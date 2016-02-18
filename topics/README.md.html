@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>KOReader Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>KOReader</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+
+
+<h2>Topics</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><strong>README</strong></li>
+</ul>
+<h2>Modules</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><a href="../modules/MD5.html">MD5</a></li>
+  <li><a href="../modules/optmath.html">optmath</a></li>
+  <li><a href="../modules/ui.font.html">ui.font</a></li>
+  <li><a href="../modules/ui.rendertext.html">ui.rendertext</a></li>
+  <li><a href="../modules/ui.widget.closebutton.html">ui.widget.closebutton</a></li>
+  <li><a href="../modules/ui.widget.keyvaluepage.html">ui.widget.keyvaluepage</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+    <a href="https://travis-ci.org/koreader/koreader"><img src="https://travis-ci.org/koreader/koreader.svg?branch=master" alt="Build Status"/></a>
+<a href="https://coveralls.io/r/koreader/koreader"><img src="https://coveralls.io/repos/koreader/koreader/badge.svg" alt="Coverage Status"/></a>
+<a href="COPYING"><img src="http://img.shields.io/badge/licence-AGPL-brightgreen.svg" alt="AGPL Licence"/></a></p>
+<h1>KOReader</h1>
+
+<p><a href="https://gitter.im/koreader/koreader?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat"/></a></p>
+
+<p>KOReader is a document viewer application, originally created for Kindle
+e-ink readers. It currently runs on Kindle, Kobo, PocketBook, Ubuntu Touch
+and Android (2.3+) devices. Developers can also run Koreader emulator
+for development purpose on desktop PC with Linux and Windows operating system.</p>
+
+<h2>Main features for users</h2>
+
+<ul>
+    <li>supports multi-format documents including:</li>
+    <li>paged fixed-layout formats: PDF, DjVu and CBZ</li>
+    <li>reflowable e-book formats: ePub, fb2, mobi, doc, chm and plain text</li>
+    <li>scanned PDF/DjVu documents can also be reflowed with built-in K2pdfopt</li>
+    <li>use StarDict dictionaries / Wikipedia to lookup words</li>
+    <li>highlights can be exported to Evernote cloud account</li>
+    <li>highly customizable reader view and typeset</li>
+    <li>setting arbitrary page margins / line space</li>
+    <li>choosing external fonts and styles</li>
+    <li>built-in multi-lingual hyphenation dictionaries</li>
+    <li>supports adding custom online OPDS catalogs</li>
+    <li>calibre integration</li>
+    <li>search calibre metadata on your koreader device</li>
+    <li>send ebooks from calibre library to your koreader device wirelessly</li>
+    <li>browser calibre library and download ebooks via calibre OPDS server</li>
+    <li>can share ebooks with other koreader devices wirelessly</li>
+    <li>various optimizations for e-ink devices</li>
+    <li>paginated menus without animation</li>
+    <li>adjustable text contrast</li>
+    <li>multi-lingual user interface</li>
+    <li>online Over-The-Air software update</li>
+</ul>
+
+<h2>Highlights for developers</h2>
+
+<ul>
+    <li>frontend written in Lua scripting language</li>
+    <li>running on multi-platform with only one code-base maintained</li>
+    <li>developing koreader in any editor without compilation</li>
+    <li>high runtime efficiency by LuaJIT acceleration</li>
+    <li>light-weight self-contained widget toolkit with small memory footprint</li>
+    <li>extensible with plugin system</li>
+    <li>interfaced backends for documents parsing and rendering</li>
+    <li>high quality document backend libraries like MuPDF, DjvuLibre and CREngine</li>
+    <li>interacting with frontend via LuaJIT FFI for best performence</li>
+    <li>in active development</li>
+    <li>contributed by developers around the world</li>
+    <li>continuous integration with Travis CI</li>
+    <li>with unit tests, static analysis and code coverage test</li>
+    <li>automatic release of nightly builds</li>
+    <li>free as in free speech</li>
+    <li>licensed under Affero GPL v3</li>
+    <li>all dependencies are free software</li>
+</ul>
+
+<p>Check out the <a href="https://github.com/koreader/koreader/wiki">KOReader wiki</a> to learn
+more about this project.</p>
+
+<h1>Building Prerequisites</h1>
+
+<p>These instructions for how to get and compile the source are intended for a Linux
+OS. Windows users are suggested to develop in a <a href="http://www.howtogeek.com/howto/11287/how-to-run-ubuntu-in-windows-7-with-vmware-player/">Linux VM</a> or use Wubi.</p>
+
+<p>To get and compile the source you must have <code>patch</code>, <code>wget</code>, <code>unzip</code>, <code>git</code>,
+<code>cmake</code> and <code>luarocks</code> installed, as well as a version of <code>autoconf</code>
+greater than 2.64. You also need <code>nasm</code> and of course a compiler like <code>gcc</code>
+or <code>clang</code>. If you want to cross-compile for other architectures, you need a proper
+cross-compile toolchain. Your GCC should be at least of version 4.7 for both native
+and cross compiling.</p>
+
+<p>Users of Debian and Ubuntu can install the required packages using:</p>
+<pre><code> sudo apt-get install build-essential git patch wget unzip \
+ gettext autoconf cmake libtool nasm luarocks \
+ libssl-dev libffi-dev libsdl2-dev linux-libc-dev:i386
+</code></pre>
+
+<p>Note that the <code>linux-libc-dev:i386</code> package is only necessary for x86_64 machines.</p>
+
+<p>Cross compile toolchains are available for Ubuntu users through these commands:</p>
+<pre><code> # for Kindle
+ sudo apt-get install gcc-arm-linux-gnueabi g++-arm-linux-gnueabi
+ # for Kobo and Ubuntu touch
+ sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
+ # for Win32
+ sudo apt-get install gcc-mingw-w64-i686 g++-mingw-w64-i686
+</code></pre>
+
+
+<p>A recent version of Android SDK/NDK and <code>ant</code> are needed in order to build
+Koreader for Android devices.</p>
+<pre><code> sudo apt-get install ant
+</code></pre>
+
+
+<p>In order to build Koreader package for Ubuntu Touch, the <code>click</code> package management
+tool is needed, Ubuntu users can install it with:</p>
+<pre><code> sudo apt-get install click
+</code></pre>
+
+
+<p>You might also need SDL library packages if you want to compile and run
+Koreader on Linux PC. Fedora users can install <code>SDL</code> and <code>SDL-devel</code> package.
+Ubuntu users probably need to install <code>libsdl2-dev</code> package:</p>
+
+<h1>Getting the source</h1>
+
+<pre><code> git clone https://github.com/koreader/koreader.git
+ cd koreader &amp;&amp; ./kodev fetch-thirdparty
+</code></pre>
+
+
+<h1>Building, Running and Testing</h1>
+
+<h2>For EReader devices (kindle, kobo, pocketbook, ubuntu-touch)</h2>
+
+<p>To build installable package for Kindle:</p>
+<pre><code> ./kodev release kindle
+</code></pre>
+
+
+<p>To build installable package for Kobo:</p>
+<pre><code> ./kodev release kobo
+</code></pre>
+
+
+<p>To build installable package for PocketBook:</p>
+<pre><code> ./kodev release pocketbook
+</code></pre>
+
+
+<p>To build installable package for Ubuntu Touch</p>
+<pre><code> ./kodev release ubuntu-touch
+</code></pre>
+
+
+<p>You may checkout our <a href="https://github.com/koreader/koreader-misc/blob/master/koreader-nightlybuild/koreader-nightlybuild.sh">nightlybuild script</a> to see how to build a
+package from scratch.</p>
+
+<h2>For Android devices</h2>
+
+<p>Make sure the "android" and "ndk-build" tools are in your PATH environment
+variable and the NDK variable points to the root directory of the Android NDK.</p>
+
+<p>Then, run this command to build installable package for Android:</p>
+<pre><code> ./kodev release android
+</code></pre>
+
+
+<h2>For emulating KOReader on Linux and Windows</h2>
+
+<p>To build an emulator on current Linux machine just run:</p>
+<pre><code> ./kodev build
+</code></pre>
+
+
+<p>If you want to compile the emulator for Windows run:</p>
+<pre><code> ./kodev build win32
+</code></pre>
+
+
+<p>To run Koreader on your developing machine:</p>
+<pre><code> ./kodev run
+</code></pre>
+
+
+<p>To run unit tests:</p>
+<pre><code> ./kodev test base
+ ./kodev test front
+</code></pre>
+
+
+<p>To run Lua static analysis:</p>
+<pre><code> make static-check
+</code></pre>
+
+
+<p>You may need to checkout the <a href="https://github.com/koreader/koreader-base/blob/master/.travis.yml">travis config file</a> to setup up
+a proper testing environment. Briefly, you need to install <code>luarocks</code> and
+then install <code>busted</code> with <code>luarocks</code>. The "eng" language data file for
+tesseract-ocr is also need to test OCR functionality. Finally, make sure
+that <code>luajit</code> in your system is at least of version 2.0.2.</p>
+
+<p>You can also specify size of emulator's screen via environment variables.
+For more information, please refer to <a href="https://github.com/koreader/koreader-base/blob/master/README.md">koreader-base's README</a>.</p>
+
+<p>To use your own koreader-base repo instead of the default one change KOR_BASE
+environment variable:</p>
+<pre><code> make KOR_BASE=../koreader-base
+</code></pre>
+
+
+<p>This will be handy if you are developing koreader-base and want to test your
+modifications with kroeader frontend. NOTE: only support relative path for now.</p>
+
+
+<h1>Translation</h1>
+
+<p>Please refer to <a href="https://github.com/koreader/koreader/blob/master/l10n/README.md">l10n's README</a> to grab the latest translations
+from <a href="https://www.transifex.com/projects/p/koreader/">the Koreader project on Transifex</a> with this command:</p>
+<pre><code> make po
+</code></pre>
+
+<p>If your language is not listed on the Transifex project, please don't hesitate
+to send a language request <a href="https://www.transifex.com/projects/p/koreader/">here</a>.</p>
+
+<h2>Variables in translation</h2>
+
+<p>Some strings contain variables that should remain unaltered in translation.
+For example:</p>
+
+
+<pre>
+The title of the book is %<span class="number">1</span> <span class="keyword">and</span> its author is %<span class="number">2.</span>
+</pre>
+
+<p>This might be displayed as:</p>
+
+<pre>
+The title of the book is The Republic <span class="keyword">and</span> its author is Plato.
+</pre>
+
+<p>To aid localization the variables may be freely positioned:</p>
+
+<pre>
+De auteur van het boek is %<span class="number">2</span> en de titel is %<span class="number">1.</span>
+</pre>
+
+<p>That would result in:</p>
+
+<pre>
+De auteur van het boek is Plato en de titel is The Republic.
+</pre>
+
+
+<h1>Use ccache</h1>
+
+<p>Ccache can speed up recompilation by caching previous compilations and detecting
+when the same compilation is being done again. In other words, it will decrease
+build time when the source have been built. Ccache support has been added to
+KOReader's build system. Before using it, you need to install a ccache in your
+system.</p>
+
+<ul>
+    <li>in Ubuntu use:<code>sudo apt-get install ccache</code></li>
+    <li>in Fedora use:<code>sudo yum install ccache</code></li>
+    <li>install from source:</li>
+    <li>get latest ccache source from http://ccache.samba.org/download.html</li>
+    <li>unarchieve the source package in a directory</li>
+    <li>cd to that directory and use:<code>./configure &amp;&amp; make &amp;&amp; sudo make install</code></li>
+    <li>to disable ccache, use <code>export USE_NO_CCACHE=1</code> before make.</li>
+    <li>for more detail about ccache. visit:</li>
+</ul>
+
+<p>http://ccache.samba.org
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i>
+<i style="float:right;">Last updated 2016-02-17 23:17:23 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
