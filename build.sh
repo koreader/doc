@@ -3,6 +3,8 @@
 git clone https://github.com/koreader/koreader.git
 
 pushd koreader
+	git clean -f
+	git pull
 	make doc
-	mv doc/html/* ../
+	cp -r doc/html/* ../
 popd
