@@ -1,0 +1,1515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>KOReader Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>KOReader</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/android.html">android</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerbookinfo.html">apps.filemanager.filemanagerbookinfo</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerconverter.html">apps.filemanager.filemanagerconverter</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerutil.html">apps.filemanager.filemanagerutil</a></li>
+  <li><a href="../modules/apps.filemanager.lib.md.html">apps.filemanager.lib.md</a></li>
+  <li><a href="../modules/apps.reader.modules.readerlink.html">apps.reader.modules.readerlink</a></li>
+  <li><a href="../modules/apps.reader.modules.readerview.html">apps.reader.modules.readerview</a></li>
+  <li><a href="../modules/apps.reader.readerui.html">apps.reader.readerui</a></li>
+  <li><a href="../modules/cache.html">cache</a></li>
+  <li><a href="../modules/cacheitem.html">cacheitem</a></li>
+  <li><a href="../modules/dbg.html">dbg</a></li>
+  <li><a href="../modules/depgraph.html">depgraph</a></li>
+  <li><a href="../modules/device.generic.device.html">device.generic.device</a></li>
+  <li><a href="../modules/device.gesturedetector.html">device.gesturedetector</a></li>
+  <li><a href="../modules/device.input.html">device.input</a></li>
+  <li><a href="../modules/device.kobo.nickel_conf.html">device.kobo.nickel_conf</a></li>
+  <li><a href="../modules/device.wakeupmgr.html">device.wakeupmgr</a></li>
+  <li><a href="../modules/dispatcher.html">dispatcher</a></li>
+  <li><a href="../modules/docsettings.html">docsettings</a></li>
+  <li><a href="../modules/document.doccache.html">document.doccache</a></li>
+  <li><a href="../modules/document.documentregistry.html">document.documentregistry</a></li>
+  <li><strong>document.koptinterface</strong></li>
+  <li><a href="../modules/dump.html">dump</a></li>
+  <li><a href="../modules/ffi.blitbuffer.html">ffi.blitbuffer</a></li>
+  <li><a href="../modules/ffi.framebuffer.html">ffi.framebuffer</a></li>
+  <li><a href="../modules/ffi.freetype.html">ffi.freetype</a></li>
+  <li><a href="../modules/ffi.jpeg.html">ffi.jpeg</a></li>
+  <li><a href="../modules/ffi.md5.html">ffi.md5</a></li>
+  <li><a href="../modules/ffi.mupdf.html">ffi.mupdf</a></li>
+  <li><a href="../modules/ffi.png.html">ffi.png</a></li>
+  <li><a href="../modules/ffi.rtc.html">ffi.rtc</a></li>
+  <li><a href="../modules/ffi.sdl2_0.html">ffi.sdl2_0</a></li>
+  <li><a href="../modules/ffi.utf8proc.html">ffi.utf8proc</a></li>
+  <li><a href="../modules/ffi.util.html">ffi.util</a></li>
+  <li><a href="../modules/ffi.zipwriter.html">ffi.zipwriter</a></li>
+  <li><a href="../modules/ffi.zlib.html">ffi.zlib</a></li>
+  <li><a href="../modules/ffi.zstd.html">ffi.zstd</a></li>
+  <li><a href="../modules/gettext.html">gettext</a></li>
+  <li><a href="../modules/koplugin.HelloWorld.html">koplugin.HelloWorld</a></li>
+  <li><a href="../modules/koplugin.QRClipboard.html">koplugin.QRClipboard</a></li>
+  <li><a href="../modules/koplugin.autowarmth.html">koplugin.autowarmth</a></li>
+  <li><a href="../modules/koplugin.calibre.metadata.html">koplugin.calibre.metadata</a></li>
+  <li><a href="../modules/koplugin.coverimage.html">koplugin.coverimage</a></li>
+  <li><a href="../modules/koplugin.japanese.html">koplugin.japanese</a></li>
+  <li><a href="../modules/koplugin.japanese.deinflector.html">koplugin.japanese.deinflector</a></li>
+  <li><a href="../modules/koplugin.wallabag.html">koplugin.wallabag</a></li>
+  <li><a href="../modules/languagesupport.html">languagesupport</a></li>
+  <li><a href="../modules/logger.html">logger</a></li>
+  <li><a href="../modules/luadata.html">luadata</a></li>
+  <li><a href="../modules/luasettings.html">luasettings</a></li>
+  <li><a href="../modules/optmath.html">optmath</a></li>
+  <li><a href="../modules/random.html">random</a></li>
+  <li><a href="../modules/socketutil.html">socketutil</a></li>
+  <li><a href="../modules/ui.bidi.html">ui.bidi</a></li>
+  <li><a href="../modules/ui.data.css_tweaks.html">ui.data.css_tweaks</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ko_KR_helper.html">ui.data.keyboardlayouts.ko_KR_helper</a></li>
+  <li><a href="../modules/ui.data.optionsutil.html">ui.data.optionsutil</a></li>
+  <li><a href="../modules/ui.downloadmgr.html">ui.downloadmgr</a></li>
+  <li><a href="../modules/ui.event.html">ui.event</a></li>
+  <li><a href="../modules/ui.font.html">ui.font</a></li>
+  <li><a href="../modules/ui.geometry.html">ui.geometry</a></li>
+  <li><a href="../modules/ui.hook_container.html">ui.hook_container</a></li>
+  <li><a href="../modules/ui.menusorter.html">ui.menusorter</a></li>
+  <li><a href="../modules/ui.network.wpa_supplicant.html">ui.network.wpa_supplicant</a></li>
+  <li><a href="../modules/ui.otamanager.html">ui.otamanager</a></li>
+  <li><a href="../modules/ui.plugin.background_task_plugin.html">ui.plugin.background_task_plugin</a></li>
+  <li><a href="../modules/ui.plugin.switch_plugin.html">ui.plugin.switch_plugin</a></li>
+  <li><a href="../modules/ui.quickstart.html">ui.quickstart</a></li>
+  <li><a href="../modules/ui.renderimage.html">ui.renderimage</a></li>
+  <li><a href="../modules/ui.rendertext.html">ui.rendertext</a></li>
+  <li><a href="../modules/ui.size.html">ui.size</a></li>
+  <li><a href="../modules/ui.timeval.html">ui.timeval</a></li>
+  <li><a href="../modules/ui.translator.html">ui.translator</a></li>
+  <li><a href="../modules/ui.trapper.html">ui.trapper</a></li>
+  <li><a href="../modules/ui.uimanager.html">ui.uimanager</a></li>
+  <li><a href="../modules/ui.widget.bboxwidget.html">ui.widget.bboxwidget</a></li>
+  <li><a href="../modules/ui.widget.button.html">ui.widget.button</a></li>
+  <li><a href="../modules/ui.widget.checkbutton.html">ui.widget.checkbutton</a></li>
+  <li><a href="../modules/ui.widget.checkmark.html">ui.widget.checkmark</a></li>
+  <li><a href="../modules/ui.widget.closebutton.html">ui.widget.closebutton</a></li>
+  <li><a href="../modules/ui.widget.confirmbox.html">ui.widget.confirmbox</a></li>
+  <li><a href="../modules/ui.widget.container.alphacontainer.html">ui.widget.container.alphacontainer</a></li>
+  <li><a href="../modules/ui.widget.container.bottomcontainer.html">ui.widget.container.bottomcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.centercontainer.html">ui.widget.container.centercontainer</a></li>
+  <li><a href="../modules/ui.widget.container.framecontainer.html">ui.widget.container.framecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.inputcontainer.html">ui.widget.container.inputcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.leftcontainer.html">ui.widget.container.leftcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.movablecontainer.html">ui.widget.container.movablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.rightcontainer.html">ui.widget.container.rightcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.scrollablecontainer.html">ui.widget.container.scrollablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.topcontainer.html">ui.widget.container.topcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.underlinecontainer.html">ui.widget.container.underlinecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.widgetcontainer.html">ui.widget.container.widgetcontainer</a></li>
+  <li><a href="../modules/ui.widget.eventlistener.html">ui.widget.eventlistener</a></li>
+  <li><a href="../modules/ui.widget.horizontalgroup.html">ui.widget.horizontalgroup</a></li>
+  <li><a href="../modules/ui.widget.htmlboxwidget.html">ui.widget.htmlboxwidget</a></li>
+  <li><a href="../modules/ui.widget.iconbutton.html">ui.widget.iconbutton</a></li>
+  <li><a href="../modules/ui.widget.iconwidget.html">ui.widget.iconwidget</a></li>
+  <li><a href="../modules/ui.widget.imageviewer.html">ui.widget.imageviewer</a></li>
+  <li><a href="../modules/ui.widget.imagewidget.html">ui.widget.imagewidget</a></li>
+  <li><a href="../modules/ui.widget.infomessage.html">ui.widget.infomessage</a></li>
+  <li><a href="../modules/ui.widget.inputdialog.html">ui.widget.inputdialog</a></li>
+  <li><a href="../modules/ui.widget.keyboardlayoutdialog.html">ui.widget.keyboardlayoutdialog</a></li>
+  <li><a href="../modules/ui.widget.keyvaluepage.html">ui.widget.keyvaluepage</a></li>
+  <li><a href="../modules/ui.widget.linewidget.html">ui.widget.linewidget</a></li>
+  <li><a href="../modules/ui.widget.listview.html">ui.widget.listview</a></li>
+  <li><a href="../modules/ui.widget.logindialog.html">ui.widget.logindialog</a></li>
+  <li><a href="../modules/ui.widget.menu.html">ui.widget.menu</a></li>
+  <li><a href="../modules/ui.widget.multiconfirmbox.html">ui.widget.multiconfirmbox</a></li>
+  <li><a href="../modules/ui.widget.networksetting.html">ui.widget.networksetting</a></li>
+  <li><a href="../modules/ui.widget.notification.html">ui.widget.notification</a></li>
+  <li><a href="../modules/ui.widget.numberpickerwidget.html">ui.widget.numberpickerwidget</a></li>
+  <li><a href="../modules/ui.widget.openwithdialog.html">ui.widget.openwithdialog</a></li>
+  <li><a href="../modules/ui.widget.overlapgroup.html">ui.widget.overlapgroup</a></li>
+  <li><a href="../modules/ui.widget.progresswidget.html">ui.widget.progresswidget</a></li>
+  <li><a href="../modules/ui.widget.qrmessage.html">ui.widget.qrmessage</a></li>
+  <li><a href="../modules/ui.widget.radiobutton.html">ui.widget.radiobutton</a></li>
+  <li><a href="../modules/ui.widget.scrollhtmlwidget.html">ui.widget.scrollhtmlwidget</a></li>
+  <li><a href="../modules/ui.widget.scrolltextwidget.html">ui.widget.scrolltextwidget</a></li>
+  <li><a href="../modules/ui.widget.textboxwidget.html">ui.widget.textboxwidget</a></li>
+  <li><a href="../modules/ui.widget.textviewer.html">ui.widget.textviewer</a></li>
+  <li><a href="../modules/ui.widget.textwidget.html">ui.widget.textwidget</a></li>
+  <li><a href="../modules/ui.widget.toggleswitch.html">ui.widget.toggleswitch</a></li>
+  <li><a href="../modules/ui.widget.touchmenu.html">ui.widget.touchmenu</a></li>
+  <li><a href="../modules/ui.widget.trapwidget.html">ui.widget.trapwidget</a></li>
+  <li><a href="../modules/ui.widget.verticalgroup.html">ui.widget.verticalgroup</a></li>
+  <li><a href="../modules/ui.widget.widget.html">ui.widget.widget</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+  <li><a href="../modules/version.html">version</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/Collaborating_with_Git.md.html">Collaborating with Git</a></li>
+  <li><a href="../topics/DataStore.md.html">DataStore</a></li>
+  <li><a href="../topics/Development_guide.md.html">Development Guide</a></li>
+  <li><a href="../topics/Events.md.html">Events</a></li>
+  <li><a href="../topics/Hacking.md.html">Hacking</a></li>
+  <li><a href="../topics/Porting.md.html">Porting</a></li>
+  <li><a href="../topics/README.md.html">README</a></li>
+  <li><a href="../topics/Unit_tests.md.html">Unit Tests</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>document.koptinterface</code></h1>
+<p>Interface to k2pdfoptlib backend.</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:createContext">KoptInterface:createContext (doc, pageno, bbox)</a></td>
+	<td class="summary">Get reflow context.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getAutoBBox">KoptInterface:getAutoBBox (doc, pageno)</a></td>
+	<td class="summary">Auto detect bbox.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getSemiAutoBBox">KoptInterface:getSemiAutoBBox (doc, pageno)</a></td>
+	<td class="summary">Detect bbox within user restricted bbox.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getCachedContext">KoptInterface:getCachedContext (doc, pageno)</a></td>
+	<td class="summary">Get cached koptcontext for a certain page.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getPageDimensions">KoptInterface:getPageDimensions (doc, pageno, zoom, rotation)</a></td>
+	<td class="summary">Get page dimensions.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getRFPageDimensions">KoptInterface:getRFPageDimensions (doc, pageno, zoom, rotation)</a></td>
+	<td class="summary">Get reflowed page dimensions.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getCoverPageImage">KoptInterface:getCoverPageImage (doc)</a></td>
+	<td class="summary">Get first page image.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:renderReflowedPage">KoptInterface:renderReflowedPage (doc, pageno, rect, zoom, rotation, render_mode)</a></td>
+	<td class="summary">Render reflowed page into tile cache.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:renderOptimizedPage">KoptInterface:renderOptimizedPage (doc, pageno, rect, zoom, rotation, render_mode, hinting)</a></td>
+	<td class="summary">Render optimized page into tile cache.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:hintReflowedPage">KoptInterface:hintReflowedPage (doc, pageno, zoom, rotation, gamma, render_mode, hinting)</a></td>
+	<td class="summary">Render reflowed page into cache in background thread.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:drawContextPage">KoptInterface:drawContextPage (doc, target, x, y, rect, pageno, zoom, rotation, render_mode)</a></td>
+	<td class="summary">Draw cached tile pixels into target blitbuffer.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getReflowedTextBoxes">KoptInterface:getReflowedTextBoxes (doc, pageno)</a></td>
+	<td class="summary">Get text boxes in reflowed page via rectmaps in koptcontext.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getNativeTextBoxes">KoptInterface:getNativeTextBoxes (doc, pageno)</a></td>
+	<td class="summary">Get text boxes in native page via rectmaps in koptcontext.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getReflowedTextBoxesFromScratch">KoptInterface:getReflowedTextBoxesFromScratch (doc, pageno)</a></td>
+	<td class="summary">Get text boxes in reflowed page via optical method.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getNativeTextBoxesFromScratch">KoptInterface:getNativeTextBoxesFromScratch (doc, pageno)</a></td>
+	<td class="summary">Get text boxes in native page via optical method.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getPageBlock">KoptInterface:getPageBlock (doc, pageno, x, y)</a></td>
+	<td class="summary">Get page regions in native page via optical method.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getOCRWord">KoptInterface:getOCRWord (doc, pageno, wbox)</a></td>
+	<td class="summary">Get word from OCR providing selected word box.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getReflewOCRWord">KoptInterface:getReflewOCRWord (doc, pageno, rect)</a></td>
+	<td class="summary">Get word from OCR in reflew page.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getNativeOCRWord">KoptInterface:getNativeOCRWord (doc, pageno, rect)</a></td>
+	<td class="summary">Get word from OCR in native page.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getOCRText">KoptInterface:getOCRText (doc, pageno, tboxes)</a></td>
+	<td class="summary">Get text from OCR providing selected text boxes.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getWordFromBoxes">KoptInterface:getWordFromBoxes (boxes, pos)</a></td>
+	<td class="summary">Get word and word box around <code>pos</code>.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getTextFromBoxes">KoptInterface:getTextFromBoxes (boxes, pos0, pos1)</a></td>
+	<td class="summary">Get text and text boxes between <code>pos0</code> and <code>pos1</code>.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getWordFromPosition">KoptInterface:getWordFromPosition (doc, pos)</a></td>
+	<td class="summary">Get word and word box from <code>doc</code> position.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getWordFromReflowPosition">KoptInterface:getWordFromReflowPosition (doc, boxes, pos)</a></td>
+	<td class="summary">Get word and word box from position in reflowed page.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getWordFromNativePosition">KoptInterface:getWordFromNativePosition (doc, boxes, pos)</a></td>
+	<td class="summary">Get word and word box from position in native page.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getLinkFromPosition">KoptInterface:getLinkFromPosition (doc, pageno, pos)</a></td>
+	<td class="summary">Get link from position in screen page.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:nativeToReflowPosTransform">KoptInterface:nativeToReflowPosTransform (doc, pageno, pos)</a></td>
+	<td class="summary">Transform position in native page to reflowed page.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:reflowToNativePosTransform">KoptInterface:reflowToNativePosTransform (doc, pageno, abs_pos, rel_pos)</a></td>
+	<td class="summary">Transform position in reflowed page to native page.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getTextFromPositions">KoptInterface:getTextFromPositions (doc, pos0, pos1)</a></td>
+	<td class="summary">Get text and text boxes from screen positions.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getTextFromReflowPositions">KoptInterface:getTextFromReflowPositions (doc, native_boxes, pos0, pos1)</a></td>
+	<td class="summary">Get text and text boxes from screen positions for reflowed page.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getTextFromNativePositions">KoptInterface:getTextFromNativePositions (doc, native_boxes, pos0, pos1)</a></td>
+	<td class="summary">Get text and text boxes from screen positions for native page.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:getPageBoxesFromPositions">KoptInterface:getPageBoxesFromPositions (doc, pageno, ppos0, ppos1)</a></td>
+	<td class="summary">Get text boxes from page positions.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:nativeToPageRectTransform">KoptInterface:nativeToPageRectTransform (doc, pageno, rect)</a></td>
+	<td class="summary">Get page rect from native rect.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#KoptInterface:logReflowDuration">KoptInterface:logReflowDuration (pageno, dur)</a></td>
+	<td class="summary">Log reflow duration.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "KoptInterface:createContext"></a>
+    <strong>KoptInterface:createContext (doc, pageno, bbox)</strong>
+    </dt>
+    <dd>
+    Get reflow context.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">bbox</span>
+        Now koptcontext keeps track of its dst bitmap reflowed by libk2pdfopt. So there is no need to check background context when creating new context.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getAutoBBox"></a>
+    <strong>KoptInterface:getAutoBBox (doc, pageno)</strong>
+    </dt>
+    <dd>
+    Auto detect bbox.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getSemiAutoBBox"></a>
+    <strong>KoptInterface:getSemiAutoBBox (doc, pageno)</strong>
+    </dt>
+    <dd>
+    Detect bbox within user restricted bbox.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+        use manual bbox
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getCachedContext"></a>
+    <strong>KoptInterface:getCachedContext (doc, pageno)</strong>
+    </dt>
+    <dd>
+    Get cached koptcontext for a certain page. </p>
+
+<p>If the context doesn't exist in cache, make a new context and reflow the src page
+immediately, or wait for the background thread with reflowed context.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getPageDimensions"></a>
+    <strong>KoptInterface:getPageDimensions (doc, pageno, zoom, rotation)</strong>
+    </dt>
+    <dd>
+    Get page dimensions.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">zoom</span>
+
+
+
+        </li>
+        <li><span class="parameter">rotation</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getRFPageDimensions"></a>
+    <strong>KoptInterface:getRFPageDimensions (doc, pageno, zoom, rotation)</strong>
+    </dt>
+    <dd>
+    Get reflowed page dimensions.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">zoom</span>
+
+
+
+        </li>
+        <li><span class="parameter">rotation</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getCoverPageImage"></a>
+    <strong>KoptInterface:getCoverPageImage (doc)</strong>
+    </dt>
+    <dd>
+    Get first page image.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:renderReflowedPage"></a>
+    <strong>KoptInterface:renderReflowedPage (doc, pageno, rect, zoom, rotation, render_mode)</strong>
+    </dt>
+    <dd>
+    Render reflowed page into tile cache. </p>
+
+<p>Inherited from common document interface.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">rect</span>
+
+
+
+        </li>
+        <li><span class="parameter">zoom</span>
+
+
+
+        </li>
+        <li><span class="parameter">rotation</span>
+
+
+
+        </li>
+        <li><span class="parameter">render_mode</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:renderOptimizedPage"></a>
+    <strong>KoptInterface:renderOptimizedPage (doc, pageno, rect, zoom, rotation, render_mode, hinting)</strong>
+    </dt>
+    <dd>
+    Render optimized page into tile cache. </p>
+
+<p>Inherited from common document interface.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">rect</span>
+
+
+
+        </li>
+        <li><span class="parameter">zoom</span>
+
+
+
+        </li>
+        <li><span class="parameter">rotation</span>
+
+
+
+        </li>
+        <li><span class="parameter">render_mode</span>
+
+
+
+        </li>
+        <li><span class="parameter">hinting</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:hintReflowedPage"></a>
+    <strong>KoptInterface:hintReflowedPage (doc, pageno, zoom, rotation, gamma, render_mode, hinting)</strong>
+    </dt>
+    <dd>
+    Render reflowed page into cache in background thread. </p>
+
+<p>This method returns immediately, leaving the precache flag on
+in context. Subsequent usage of this context should wait for the precache flag
+off by calling self:waitForContext(kctx)</p>
+
+<p>Inherited from common document interface.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">zoom</span>
+
+
+
+        </li>
+        <li><span class="parameter">rotation</span>
+
+
+
+        </li>
+        <li><span class="parameter">gamma</span>
+
+
+
+        </li>
+        <li><span class="parameter">render_mode</span>
+
+
+
+        </li>
+        <li><span class="parameter">hinting</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:drawContextPage"></a>
+    <strong>KoptInterface:drawContextPage (doc, target, x, y, rect, pageno, zoom, rotation, render_mode)</strong>
+    </dt>
+    <dd>
+    Draw cached tile pixels into target blitbuffer. </p>
+
+<p>Inherited from common document interface.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">target</span>
+
+
+
+        </li>
+        <li><span class="parameter">x</span>
+
+
+
+        </li>
+        <li><span class="parameter">y</span>
+
+
+
+        </li>
+        <li><span class="parameter">rect</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">zoom</span>
+
+
+
+        </li>
+        <li><span class="parameter">rotation</span>
+
+
+
+        </li>
+        <li><span class="parameter">render_mode</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getReflowedTextBoxes"></a>
+    <strong>KoptInterface:getReflowedTextBoxes (doc, pageno)</strong>
+    </dt>
+    <dd>
+    Get text boxes in reflowed page via rectmaps in koptcontext.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getNativeTextBoxes"></a>
+    <strong>KoptInterface:getNativeTextBoxes (doc, pageno)</strong>
+    </dt>
+    <dd>
+    Get text boxes in native page via rectmaps in koptcontext.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getReflowedTextBoxesFromScratch"></a>
+    <strong>KoptInterface:getReflowedTextBoxesFromScratch (doc, pageno)</strong>
+    </dt>
+    <dd>
+    Get text boxes in reflowed page via optical method. </p>
+
+<p>Done by OCR pre-processing in Tesseract and Leptonica.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getNativeTextBoxesFromScratch"></a>
+    <strong>KoptInterface:getNativeTextBoxesFromScratch (doc, pageno)</strong>
+    </dt>
+    <dd>
+    Get text boxes in native page via optical method. </p>
+
+<p>Done by OCR pre-processing in Tesseract and Leptonica.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getPageBlock"></a>
+    <strong>KoptInterface:getPageBlock (doc, pageno, x, y)</strong>
+    </dt>
+    <dd>
+    Get page regions in native page via optical method.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">x</span>
+
+
+
+        </li>
+        <li><span class="parameter">y</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getOCRWord"></a>
+    <strong>KoptInterface:getOCRWord (doc, pageno, wbox)</strong>
+    </dt>
+    <dd>
+    Get word from OCR providing selected word box.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">wbox</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getReflewOCRWord"></a>
+    <strong>KoptInterface:getReflewOCRWord (doc, pageno, rect)</strong>
+    </dt>
+    <dd>
+    Get word from OCR in reflew page.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">rect</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getNativeOCRWord"></a>
+    <strong>KoptInterface:getNativeOCRWord (doc, pageno, rect)</strong>
+    </dt>
+    <dd>
+    Get word from OCR in native page.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">rect</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getOCRText"></a>
+    <strong>KoptInterface:getOCRText (doc, pageno, tboxes)</strong>
+    </dt>
+    <dd>
+    Get text from OCR providing selected text boxes.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">tboxes</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getWordFromBoxes"></a>
+    <strong>KoptInterface:getWordFromBoxes (boxes, pos)</strong>
+    </dt>
+    <dd>
+    Get word and word box around <code>pos</code>.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">boxes</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getTextFromBoxes"></a>
+    <strong>KoptInterface:getTextFromBoxes (boxes, pos0, pos1)</strong>
+    </dt>
+    <dd>
+    Get text and text boxes between <code>pos0</code> and <code>pos1</code>.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">boxes</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos0</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos1</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getWordFromPosition"></a>
+    <strong>KoptInterface:getWordFromPosition (doc, pos)</strong>
+    </dt>
+    <dd>
+    Get word and word box from <code>doc</code> position.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getWordFromReflowPosition"></a>
+    <strong>KoptInterface:getWordFromReflowPosition (doc, boxes, pos)</strong>
+    </dt>
+    <dd>
+    Get word and word box from position in reflowed page.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">boxes</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getWordFromNativePosition"></a>
+    <strong>KoptInterface:getWordFromNativePosition (doc, boxes, pos)</strong>
+    </dt>
+    <dd>
+    Get word and word box from position in native page.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">boxes</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getLinkFromPosition"></a>
+    <strong>KoptInterface:getLinkFromPosition (doc, pageno, pos)</strong>
+    </dt>
+    <dd>
+    Get link from position in screen page.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:nativeToReflowPosTransform"></a>
+    <strong>KoptInterface:nativeToReflowPosTransform (doc, pageno, pos)</strong>
+    </dt>
+    <dd>
+    Transform position in native page to reflowed page.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:reflowToNativePosTransform"></a>
+    <strong>KoptInterface:reflowToNativePosTransform (doc, pageno, abs_pos, rel_pos)</strong>
+    </dt>
+    <dd>
+    Transform position in reflowed page to native page.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">abs_pos</span>
+
+
+
+        </li>
+        <li><span class="parameter">rel_pos</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getTextFromPositions"></a>
+    <strong>KoptInterface:getTextFromPositions (doc, pos0, pos1)</strong>
+    </dt>
+    <dd>
+    Get text and text boxes from screen positions.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos0</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos1</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getTextFromReflowPositions"></a>
+    <strong>KoptInterface:getTextFromReflowPositions (doc, native_boxes, pos0, pos1)</strong>
+    </dt>
+    <dd>
+    Get text and text boxes from screen positions for reflowed page.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">native_boxes</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos0</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos1</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getTextFromNativePositions"></a>
+    <strong>KoptInterface:getTextFromNativePositions (doc, native_boxes, pos0, pos1)</strong>
+    </dt>
+    <dd>
+    Get text and text boxes from screen positions for native page.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">native_boxes</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos0</span>
+
+
+
+        </li>
+        <li><span class="parameter">pos1</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:getPageBoxesFromPositions"></a>
+    <strong>KoptInterface:getPageBoxesFromPositions (doc, pageno, ppos0, ppos1)</strong>
+    </dt>
+    <dd>
+    Get text boxes from page positions.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">ppos0</span>
+
+
+
+        </li>
+        <li><span class="parameter">ppos1</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:nativeToPageRectTransform"></a>
+    <strong>KoptInterface:nativeToPageRectTransform (doc, pageno, rect)</strong>
+    </dt>
+    <dd>
+    Get page rect from native rect.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">doc</span>
+
+
+
+        </li>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">rect</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "KoptInterface:logReflowDuration"></a>
+    <strong>KoptInterface:logReflowDuration (pageno, dur)</strong>
+    </dt>
+    <dd>
+    Log reflow duration.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">pageno</span>
+
+
+
+        </li>
+        <li><span class="parameter">dur</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2021-10-26 19:18:15 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

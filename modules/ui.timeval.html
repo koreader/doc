@@ -1,0 +1,697 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>KOReader Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>KOReader</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#Fields">Fields</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/android.html">android</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerbookinfo.html">apps.filemanager.filemanagerbookinfo</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerconverter.html">apps.filemanager.filemanagerconverter</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerutil.html">apps.filemanager.filemanagerutil</a></li>
+  <li><a href="../modules/apps.filemanager.lib.md.html">apps.filemanager.lib.md</a></li>
+  <li><a href="../modules/apps.reader.modules.readerlink.html">apps.reader.modules.readerlink</a></li>
+  <li><a href="../modules/apps.reader.modules.readerview.html">apps.reader.modules.readerview</a></li>
+  <li><a href="../modules/apps.reader.readerui.html">apps.reader.readerui</a></li>
+  <li><a href="../modules/cache.html">cache</a></li>
+  <li><a href="../modules/cacheitem.html">cacheitem</a></li>
+  <li><a href="../modules/dbg.html">dbg</a></li>
+  <li><a href="../modules/depgraph.html">depgraph</a></li>
+  <li><a href="../modules/device.generic.device.html">device.generic.device</a></li>
+  <li><a href="../modules/device.gesturedetector.html">device.gesturedetector</a></li>
+  <li><a href="../modules/device.input.html">device.input</a></li>
+  <li><a href="../modules/device.kobo.nickel_conf.html">device.kobo.nickel_conf</a></li>
+  <li><a href="../modules/device.wakeupmgr.html">device.wakeupmgr</a></li>
+  <li><a href="../modules/dispatcher.html">dispatcher</a></li>
+  <li><a href="../modules/docsettings.html">docsettings</a></li>
+  <li><a href="../modules/document.doccache.html">document.doccache</a></li>
+  <li><a href="../modules/document.documentregistry.html">document.documentregistry</a></li>
+  <li><a href="../modules/document.koptinterface.html">document.koptinterface</a></li>
+  <li><a href="../modules/dump.html">dump</a></li>
+  <li><a href="../modules/ffi.blitbuffer.html">ffi.blitbuffer</a></li>
+  <li><a href="../modules/ffi.framebuffer.html">ffi.framebuffer</a></li>
+  <li><a href="../modules/ffi.freetype.html">ffi.freetype</a></li>
+  <li><a href="../modules/ffi.jpeg.html">ffi.jpeg</a></li>
+  <li><a href="../modules/ffi.md5.html">ffi.md5</a></li>
+  <li><a href="../modules/ffi.mupdf.html">ffi.mupdf</a></li>
+  <li><a href="../modules/ffi.png.html">ffi.png</a></li>
+  <li><a href="../modules/ffi.rtc.html">ffi.rtc</a></li>
+  <li><a href="../modules/ffi.sdl2_0.html">ffi.sdl2_0</a></li>
+  <li><a href="../modules/ffi.utf8proc.html">ffi.utf8proc</a></li>
+  <li><a href="../modules/ffi.util.html">ffi.util</a></li>
+  <li><a href="../modules/ffi.zipwriter.html">ffi.zipwriter</a></li>
+  <li><a href="../modules/ffi.zlib.html">ffi.zlib</a></li>
+  <li><a href="../modules/ffi.zstd.html">ffi.zstd</a></li>
+  <li><a href="../modules/gettext.html">gettext</a></li>
+  <li><a href="../modules/koplugin.HelloWorld.html">koplugin.HelloWorld</a></li>
+  <li><a href="../modules/koplugin.QRClipboard.html">koplugin.QRClipboard</a></li>
+  <li><a href="../modules/koplugin.autowarmth.html">koplugin.autowarmth</a></li>
+  <li><a href="../modules/koplugin.calibre.metadata.html">koplugin.calibre.metadata</a></li>
+  <li><a href="../modules/koplugin.coverimage.html">koplugin.coverimage</a></li>
+  <li><a href="../modules/koplugin.japanese.html">koplugin.japanese</a></li>
+  <li><a href="../modules/koplugin.japanese.deinflector.html">koplugin.japanese.deinflector</a></li>
+  <li><a href="../modules/koplugin.wallabag.html">koplugin.wallabag</a></li>
+  <li><a href="../modules/languagesupport.html">languagesupport</a></li>
+  <li><a href="../modules/logger.html">logger</a></li>
+  <li><a href="../modules/luadata.html">luadata</a></li>
+  <li><a href="../modules/luasettings.html">luasettings</a></li>
+  <li><a href="../modules/optmath.html">optmath</a></li>
+  <li><a href="../modules/random.html">random</a></li>
+  <li><a href="../modules/socketutil.html">socketutil</a></li>
+  <li><a href="../modules/ui.bidi.html">ui.bidi</a></li>
+  <li><a href="../modules/ui.data.css_tweaks.html">ui.data.css_tweaks</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ko_KR_helper.html">ui.data.keyboardlayouts.ko_KR_helper</a></li>
+  <li><a href="../modules/ui.data.optionsutil.html">ui.data.optionsutil</a></li>
+  <li><a href="../modules/ui.downloadmgr.html">ui.downloadmgr</a></li>
+  <li><a href="../modules/ui.event.html">ui.event</a></li>
+  <li><a href="../modules/ui.font.html">ui.font</a></li>
+  <li><a href="../modules/ui.geometry.html">ui.geometry</a></li>
+  <li><a href="../modules/ui.hook_container.html">ui.hook_container</a></li>
+  <li><a href="../modules/ui.menusorter.html">ui.menusorter</a></li>
+  <li><a href="../modules/ui.network.wpa_supplicant.html">ui.network.wpa_supplicant</a></li>
+  <li><a href="../modules/ui.otamanager.html">ui.otamanager</a></li>
+  <li><a href="../modules/ui.plugin.background_task_plugin.html">ui.plugin.background_task_plugin</a></li>
+  <li><a href="../modules/ui.plugin.switch_plugin.html">ui.plugin.switch_plugin</a></li>
+  <li><a href="../modules/ui.quickstart.html">ui.quickstart</a></li>
+  <li><a href="../modules/ui.renderimage.html">ui.renderimage</a></li>
+  <li><a href="../modules/ui.rendertext.html">ui.rendertext</a></li>
+  <li><a href="../modules/ui.size.html">ui.size</a></li>
+  <li><strong>ui.timeval</strong></li>
+  <li><a href="../modules/ui.translator.html">ui.translator</a></li>
+  <li><a href="../modules/ui.trapper.html">ui.trapper</a></li>
+  <li><a href="../modules/ui.uimanager.html">ui.uimanager</a></li>
+  <li><a href="../modules/ui.widget.bboxwidget.html">ui.widget.bboxwidget</a></li>
+  <li><a href="../modules/ui.widget.button.html">ui.widget.button</a></li>
+  <li><a href="../modules/ui.widget.checkbutton.html">ui.widget.checkbutton</a></li>
+  <li><a href="../modules/ui.widget.checkmark.html">ui.widget.checkmark</a></li>
+  <li><a href="../modules/ui.widget.closebutton.html">ui.widget.closebutton</a></li>
+  <li><a href="../modules/ui.widget.confirmbox.html">ui.widget.confirmbox</a></li>
+  <li><a href="../modules/ui.widget.container.alphacontainer.html">ui.widget.container.alphacontainer</a></li>
+  <li><a href="../modules/ui.widget.container.bottomcontainer.html">ui.widget.container.bottomcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.centercontainer.html">ui.widget.container.centercontainer</a></li>
+  <li><a href="../modules/ui.widget.container.framecontainer.html">ui.widget.container.framecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.inputcontainer.html">ui.widget.container.inputcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.leftcontainer.html">ui.widget.container.leftcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.movablecontainer.html">ui.widget.container.movablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.rightcontainer.html">ui.widget.container.rightcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.scrollablecontainer.html">ui.widget.container.scrollablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.topcontainer.html">ui.widget.container.topcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.underlinecontainer.html">ui.widget.container.underlinecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.widgetcontainer.html">ui.widget.container.widgetcontainer</a></li>
+  <li><a href="../modules/ui.widget.eventlistener.html">ui.widget.eventlistener</a></li>
+  <li><a href="../modules/ui.widget.horizontalgroup.html">ui.widget.horizontalgroup</a></li>
+  <li><a href="../modules/ui.widget.htmlboxwidget.html">ui.widget.htmlboxwidget</a></li>
+  <li><a href="../modules/ui.widget.iconbutton.html">ui.widget.iconbutton</a></li>
+  <li><a href="../modules/ui.widget.iconwidget.html">ui.widget.iconwidget</a></li>
+  <li><a href="../modules/ui.widget.imageviewer.html">ui.widget.imageviewer</a></li>
+  <li><a href="../modules/ui.widget.imagewidget.html">ui.widget.imagewidget</a></li>
+  <li><a href="../modules/ui.widget.infomessage.html">ui.widget.infomessage</a></li>
+  <li><a href="../modules/ui.widget.inputdialog.html">ui.widget.inputdialog</a></li>
+  <li><a href="../modules/ui.widget.keyboardlayoutdialog.html">ui.widget.keyboardlayoutdialog</a></li>
+  <li><a href="../modules/ui.widget.keyvaluepage.html">ui.widget.keyvaluepage</a></li>
+  <li><a href="../modules/ui.widget.linewidget.html">ui.widget.linewidget</a></li>
+  <li><a href="../modules/ui.widget.listview.html">ui.widget.listview</a></li>
+  <li><a href="../modules/ui.widget.logindialog.html">ui.widget.logindialog</a></li>
+  <li><a href="../modules/ui.widget.menu.html">ui.widget.menu</a></li>
+  <li><a href="../modules/ui.widget.multiconfirmbox.html">ui.widget.multiconfirmbox</a></li>
+  <li><a href="../modules/ui.widget.networksetting.html">ui.widget.networksetting</a></li>
+  <li><a href="../modules/ui.widget.notification.html">ui.widget.notification</a></li>
+  <li><a href="../modules/ui.widget.numberpickerwidget.html">ui.widget.numberpickerwidget</a></li>
+  <li><a href="../modules/ui.widget.openwithdialog.html">ui.widget.openwithdialog</a></li>
+  <li><a href="../modules/ui.widget.overlapgroup.html">ui.widget.overlapgroup</a></li>
+  <li><a href="../modules/ui.widget.progresswidget.html">ui.widget.progresswidget</a></li>
+  <li><a href="../modules/ui.widget.qrmessage.html">ui.widget.qrmessage</a></li>
+  <li><a href="../modules/ui.widget.radiobutton.html">ui.widget.radiobutton</a></li>
+  <li><a href="../modules/ui.widget.scrollhtmlwidget.html">ui.widget.scrollhtmlwidget</a></li>
+  <li><a href="../modules/ui.widget.scrolltextwidget.html">ui.widget.scrolltextwidget</a></li>
+  <li><a href="../modules/ui.widget.textboxwidget.html">ui.widget.textboxwidget</a></li>
+  <li><a href="../modules/ui.widget.textviewer.html">ui.widget.textviewer</a></li>
+  <li><a href="../modules/ui.widget.textwidget.html">ui.widget.textwidget</a></li>
+  <li><a href="../modules/ui.widget.toggleswitch.html">ui.widget.toggleswitch</a></li>
+  <li><a href="../modules/ui.widget.touchmenu.html">ui.widget.touchmenu</a></li>
+  <li><a href="../modules/ui.widget.trapwidget.html">ui.widget.trapwidget</a></li>
+  <li><a href="../modules/ui.widget.verticalgroup.html">ui.widget.verticalgroup</a></li>
+  <li><a href="../modules/ui.widget.widget.html">ui.widget.widget</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+  <li><a href="../modules/version.html">version</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/Collaborating_with_Git.md.html">Collaborating with Git</a></li>
+  <li><a href="../topics/DataStore.md.html">DataStore</a></li>
+  <li><a href="../topics/Development_guide.md.html">Development Guide</a></li>
+  <li><a href="../topics/Events.md.html">Events</a></li>
+  <li><a href="../topics/Hacking.md.html">Hacking</a></li>
+  <li><a href="../topics/Porting.md.html">Porting</a></li>
+  <li><a href="../topics/README.md.html">README</a></li>
+  <li><a href="../topics/Unit_tests.md.html">Unit Tests</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ui.timeval</code></h1>
+<p>A simple module to module to compare and do arithmetic with time values.</p>
+<p>
+
+</p>
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">local TimeVal = require(&quot;ui/timeval&quot;)
+
+local tv_start = TimeVal:now()
+-- Do some stuff.
+-- You can add and subtract `TimeVal` objects.
+local tv_duration = TimeVal:now() - tv_start
+-- And convert that object to various more human-readable formats, e.g.,
+print(string.format(&quot;Stuff took %.3fms&quot;, tv_duration:tomsecs()))
+</pre>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:new">TimeVal:new (from_o)</a></td>
+	<td class="summary">Creates a new TimeVal object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:realtime">TimeVal:realtime ()</a></td>
+	<td class="summary">Creates a new TimeVal object based on the current wall clock time.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:monotonic">TimeVal:monotonic ()</a></td>
+	<td class="summary">Creates a new TimeVal object based on the current value from the system's MONOTONIC clock source.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:monotonic_coarse">TimeVal:monotonic_coarse ()</a></td>
+	<td class="summary">Ditto, but w/ CLOCK<em>MONOTONIC</em>COARSE if it's available and has a 1ms resolution or better (uses CLOCK_MONOTONIC otherwise).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:realtime_coarse">TimeVal:realtime_coarse ()</a></td>
+	<td class="summary">Ditto, but w/ CLOCK<em>REALTIME</em>COARSE if it's available and has a 1ms resolution or better (uses CLOCK_REALTIME otherwise).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:boottime">TimeVal:boottime ()</a></td>
+	<td class="summary">Ditto, but w/ CLOCK_BOOTTIME (will return a TimeVal set to 0, 0 if the clock source is unsupported, as it's 2.6.39+)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:tonumber">TimeVal:tonumber ()</a></td>
+	<td class="summary">Converts a TimeVal object to a Lua (decimal) number (sec.usecs) (accurate to the ms, rounded to 4 decimal places)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:tousecs">TimeVal:tousecs ()</a></td>
+	<td class="summary">Converts a TimeVal object to a Lua (int) number (resolution: 1µs)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:tomsecs">TimeVal:tomsecs ()</a></td>
+	<td class="summary">Converts a TimeVal object to a Lua (int) number (resolution: 1ms).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:fromnumber">TimeVal:fromnumber (seconds)</a></td>
+	<td class="summary">Converts a Lua (decimal) number (sec.usecs) to a TimeVal object</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:getDuration">TimeVal:getDuration (start_tv)</a></td>
+	<td class="summary">Compare a past <em>MONOTONIC</em> TimeVal object to <em>now</em>, returning the elapsed time between the two.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:getDurationUs">TimeVal:getDurationUs (start_tv)</a></td>
+	<td class="summary">Compare a past <em>MONOTONIC</em> TimeVal object to <em>now</em>, returning the elapsed time between the two.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:getDurationMs">TimeVal:getDurationMs (start_tv)</a></td>
+	<td class="summary">Compare a past <em>MONOTONIC</em> TimeVal object to <em>now</em>, returning the elapsed time between the two.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:isPositive">TimeVal:isPositive ()</a></td>
+	<td class="summary">Checks if a TimeVal object is positive</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal:isZero">TimeVal:isZero ()</a></td>
+	<td class="summary">Checks if a TimeVal object is zero</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal">TimeVal</a></td>
+	<td class="summary">TimeVal object.</td>
+	</tr>
+</table>
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal.now">TimeVal.now</a></td>
+	<td class="summary">Alias for <a href="../modules/ui.timeval.html#TimeVal:monotonic_coarse">monotonic_coarse</a>.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal.zero">TimeVal.zero</a></td>
+	<td class="summary">We often need a const TimeVal set to zero...</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#TimeVal.huge">TimeVal.huge</a></td>
+	<td class="summary">Ditto for one set to math.huge</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "TimeVal:new"></a>
+    <strong>TimeVal:new (from_o)</strong>
+    </dt>
+    <dd>
+    Creates a new TimeVal object.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">from_o</span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ui.timeval.html#TimeVal">TimeVal</a></span>
+
+
+
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> timev = TimeVal:new{
+    sec = <span class="number">10</span>,
+    usec = <span class="number">10000</span>,
+}</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "TimeVal:realtime"></a>
+    <strong>TimeVal:realtime ()</strong>
+    </dt>
+    <dd>
+    Creates a new TimeVal object based on the current wall clock time.
+(e.g., gettimeofday / clock<em>gettime(CLOCK</em>REALTIME).</p>
+
+<p>This is a simple wrapper around util.gettime() to get all the niceties of a TimeVal object.
+If you don't need sub-second precision, prefer os.time().
+Which means that, yes, this is a fancier POSIX Epoch ;).
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ui.timeval.html#TimeVal">TimeVal</a></span>
+
+
+
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> TimeVal = <span class="global">require</span>(<span class="string">"ui/timeval"</span>)
+<span class="keyword">local</span> tv_start = TimeVal:realtime()
+<span class="comment">-- Do some stuff.
+</span><span class="comment">-- You can add and substract <a href="../modules/ui.timeval.html#TimeVal">TimeVal</a> objects.
+</span><span class="keyword">local</span> tv_duration = TimeVal:realtime() - tv_start</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "TimeVal:monotonic"></a>
+    <strong>TimeVal:monotonic ()</strong>
+    </dt>
+    <dd>
+    Creates a new TimeVal object based on the current value from the system's MONOTONIC clock source.
+(e.g., clock<em>gettime(CLOCK</em>MONOTONIC).)</p>
+
+<p>POSIX guarantees that this clock source will <em>never</em> go backwards (but it <em>may</em> return the same value multiple times).
+On Linux, this will not account for time spent with the device in suspend (unlike CLOCK_BOOTTIME).
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ui.timeval.html#TimeVal">TimeVal</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:monotonic_coarse"></a>
+    <strong>TimeVal:monotonic_coarse ()</strong>
+    </dt>
+    <dd>
+    Ditto, but w/ CLOCK<em>MONOTONIC</em>COARSE if it's available and has a 1ms resolution or better (uses CLOCK_MONOTONIC otherwise).
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:realtime_coarse"></a>
+    <strong>TimeVal:realtime_coarse ()</strong>
+    </dt>
+    <dd>
+    Ditto, but w/ CLOCK<em>REALTIME</em>COARSE if it's available and has a 1ms resolution or better (uses CLOCK_REALTIME otherwise).
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:boottime"></a>
+    <strong>TimeVal:boottime ()</strong>
+    </dt>
+    <dd>
+    Ditto, but w/ CLOCK_BOOTTIME (will return a TimeVal set to 0, 0 if the clock source is unsupported, as it's 2.6.39+)
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:tonumber"></a>
+    <strong>TimeVal:tonumber ()</strong>
+    </dt>
+    <dd>
+    Converts a TimeVal object to a Lua (decimal) number (sec.usecs) (accurate to the ms, rounded to 4 decimal places)
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:tousecs"></a>
+    <strong>TimeVal:tousecs ()</strong>
+    </dt>
+    <dd>
+    Converts a TimeVal object to a Lua (int) number (resolution: 1µs)
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:tomsecs"></a>
+    <strong>TimeVal:tomsecs ()</strong>
+    </dt>
+    <dd>
+    Converts a TimeVal object to a Lua (int) number (resolution: 1ms). </p>
+
+<p>(Mainly useful when computing a time lapse for benchmarking purposes).
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:fromnumber"></a>
+    <strong>TimeVal:fromnumber (seconds)</strong>
+    </dt>
+    <dd>
+    Converts a Lua (decimal) number (sec.usecs) to a TimeVal object
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">seconds</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:getDuration"></a>
+    <strong>TimeVal:getDuration (start_tv)</strong>
+    </dt>
+    <dd>
+    Compare a past <em>MONOTONIC</em> TimeVal object to <em>now</em>, returning the elapsed time between the two.  (sec.usecs variant)</p>
+
+<p>Returns a Lua (decimal) number (sec.usecs) (accurate to the ms, rounded to 4 decimal places) (i.e., :tonumber())
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">start_tv</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:getDurationUs"></a>
+    <strong>TimeVal:getDurationUs (start_tv)</strong>
+    </dt>
+    <dd>
+    Compare a past <em>MONOTONIC</em> TimeVal object to <em>now</em>, returning the elapsed time between the two.  (µs variant)</p>
+
+<p>Returns a Lua (int) number (resolution: 1µs) (i.e., :tousecs())
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">start_tv</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:getDurationMs"></a>
+    <strong>TimeVal:getDurationMs (start_tv)</strong>
+    </dt>
+    <dd>
+    Compare a past <em>MONOTONIC</em> TimeVal object to <em>now</em>, returning the elapsed time between the two.  (ms variant)</p>
+
+<p>Returns a Lua (int) number (resolution: 1ms) (i.e., :tomsecs())
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">start_tv</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:isPositive"></a>
+    <strong>TimeVal:isPositive ()</strong>
+    </dt>
+    <dd>
+    Checks if a TimeVal object is positive
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal:isZero"></a>
+    <strong>TimeVal:isZero ()</strong>
+    </dt>
+    <dd>
+    Checks if a TimeVal object is zero
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "TimeVal"></a>
+    <strong>TimeVal</strong>
+    </dt>
+    <dd>
+    TimeVal object.  Maps to a POSIX struct timeval (<sys/time.h>).
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">sec</span>
+            <span class="types"><span class="type">int</span></span>
+         floored number of seconds
+        </li>
+        <li><span class="parameter">usec</span>
+            <span class="types"><span class="type">int</span></span>
+         number of microseconds past that second.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "TimeVal.now"></a>
+    <strong>TimeVal.now</strong>
+    </dt>
+    <dd>
+    Alias for <a href="../modules/ui.timeval.html#TimeVal:monotonic_coarse">monotonic_coarse</a>. </p>
+
+<p>The assumption being anything that requires accurate timestamps expects a monotonic clock source.
+This is certainly true for KOReader's UI scheduling.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal.zero"></a>
+    <strong>TimeVal.zero</strong>
+    </dt>
+    <dd>
+    We often need a const TimeVal set to zero...
+ LuaJIT doesn't actually support const values (Lua 5.4+): Do <em>NOT</em> modify it.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "TimeVal.huge"></a>
+    <strong>TimeVal.huge</strong>
+    </dt>
+    <dd>
+    Ditto for one set to math.huge
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2021-10-26 19:18:15 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
