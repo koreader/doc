@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>KOReader Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>KOReader</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Basic">Basic </a></li>
+<li><a href="#Get_latest_code_from_the_KOReader_repository">Get latest code from the KOReader repository </a></li>
+<li><a href="#Get_latest_patches_from_other_developer_s_branch">Get latest patches from other developer's branch </a></li>
+<li><a href="#Submitting_code_change">Submitting code change </a></li>
+</ul>
+
+
+<h2>Topics</h2>
+<ul class="">
+  <li><strong>Collaborating with Git</strong></li>
+  <li><a href="../topics/DataStore.md.html">DataStore</a></li>
+  <li><a href="../topics/Development.html">Development Guide</a></li>
+  <li><a href="../topics/Events.md.html">Events</a></li>
+  <li><a href="../topics/Hacking.md.html">Hacking</a></li>
+  <li><a href="../topics/Porting.md.html">Porting</a></li>
+  <li><a href="../topics/README.md.html">README</a></li>
+  <li><a href="../topics/Unit.html">Unit Tests</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/apps.filemanager.filemanagerbookinfo.html">apps.filemanager.filemanagerbookinfo</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerconverter.html">apps.filemanager.filemanagerconverter</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerutil.html">apps.filemanager.filemanagerutil</a></li>
+  <li><a href="../modules/apps.filemanager.lib.md.html">apps.filemanager.lib.md</a></li>
+  <li><a href="../modules/apps.reader.modules.readerlink.html">apps.reader.modules.readerlink</a></li>
+  <li><a href="../modules/apps.reader.modules.readerview.html">apps.reader.modules.readerview</a></li>
+  <li><a href="../modules/depgraph.html">depgraph</a></li>
+  <li><a href="../modules/device.gesturedetector.html">device.gesturedetector</a></li>
+  <li><a href="../modules/device.input.html">device.input</a></li>
+  <li><a href="../modules/docsettings.html">docsettings</a></li>
+  <li><a href="../modules/document.documentregistry.html">document.documentregistry</a></li>
+  <li><a href="../modules/dump.html">dump</a></li>
+  <li><a href="../modules/ffi.blitbuffer.html">ffi.blitbuffer</a></li>
+  <li><a href="../modules/ffi.framebuffer.html">ffi.framebuffer</a></li>
+  <li><a href="../modules/ffi.freetype.html">ffi.freetype</a></li>
+  <li><a href="../modules/ffi.md5.html">ffi.md5</a></li>
+  <li><a href="../modules/ffi.mupdf.html">ffi.mupdf</a></li>
+  <li><a href="../modules/ffi.png.html">ffi.png</a></li>
+  <li><a href="../modules/ffi.sdl2_0.html">ffi.sdl2_0</a></li>
+  <li><a href="../modules/ffi.util.html">ffi.util</a></li>
+  <li><a href="../modules/ffi.zipwriter.html">ffi.zipwriter</a></li>
+  <li><a href="../modules/logger.html">logger</a></li>
+  <li><a href="../modules/luadata.html">luadata</a></li>
+  <li><a href="../modules/luasettings.html">luasettings</a></li>
+  <li><a href="../modules/optmath.html">optmath</a></li>
+  <li><a href="../modules/random.html">random</a></li>
+  <li><a href="../modules/ui.downloadmgr.html">ui.downloadmgr</a></li>
+  <li><a href="../modules/ui.event.html">ui.event</a></li>
+  <li><a href="../modules/ui.font.html">ui.font</a></li>
+  <li><a href="../modules/ui.geometry.html">ui.geometry</a></li>
+  <li><a href="../modules/ui.hook_container.html">ui.hook_container</a></li>
+  <li><a href="../modules/ui.menusorter.html">ui.menusorter</a></li>
+  <li><a href="../modules/ui.plugin.background_task_plugin.html">ui.plugin.background_task_plugin</a></li>
+  <li><a href="../modules/ui.plugin.switch_plugin.html">ui.plugin.switch_plugin</a></li>
+  <li><a href="../modules/ui.quickstart.html">ui.quickstart</a></li>
+  <li><a href="../modules/ui.rendertext.html">ui.rendertext</a></li>
+  <li><a href="../modules/ui.size.html">ui.size</a></li>
+  <li><a href="../modules/ui.timeval.html">ui.timeval</a></li>
+  <li><a href="../modules/ui.translator.html">ui.translator</a></li>
+  <li><a href="../modules/ui.trapper.html">ui.trapper</a></li>
+  <li><a href="../modules/ui.uimanager.html">ui.uimanager</a></li>
+  <li><a href="../modules/ui.widget.bboxwidget.html">ui.widget.bboxwidget</a></li>
+  <li><a href="../modules/ui.widget.button.html">ui.widget.button</a></li>
+  <li><a href="../modules/ui.widget.checkbutton.html">ui.widget.checkbutton</a></li>
+  <li><a href="../modules/ui.widget.checkmark.html">ui.widget.checkmark</a></li>
+  <li><a href="../modules/ui.widget.closebutton.html">ui.widget.closebutton</a></li>
+  <li><a href="../modules/ui.widget.confirmbox.html">ui.widget.confirmbox</a></li>
+  <li><a href="../modules/ui.widget.container.alphacontainer.html">ui.widget.container.alphacontainer</a></li>
+  <li><a href="../modules/ui.widget.container.bottomcontainer.html">ui.widget.container.bottomcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.centercontainer.html">ui.widget.container.centercontainer</a></li>
+  <li><a href="../modules/ui.widget.container.framecontainer.html">ui.widget.container.framecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.inputcontainer.html">ui.widget.container.inputcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.leftcontainer.html">ui.widget.container.leftcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.rightcontainer.html">ui.widget.container.rightcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.topcontainer.html">ui.widget.container.topcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.underlinecontainer.html">ui.widget.container.underlinecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.widgetcontainer.html">ui.widget.container.widgetcontainer</a></li>
+  <li><a href="../modules/ui.widget.eventlistener.html">ui.widget.eventlistener</a></li>
+  <li><a href="../modules/ui.widget.horizontalgroup.html">ui.widget.horizontalgroup</a></li>
+  <li><a href="../modules/ui.widget.iconbutton.html">ui.widget.iconbutton</a></li>
+  <li><a href="../modules/ui.widget.imageviewer.html">ui.widget.imageviewer</a></li>
+  <li><a href="../modules/ui.widget.imagewidget.html">ui.widget.imagewidget</a></li>
+  <li><a href="../modules/ui.widget.infomessage.html">ui.widget.infomessage</a></li>
+  <li><a href="../modules/ui.widget.inputdialog.html">ui.widget.inputdialog</a></li>
+  <li><a href="../modules/ui.widget.keyvaluepage.html">ui.widget.keyvaluepage</a></li>
+  <li><a href="../modules/ui.widget.linewidget.html">ui.widget.linewidget</a></li>
+  <li><a href="../modules/ui.widget.listview.html">ui.widget.listview</a></li>
+  <li><a href="../modules/ui.widget.logindialog.html">ui.widget.logindialog</a></li>
+  <li><a href="../modules/ui.widget.menu.html">ui.widget.menu</a></li>
+  <li><a href="../modules/ui.widget.multiconfirmbox.html">ui.widget.multiconfirmbox</a></li>
+  <li><a href="../modules/ui.widget.networksetting.html">ui.widget.networksetting</a></li>
+  <li><a href="../modules/ui.widget.notification.html">ui.widget.notification</a></li>
+  <li><a href="../modules/ui.widget.overlapgroup.html">ui.widget.overlapgroup</a></li>
+  <li><a href="../modules/ui.widget.progresswidget.html">ui.widget.progresswidget</a></li>
+  <li><a href="../modules/ui.widget.scrolltextwidget.html">ui.widget.scrolltextwidget</a></li>
+  <li><a href="../modules/ui.widget.textboxwidget.html">ui.widget.textboxwidget</a></li>
+  <li><a href="../modules/ui.widget.textviewer.html">ui.widget.textviewer</a></li>
+  <li><a href="../modules/ui.widget.textwidget.html">ui.widget.textwidget</a></li>
+  <li><a href="../modules/ui.widget.toggleswitch.html">ui.widget.toggleswitch</a></li>
+  <li><a href="../modules/ui.widget.touchmenu.html">ui.widget.touchmenu</a></li>
+  <li><a href="../modules/ui.widget.verticalgroup.html">ui.widget.verticalgroup</a></li>
+  <li><a href="../modules/ui.widget.widget.html">ui.widget.widget</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+  <li><a href="../modules/version.html">version</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+
+<h1>Collaborating with Git</h1>
+
+<p><a name="Basic"></a></p>
+<h2>Basic</h2>
+<p>If you are new to Git, following are some of the resources you might find useful:</p>
+
+<ul>
+    <li><a href="https://github.com/blog/120-new-to-git">GitHub's blog post</a></li>
+    <li><a href="http://try.github.com/">http://try.github.com/</a></li>
+    <li><a href="http://sixrevisions.com/resources/git-tutorials-beginners/">http://sixrevisions.com/resources/git-tutorials-beginners/</a></li>
+    <li><a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a></li>
+</ul>
+
+<p><a name="Get_latest_code_from_the_KOReader_repository"></a></p>
+<h2>Get latest code from the KOReader repository</h2>
+<p>First you need to add the official repo to your remote repo list:</p>
+
+<pre>
+git remote add upstream git@github.com:koreader/koreader.git
+</pre>
+
+
+<p>For koreader-base that is:</p>
+
+<pre>
+git remote add upstream git@github.com:koreader/koreader-base.git
+</pre>
+
+
+<p>You can verify the remote repo is successfully added by using:</p>
+
+<pre>
+git remote -v show
+</pre>
+
+
+<p>Now you can pull the latest development code:</p>
+
+<pre>
+git pull upstream master
+</pre>
+
+
+<p>If you've made some local changes, you'll often want to rebase your local commits on top of the most recent upstream:</p>
+
+<pre>
+git pull -r upstream master
+</pre>
+
+<p>You might want to test that in a new branch first.</p>
+
+<p><a name="Get_latest_patches_from_other_developer_s_branch"></a></p>
+<h2>Get latest patches from other developer's branch</h2>
+<p>First you need to add his/her own repo to your remote repo list:</p>
+
+<pre>
+git remote add NAME REPO_ADDR
+</pre>
+
+<p>Where <code>NAME</code> is the alias name you want to give for the remote repo, for example:</p>
+
+<pre>
+git remote add dpavlin git://github.com/dpavlin/kindlepdfviewer.git
+</pre>
+
+
+<p>You can verify the remote repo is successfully added by using:</p>
+
+<pre>
+git remote -v show
+</pre>
+
+
+<p>Now you can merge their branch to your local branch. But before you do this, I recommend you create a new branch first and do experimental stuff on top of the new branch so you won't mess with the master branch:</p>
+<pre><code> git checkout -b NEW_TEST_BRANCH_NAME
+ git pull dpavlin REMOTE_BRANCH_NAME
+</code></pre>
+
+
+<p><a name="Submitting_code_change"></a></p>
+<h2>Submitting code change</h2>
+<p>How to submit my change on top of current development (which is master branch at origin).</p>
+
+<p>This assumes that your repository clone have <code>origin</code> which points to upstream official repository as shown below. If you did checkout from your forked copy, and origin points to your local fork, you can always add another remote and replace <code>origin</code> in this instructions with another remote name.</p>
+
+<pre><code> dpavlin$ git remote -v | grep origin
+ origin  git@github.com:koreader/koreader.git (fetch)
+ origin  git@github.com:koreader/koreader.git (push)
+ dpavlin$ git fetch origin
+ dpavlin$ git checkout -b issue-235-toc-position origin/master
+ M       djvulibre
+ M       kpvcrlib/crengine
+ M       mupdf
+ Branch issue-235-toc-position set up to track remote branch master from origin.
+ Switched to a new branch 'issue-235-toc-position'
+</code></pre>
+
+
+<p>integrate changes from this issue (or diff, patch, git cherry-pick sha-commit)</p>
+
+<pre><code> dpavlin$ git add -p unireader.lua
+</code></pre>
+
+<p>interactivly select just changes which are not whitespace</p>
+
+<pre><code> dpavlin$ git commit --author NuPogodi -m 'TOC position on current place in the tree #235'
+ [issue-235-toc-position 25edd31] TOC position on current place in the tree #235
+  Author: NuPogodi &lt;surzh@mail.ru&gt;
+  1 file changed, 9 insertions(+), 5 deletions(-)
+ dpavlin$ git show
+</code></pre>
+
+
+<p>verify that commit looks sane, if I wasn't happy I would do <code>git --commit --amend</code></p>
+
+<pre><code> dpavlin$ git push dpavlin issue-235-toc-position
+ Counting objects: 5, done.
+ Delta compression using up to 2 threads.
+ Compressing objects: 100% (3/3), done.
+ Writing objects: 100% (3/3), 489 bytes, done.
+ Total 3 (delta 2), reused 0 (delta 0)
+ To git@github.com:dpavlin/koreader.git
+  * [new branch]      issue-235-toc-position -&gt; issue-235-toc-position
+</code></pre>
+
+
+<p>This assumes that your copy of github source is named <code>dpavlin</code> as here:</p>
+
+<pre><code> dpavlin$ git remote -v | grep dpavlin
+ dpavlin git@github.com:dpavlin/koreader.git (fetch)
+ dpavlin git@github.com:dpavlin/koreader.git (push)
+</code></pre>
+
+
+<p>Go to your github page and issue pull request</p>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.6</a></i>
+<i style="float:right;">Last updated 2017-10-08 14:57:40 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

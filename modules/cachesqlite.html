@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>KOReader Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>KOReader</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Fields">Fields</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/android.html">android</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerbookinfo.html">apps.filemanager.filemanagerbookinfo</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerconverter.html">apps.filemanager.filemanagerconverter</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerutil.html">apps.filemanager.filemanagerutil</a></li>
+  <li><a href="../modules/apps.filemanager.lib.md.html">apps.filemanager.lib.md</a></li>
+  <li><a href="../modules/apps.reader.modules.readerlink.html">apps.reader.modules.readerlink</a></li>
+  <li><a href="../modules/apps.reader.modules.readerview.html">apps.reader.modules.readerview</a></li>
+  <li><a href="../modules/apps.reader.readerui.html">apps.reader.readerui</a></li>
+  <li><a href="../modules/baseexporter.html">baseexporter</a></li>
+  <li><a href="../modules/cache.html">cache</a></li>
+  <li><a href="../modules/cacheitem.html">cacheitem</a></li>
+  <li><strong>cachesqlite</strong></li>
+  <li><a href="../modules/datastorage.html">datastorage</a></li>
+  <li><a href="../modules/datetime.html">datetime</a></li>
+  <li><a href="../modules/dbg.html">dbg</a></li>
+  <li><a href="../modules/depgraph.html">depgraph</a></li>
+  <li><a href="../modules/device.generic.device.html">device.generic.device</a></li>
+  <li><a href="../modules/device.gesturedetector.html">device.gesturedetector</a></li>
+  <li><a href="../modules/device.input.html">device.input</a></li>
+  <li><a href="../modules/device.kindle.mockrtc.html">device.kindle.mockrtc</a></li>
+  <li><a href="../modules/device.kobo.nickel_conf.html">device.kobo.nickel_conf</a></li>
+  <li><a href="../modules/device.sysfs_light.html">device.sysfs_light</a></li>
+  <li><a href="../modules/device.wakeupmgr.html">device.wakeupmgr</a></li>
+  <li><a href="../modules/dispatcher.html">dispatcher</a></li>
+  <li><a href="../modules/docsettings.html">docsettings</a></li>
+  <li><a href="../modules/document.doccache.html">document.doccache</a></li>
+  <li><a href="../modules/document.documentregistry.html">document.documentregistry</a></li>
+  <li><a href="../modules/document.koptinterface.html">document.koptinterface</a></li>
+  <li><a href="../modules/dump.html">dump</a></li>
+  <li><a href="../modules/ffi.archiver.html">ffi.archiver</a></li>
+  <li><a href="../modules/ffi.blitbuffer.html">ffi.blitbuffer</a></li>
+  <li><a href="../modules/ffi.crypto.html">ffi.crypto</a></li>
+  <li><a href="../modules/ffi.framebuffer.html">ffi.framebuffer</a></li>
+  <li><a href="../modules/ffi.freetype.html">ffi.freetype</a></li>
+  <li><a href="../modules/ffi.jpeg.html">ffi.jpeg</a></li>
+  <li><a href="../modules/ffi.koptcontext.html">ffi.koptcontext</a></li>
+  <li><a href="../modules/ffi.loadlib.html">ffi.loadlib</a></li>
+  <li><a href="../modules/ffi.md5.html">ffi.md5</a></li>
+  <li><a href="../modules/ffi.mupdf.html">ffi.mupdf</a></li>
+  <li><a href="../modules/ffi.png.html">ffi.png</a></li>
+  <li><a href="../modules/ffi.rtc.html">ffi.rtc</a></li>
+  <li><a href="../modules/ffi.sdl3.html">ffi.sdl3</a></li>
+  <li><a href="../modules/ffi.utf8proc.html">ffi.utf8proc</a></li>
+  <li><a href="../modules/ffi.util.html">ffi.util</a></li>
+  <li><a href="../modules/ffi.webp.html">ffi.webp</a></li>
+  <li><a href="../modules/ffi.zlib.html">ffi.zlib</a></li>
+  <li><a href="../modules/ffi.zstd.html">ffi.zstd</a></li>
+  <li><a href="../modules/gettext.html">gettext</a></li>
+  <li><a href="../modules/httpasync.html">httpasync</a></li>
+  <li><a href="../modules/koplugin.HelloWorld.html">koplugin.HelloWorld</a></li>
+  <li><a href="../modules/koplugin.QRClipboard.html">koplugin.QRClipboard</a></li>
+  <li><a href="../modules/koplugin.autodim.html">koplugin.autodim</a></li>
+  <li><a href="../modules/koplugin.autowarmth.html">koplugin.autowarmth</a></li>
+  <li><a href="../modules/koplugin.calibre.metadata.html">koplugin.calibre.metadata</a></li>
+  <li><a href="../modules/koplugin.coverimage.html">koplugin.coverimage</a></li>
+  <li><a href="../modules/koplugin.exporter.html">koplugin.exporter</a></li>
+  <li><a href="../modules/koplugin.japanese.html">koplugin.japanese</a></li>
+  <li><a href="../modules/koplugin.japanese.deinflector.html">koplugin.japanese.deinflector</a></li>
+  <li><a href="../modules/koplugin.terminal.html">koplugin.terminal</a></li>
+  <li><a href="../modules/koplugin.terminal.terminputtext.html">koplugin.terminal.terminputtext</a></li>
+  <li><a href="../modules/koplugin.vocabbuilder.html">koplugin.vocabbuilder</a></li>
+  <li><a href="../modules/koplugin.wallabag.html">koplugin.wallabag</a></li>
+  <li><a href="../modules/languagesupport.html">languagesupport</a></li>
+  <li><a href="../modules/logger.html">logger</a></li>
+  <li><a href="../modules/luadata.html">luadata</a></li>
+  <li><a href="../modules/luadefaults.html">luadefaults</a></li>
+  <li><a href="../modules/luasettings.html">luasettings</a></li>
+  <li><a href="../modules/optmath.html">optmath</a></li>
+  <li><a href="../modules/pluginloader.html">pluginloader</a></li>
+  <li><a href="../modules/provider.html">provider</a></li>
+  <li><a href="../modules/random.html">random</a></li>
+  <li><a href="../modules/socketutil.html">socketutil</a></li>
+  <li><a href="../modules/sort.html">sort</a></li>
+  <li><a href="../modules/suntime.html">suntime</a></li>
+  <li><a href="../modules/time.html">time</a></li>
+  <li><a href="../modules/ui.bidi.html">ui.bidi</a></li>
+  <li><a href="../modules/ui.data.css_tweaks.html">ui.data.css_tweaks</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.generic_ime.html">ui.data.keyboardlayouts.generic_ime</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard.html">ui.data.keyboardlayouts.ja_keyboard</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard_keys.html">ui.data.keyboardlayouts.ja_keyboard_keys</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ko_KR_helper.html">ui.data.keyboardlayouts.ko_KR_helper</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.zh_keyboard.html">ui.data.keyboardlayouts.zh_keyboard</a></li>
+  <li><a href="../modules/ui.data.optionsutil.html">ui.data.optionsutil</a></li>
+  <li><a href="../modules/ui.downloadmgr.html">ui.downloadmgr</a></li>
+  <li><a href="../modules/ui.event.html">ui.event</a></li>
+  <li><a href="../modules/ui.font.html">ui.font</a></li>
+  <li><a href="../modules/ui.geometry.html">ui.geometry</a></li>
+  <li><a href="../modules/ui.hook_container.html">ui.hook_container</a></li>
+  <li><a href="../modules/ui.menusorter.html">ui.menusorter</a></li>
+  <li><a href="../modules/ui.network.wpa_supplicant.html">ui.network.wpa_supplicant</a></li>
+  <li><a href="../modules/ui.otamanager.html">ui.otamanager</a></li>
+  <li><a href="../modules/ui.plugin.background_task_plugin.html">ui.plugin.background_task_plugin</a></li>
+  <li><a href="../modules/ui.plugin.switch_plugin.html">ui.plugin.switch_plugin</a></li>
+  <li><a href="../modules/ui.presets.html">ui.presets</a></li>
+  <li><a href="../modules/ui.quickstart.html">ui.quickstart</a></li>
+  <li><a href="../modules/ui.renderimage.html">ui.renderimage</a></li>
+  <li><a href="../modules/ui.rendertext.html">ui.rendertext</a></li>
+  <li><a href="../modules/ui.size.html">ui.size</a></li>
+  <li><a href="../modules/ui.translator.html">ui.translator</a></li>
+  <li><a href="../modules/ui.trapper.html">ui.trapper</a></li>
+  <li><a href="../modules/ui.uimanager.html">ui.uimanager</a></li>
+  <li><a href="../modules/ui.viewhtml.html">ui.viewhtml</a></li>
+  <li><a href="../modules/ui.widget.bboxwidget.html">ui.widget.bboxwidget</a></li>
+  <li><a href="../modules/ui.widget.button.html">ui.widget.button</a></li>
+  <li><a href="../modules/ui.widget.buttondialog.html">ui.widget.buttondialog</a></li>
+  <li><a href="../modules/ui.widget.checkbutton.html">ui.widget.checkbutton</a></li>
+  <li><a href="../modules/ui.widget.checkmark.html">ui.widget.checkmark</a></li>
+  <li><a href="../modules/ui.widget.confirmbox.html">ui.widget.confirmbox</a></li>
+  <li><a href="../modules/ui.widget.container.alphacontainer.html">ui.widget.container.alphacontainer</a></li>
+  <li><a href="../modules/ui.widget.container.bottomcontainer.html">ui.widget.container.bottomcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.centercontainer.html">ui.widget.container.centercontainer</a></li>
+  <li><a href="../modules/ui.widget.container.framecontainer.html">ui.widget.container.framecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.inputcontainer.html">ui.widget.container.inputcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.leftcontainer.html">ui.widget.container.leftcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.movablecontainer.html">ui.widget.container.movablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.rightcontainer.html">ui.widget.container.rightcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.scrollablecontainer.html">ui.widget.container.scrollablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.topcontainer.html">ui.widget.container.topcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.underlinecontainer.html">ui.widget.container.underlinecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.widgetcontainer.html">ui.widget.container.widgetcontainer</a></li>
+  <li><a href="../modules/ui.widget.datetimewidget.html">ui.widget.datetimewidget</a></li>
+  <li><a href="../modules/ui.widget.dictquicklookup.html">ui.widget.dictquicklookup</a></li>
+  <li><a href="../modules/ui.widget.eventlistener.html">ui.widget.eventlistener</a></li>
+  <li><a href="../modules/ui.widget.horizontalgroup.html">ui.widget.horizontalgroup</a></li>
+  <li><a href="../modules/ui.widget.htmlboxwidget.html">ui.widget.htmlboxwidget</a></li>
+  <li><a href="../modules/ui.widget.iconbutton.html">ui.widget.iconbutton</a></li>
+  <li><a href="../modules/ui.widget.iconwidget.html">ui.widget.iconwidget</a></li>
+  <li><a href="../modules/ui.widget.imageviewer.html">ui.widget.imageviewer</a></li>
+  <li><a href="../modules/ui.widget.imagewidget.html">ui.widget.imagewidget</a></li>
+  <li><a href="../modules/ui.widget.infomessage.html">ui.widget.infomessage</a></li>
+  <li><a href="../modules/ui.widget.inputdialog.html">ui.widget.inputdialog</a></li>
+  <li><a href="../modules/ui.widget.keyboardlayoutdialog.html">ui.widget.keyboardlayoutdialog</a></li>
+  <li><a href="../modules/ui.widget.keyvaluepage.html">ui.widget.keyvaluepage</a></li>
+  <li><a href="../modules/ui.widget.linewidget.html">ui.widget.linewidget</a></li>
+  <li><a href="../modules/ui.widget.listview.html">ui.widget.listview</a></li>
+  <li><a href="../modules/ui.widget.multiconfirmbox.html">ui.widget.multiconfirmbox</a></li>
+  <li><a href="../modules/ui.widget.multiinputdialog.html">ui.widget.multiinputdialog</a></li>
+  <li><a href="../modules/ui.widget.networksetting.html">ui.widget.networksetting</a></li>
+  <li><a href="../modules/ui.widget.notification.html">ui.widget.notification</a></li>
+  <li><a href="../modules/ui.widget.numberpickerwidget.html">ui.widget.numberpickerwidget</a></li>
+  <li><a href="../modules/ui.widget.openwithdialog.html">ui.widget.openwithdialog</a></li>
+  <li><a href="../modules/ui.widget.overlapgroup.html">ui.widget.overlapgroup</a></li>
+  <li><a href="../modules/ui.widget.progressbardialog.html">ui.widget.progressbardialog</a></li>
+  <li><a href="../modules/ui.widget.progresswidget.html">ui.widget.progresswidget</a></li>
+  <li><a href="../modules/ui.widget.qrmessage.html">ui.widget.qrmessage</a></li>
+  <li><a href="../modules/ui.widget.radiobuttontable.html">ui.widget.radiobuttontable</a></li>
+  <li><a href="../modules/ui.widget.radiobuttonwidget.html">ui.widget.radiobuttonwidget</a></li>
+  <li><a href="../modules/ui.widget.scrollhtmlwidget.html">ui.widget.scrollhtmlwidget</a></li>
+  <li><a href="../modules/ui.widget.scrolltextwidget.html">ui.widget.scrolltextwidget</a></li>
+  <li><a href="../modules/ui.widget.textboxwidget.html">ui.widget.textboxwidget</a></li>
+  <li><a href="../modules/ui.widget.textviewer.html">ui.widget.textviewer</a></li>
+  <li><a href="../modules/ui.widget.textwidget.html">ui.widget.textwidget</a></li>
+  <li><a href="../modules/ui.widget.toggleswitch.html">ui.widget.toggleswitch</a></li>
+  <li><a href="../modules/ui.widget.touchmenu.html">ui.widget.touchmenu</a></li>
+  <li><a href="../modules/ui.widget.trapwidget.html">ui.widget.trapwidget</a></li>
+  <li><a href="../modules/ui.widget.verticalgroup.html">ui.widget.verticalgroup</a></li>
+  <li><a href="../modules/ui.widget.widget.html">ui.widget.widget</a></li>
+  <li><a href="../modules/userpatch.html">userpatch</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+  <li><a href="../modules/version.html">version</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/Collaborating_with_Git.md.html">Collaborating with Git</a></li>
+  <li><a href="../topics/DataStore.md.html">DataStore</a></li>
+  <li><a href="../topics/Development_guide.md.html">Development Guide</a></li>
+  <li><a href="../topics/Events.md.html">Events</a></li>
+  <li><a href="../topics/Hacking.md.html">Hacking</a></li>
+  <li><a href="../topics/Porting.md.html">Porting</a></li>
+  <li><a href="../topics/README.md.html">README</a></li>
+  <li><a href="../topics/Unit_tests.md.html">Unit Tests</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>cachesqlite</code></h1>
+<p>An SQLite-based cache implementation, with an interface similar to <a href="../modules/cache.html#">Cache</a>.</p>
+<p>
+
+
+<p>Example:</p>
+
+
+<pre>
+<span class="keyword">local</span> CacheSQLite = <span class="global">require</span>(<span class="string">"cachesqlite"</span>)
+<span class="keyword">local</span> cache = CacheSQLite:<span class="function-name">new</span>{
+    size = <span class="number">1024</span> * <span class="number">1024</span> * <span class="number">10</span>, <span class="comment">-- 10 MB
+</span>    <span class="comment">-- Set to :memory: for an in-memory database.
+</span>    <span class="comment">-- In that case, set auto_close to false.
+</span>    db_path = <span class="string">"/path/to/cache.db"</span>,
+}
+cache:<span class="function-name">insert</span>(<span class="string">"key"</span>, {value = <span class="string">"data"</span>})
+<span class="keyword">local</span> data = cache:<span class="function-name">check</span>(<span class="string">"key"</span>)
+</pre>
+
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#CacheSQLite:openDB">CacheSQLite:openDB ()</a></td>
+	<td class="summary">Opens the SQLite database.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CacheSQLite:closeDB">CacheSQLite:closeDB ([explicit=false])</a></td>
+	<td class="summary">Closes the SQLite database.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CacheSQLite:isConnected">CacheSQLite:isConnected ()</a></td>
+	<td class="summary">Retrieves the connected state of the database.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CacheSQLite:insert">CacheSQLite:insert (key, object)</a></td>
+	<td class="summary">Inserts an object into the cache.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CacheSQLite:check">CacheSQLite:check (key)</a></td>
+	<td class="summary">Retrieves an object if it is in the cache and updates its access time.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CacheSQLite:get">CacheSQLite:get (key)</a></td>
+	<td class="summary">Retrieves an object if it is in the cache without updating its access time.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CacheSQLite:remove">CacheSQLite:remove (key)</a></td>
+	<td class="summary">Removes an object from the cache.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CacheSQLite:willAccept">CacheSQLite:willAccept (size)</a></td>
+	<td class="summary">Queries whether the cache will accept an object of a given size in bytes.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#CacheSQLite:clear">CacheSQLite:clear ()</a></td>
+	<td class="summary">Clears the entire cache.</td>
+	</tr>
+</table>
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#size">size</a></td>
+	<td class="summary">Max storage space, in bytes.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#db_path">db_path</a></td>
+	<td class="summary">Database file path.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#codec">codec</a></td>
+	<td class="summary">Compression codec from Persist.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#auto_close">auto_close</a></td>
+	<td class="summary">Whether to automatically close the DB connection after each operation.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "CacheSQLite:openDB"></a>
+    <strong>CacheSQLite:openDB ()</strong>
+    </dt>
+    <dd>
+    Opens the SQLite database.
+ This is normally done internally, but can be called manually if needed.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CacheSQLite:closeDB"></a>
+    <strong>CacheSQLite:closeDB ([explicit=false])</strong>
+    </dt>
+    <dd>
+    Closes the SQLite database.
+ This is normally done internally, but can be called manually if needed.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">explicit</span>
+         boolean When auto_close is false, this must be set to true to close the DB.
+         (<em>default</em> false)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CacheSQLite:isConnected"></a>
+    <strong>CacheSQLite:isConnected ()</strong>
+    </dt>
+    <dd>
+    Retrieves the connected state of the database.
+ This is normally done internally, but can be called manually if needed.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        boolean
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CacheSQLite:insert"></a>
+    <strong>CacheSQLite:insert (key, object)</strong>
+    </dt>
+    <dd>
+    Inserts an object into the cache.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+         string
+        </li>
+        <li><span class="parameter">object</span>
+         any
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        boolean success, number size
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CacheSQLite:check"></a>
+    <strong>CacheSQLite:check (key)</strong>
+    </dt>
+    <dd>
+    Retrieves an object if it is in the cache and updates its access time.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+         string
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        any
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CacheSQLite:get"></a>
+    <strong>CacheSQLite:get (key)</strong>
+    </dt>
+    <dd>
+    Retrieves an object if it is in the cache without updating its access time.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+         string
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        any
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CacheSQLite:remove"></a>
+    <strong>CacheSQLite:remove (key)</strong>
+    </dt>
+    <dd>
+    Removes an object from the cache.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">key</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CacheSQLite:willAccept"></a>
+    <strong>CacheSQLite:willAccept (size)</strong>
+    </dt>
+    <dd>
+    Queries whether the cache will accept an object of a given size in bytes.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">size</span>
+        We only allow a single object to fill 50% of the cache
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CacheSQLite:clear"></a>
+    <strong>CacheSQLite:clear ()</strong>
+    </dt>
+    <dd>
+    Clears the entire cache.
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "size"></a>
+    <strong>size</strong>
+    </dt>
+    <dd>
+    Max storage space, in bytes.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "db_path"></a>
+    <strong>db_path</strong>
+    </dt>
+    <dd>
+    Database file path.  Set to :memory: for an in-memory database.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "codec"></a>
+    <strong>codec</strong>
+    </dt>
+    <dd>
+    Compression codec from Persist.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "auto_close"></a>
+    <strong>auto_close</strong>
+    </dt>
+    <dd>
+    Whether to automatically close the DB connection after each operation.  Set to false for batch operations or when using :memory:.
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-09-04 22:02:09 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

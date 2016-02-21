@@ -1,0 +1,1093 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>KOReader Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>KOReader</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Issues">Issues</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/android.html">android</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerbookinfo.html">apps.filemanager.filemanagerbookinfo</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerconverter.html">apps.filemanager.filemanagerconverter</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerutil.html">apps.filemanager.filemanagerutil</a></li>
+  <li><a href="../modules/apps.filemanager.lib.md.html">apps.filemanager.lib.md</a></li>
+  <li><a href="../modules/apps.reader.modules.readerlink.html">apps.reader.modules.readerlink</a></li>
+  <li><a href="../modules/apps.reader.modules.readerview.html">apps.reader.modules.readerview</a></li>
+  <li><a href="../modules/apps.reader.readerui.html">apps.reader.readerui</a></li>
+  <li><a href="../modules/baseexporter.html">baseexporter</a></li>
+  <li><a href="../modules/cache.html">cache</a></li>
+  <li><a href="../modules/cacheitem.html">cacheitem</a></li>
+  <li><a href="../modules/cachesqlite.html">cachesqlite</a></li>
+  <li><a href="../modules/datastorage.html">datastorage</a></li>
+  <li><a href="../modules/datetime.html">datetime</a></li>
+  <li><a href="../modules/dbg.html">dbg</a></li>
+  <li><a href="../modules/depgraph.html">depgraph</a></li>
+  <li><a href="../modules/device.generic.device.html">device.generic.device</a></li>
+  <li><a href="../modules/device.gesturedetector.html">device.gesturedetector</a></li>
+  <li><a href="../modules/device.input.html">device.input</a></li>
+  <li><a href="../modules/device.kindle.mockrtc.html">device.kindle.mockrtc</a></li>
+  <li><a href="../modules/device.kobo.nickel_conf.html">device.kobo.nickel_conf</a></li>
+  <li><a href="../modules/device.sysfs_light.html">device.sysfs_light</a></li>
+  <li><a href="../modules/device.wakeupmgr.html">device.wakeupmgr</a></li>
+  <li><a href="../modules/dispatcher.html">dispatcher</a></li>
+  <li><a href="../modules/docsettings.html">docsettings</a></li>
+  <li><a href="../modules/document.doccache.html">document.doccache</a></li>
+  <li><a href="../modules/document.documentregistry.html">document.documentregistry</a></li>
+  <li><a href="../modules/document.koptinterface.html">document.koptinterface</a></li>
+  <li><a href="../modules/dump.html">dump</a></li>
+  <li><a href="../modules/ffi.archiver.html">ffi.archiver</a></li>
+  <li><a href="../modules/ffi.blitbuffer.html">ffi.blitbuffer</a></li>
+  <li><a href="../modules/ffi.crypto.html">ffi.crypto</a></li>
+  <li><a href="../modules/ffi.framebuffer.html">ffi.framebuffer</a></li>
+  <li><a href="../modules/ffi.freetype.html">ffi.freetype</a></li>
+  <li><a href="../modules/ffi.jpeg.html">ffi.jpeg</a></li>
+  <li><a href="../modules/ffi.koptcontext.html">ffi.koptcontext</a></li>
+  <li><a href="../modules/ffi.loadlib.html">ffi.loadlib</a></li>
+  <li><a href="../modules/ffi.md5.html">ffi.md5</a></li>
+  <li><a href="../modules/ffi.mupdf.html">ffi.mupdf</a></li>
+  <li><a href="../modules/ffi.png.html">ffi.png</a></li>
+  <li><a href="../modules/ffi.rtc.html">ffi.rtc</a></li>
+  <li><a href="../modules/ffi.sdl3.html">ffi.sdl3</a></li>
+  <li><a href="../modules/ffi.utf8proc.html">ffi.utf8proc</a></li>
+  <li><a href="../modules/ffi.util.html">ffi.util</a></li>
+  <li><a href="../modules/ffi.webp.html">ffi.webp</a></li>
+  <li><a href="../modules/ffi.zlib.html">ffi.zlib</a></li>
+  <li><a href="../modules/ffi.zstd.html">ffi.zstd</a></li>
+  <li><a href="../modules/gettext.html">gettext</a></li>
+  <li><a href="../modules/httpasync.html">httpasync</a></li>
+  <li><a href="../modules/koplugin.HelloWorld.html">koplugin.HelloWorld</a></li>
+  <li><a href="../modules/koplugin.QRClipboard.html">koplugin.QRClipboard</a></li>
+  <li><a href="../modules/koplugin.autodim.html">koplugin.autodim</a></li>
+  <li><a href="../modules/koplugin.autowarmth.html">koplugin.autowarmth</a></li>
+  <li><a href="../modules/koplugin.calibre.metadata.html">koplugin.calibre.metadata</a></li>
+  <li><a href="../modules/koplugin.coverimage.html">koplugin.coverimage</a></li>
+  <li><a href="../modules/koplugin.exporter.html">koplugin.exporter</a></li>
+  <li><a href="../modules/koplugin.japanese.html">koplugin.japanese</a></li>
+  <li><a href="../modules/koplugin.japanese.deinflector.html">koplugin.japanese.deinflector</a></li>
+  <li><a href="../modules/koplugin.terminal.html">koplugin.terminal</a></li>
+  <li><a href="../modules/koplugin.terminal.terminputtext.html">koplugin.terminal.terminputtext</a></li>
+  <li><a href="../modules/koplugin.vocabbuilder.html">koplugin.vocabbuilder</a></li>
+  <li><strong>koplugin.wallabag</strong></li>
+  <li><a href="../modules/languagesupport.html">languagesupport</a></li>
+  <li><a href="../modules/logger.html">logger</a></li>
+  <li><a href="../modules/luadata.html">luadata</a></li>
+  <li><a href="../modules/luadefaults.html">luadefaults</a></li>
+  <li><a href="../modules/luasettings.html">luasettings</a></li>
+  <li><a href="../modules/optmath.html">optmath</a></li>
+  <li><a href="../modules/pluginloader.html">pluginloader</a></li>
+  <li><a href="../modules/provider.html">provider</a></li>
+  <li><a href="../modules/random.html">random</a></li>
+  <li><a href="../modules/socketutil.html">socketutil</a></li>
+  <li><a href="../modules/sort.html">sort</a></li>
+  <li><a href="../modules/suntime.html">suntime</a></li>
+  <li><a href="../modules/time.html">time</a></li>
+  <li><a href="../modules/ui.bidi.html">ui.bidi</a></li>
+  <li><a href="../modules/ui.data.css_tweaks.html">ui.data.css_tweaks</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.generic_ime.html">ui.data.keyboardlayouts.generic_ime</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard.html">ui.data.keyboardlayouts.ja_keyboard</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard_keys.html">ui.data.keyboardlayouts.ja_keyboard_keys</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ko_KR_helper.html">ui.data.keyboardlayouts.ko_KR_helper</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.zh_keyboard.html">ui.data.keyboardlayouts.zh_keyboard</a></li>
+  <li><a href="../modules/ui.data.optionsutil.html">ui.data.optionsutil</a></li>
+  <li><a href="../modules/ui.downloadmgr.html">ui.downloadmgr</a></li>
+  <li><a href="../modules/ui.event.html">ui.event</a></li>
+  <li><a href="../modules/ui.font.html">ui.font</a></li>
+  <li><a href="../modules/ui.geometry.html">ui.geometry</a></li>
+  <li><a href="../modules/ui.hook_container.html">ui.hook_container</a></li>
+  <li><a href="../modules/ui.menusorter.html">ui.menusorter</a></li>
+  <li><a href="../modules/ui.network.wpa_supplicant.html">ui.network.wpa_supplicant</a></li>
+  <li><a href="../modules/ui.otamanager.html">ui.otamanager</a></li>
+  <li><a href="../modules/ui.plugin.background_task_plugin.html">ui.plugin.background_task_plugin</a></li>
+  <li><a href="../modules/ui.plugin.switch_plugin.html">ui.plugin.switch_plugin</a></li>
+  <li><a href="../modules/ui.presets.html">ui.presets</a></li>
+  <li><a href="../modules/ui.quickstart.html">ui.quickstart</a></li>
+  <li><a href="../modules/ui.renderimage.html">ui.renderimage</a></li>
+  <li><a href="../modules/ui.rendertext.html">ui.rendertext</a></li>
+  <li><a href="../modules/ui.size.html">ui.size</a></li>
+  <li><a href="../modules/ui.translator.html">ui.translator</a></li>
+  <li><a href="../modules/ui.trapper.html">ui.trapper</a></li>
+  <li><a href="../modules/ui.uimanager.html">ui.uimanager</a></li>
+  <li><a href="../modules/ui.viewhtml.html">ui.viewhtml</a></li>
+  <li><a href="../modules/ui.widget.bboxwidget.html">ui.widget.bboxwidget</a></li>
+  <li><a href="../modules/ui.widget.button.html">ui.widget.button</a></li>
+  <li><a href="../modules/ui.widget.buttondialog.html">ui.widget.buttondialog</a></li>
+  <li><a href="../modules/ui.widget.checkbutton.html">ui.widget.checkbutton</a></li>
+  <li><a href="../modules/ui.widget.checkmark.html">ui.widget.checkmark</a></li>
+  <li><a href="../modules/ui.widget.confirmbox.html">ui.widget.confirmbox</a></li>
+  <li><a href="../modules/ui.widget.container.alphacontainer.html">ui.widget.container.alphacontainer</a></li>
+  <li><a href="../modules/ui.widget.container.bottomcontainer.html">ui.widget.container.bottomcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.centercontainer.html">ui.widget.container.centercontainer</a></li>
+  <li><a href="../modules/ui.widget.container.framecontainer.html">ui.widget.container.framecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.inputcontainer.html">ui.widget.container.inputcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.leftcontainer.html">ui.widget.container.leftcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.movablecontainer.html">ui.widget.container.movablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.rightcontainer.html">ui.widget.container.rightcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.scrollablecontainer.html">ui.widget.container.scrollablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.topcontainer.html">ui.widget.container.topcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.underlinecontainer.html">ui.widget.container.underlinecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.widgetcontainer.html">ui.widget.container.widgetcontainer</a></li>
+  <li><a href="../modules/ui.widget.datetimewidget.html">ui.widget.datetimewidget</a></li>
+  <li><a href="../modules/ui.widget.dictquicklookup.html">ui.widget.dictquicklookup</a></li>
+  <li><a href="../modules/ui.widget.eventlistener.html">ui.widget.eventlistener</a></li>
+  <li><a href="../modules/ui.widget.horizontalgroup.html">ui.widget.horizontalgroup</a></li>
+  <li><a href="../modules/ui.widget.htmlboxwidget.html">ui.widget.htmlboxwidget</a></li>
+  <li><a href="../modules/ui.widget.iconbutton.html">ui.widget.iconbutton</a></li>
+  <li><a href="../modules/ui.widget.iconwidget.html">ui.widget.iconwidget</a></li>
+  <li><a href="../modules/ui.widget.imageviewer.html">ui.widget.imageviewer</a></li>
+  <li><a href="../modules/ui.widget.imagewidget.html">ui.widget.imagewidget</a></li>
+  <li><a href="../modules/ui.widget.infomessage.html">ui.widget.infomessage</a></li>
+  <li><a href="../modules/ui.widget.inputdialog.html">ui.widget.inputdialog</a></li>
+  <li><a href="../modules/ui.widget.keyboardlayoutdialog.html">ui.widget.keyboardlayoutdialog</a></li>
+  <li><a href="../modules/ui.widget.keyvaluepage.html">ui.widget.keyvaluepage</a></li>
+  <li><a href="../modules/ui.widget.linewidget.html">ui.widget.linewidget</a></li>
+  <li><a href="../modules/ui.widget.listview.html">ui.widget.listview</a></li>
+  <li><a href="../modules/ui.widget.multiconfirmbox.html">ui.widget.multiconfirmbox</a></li>
+  <li><a href="../modules/ui.widget.multiinputdialog.html">ui.widget.multiinputdialog</a></li>
+  <li><a href="../modules/ui.widget.networksetting.html">ui.widget.networksetting</a></li>
+  <li><a href="../modules/ui.widget.notification.html">ui.widget.notification</a></li>
+  <li><a href="../modules/ui.widget.numberpickerwidget.html">ui.widget.numberpickerwidget</a></li>
+  <li><a href="../modules/ui.widget.openwithdialog.html">ui.widget.openwithdialog</a></li>
+  <li><a href="../modules/ui.widget.overlapgroup.html">ui.widget.overlapgroup</a></li>
+  <li><a href="../modules/ui.widget.progressbardialog.html">ui.widget.progressbardialog</a></li>
+  <li><a href="../modules/ui.widget.progresswidget.html">ui.widget.progresswidget</a></li>
+  <li><a href="../modules/ui.widget.qrmessage.html">ui.widget.qrmessage</a></li>
+  <li><a href="../modules/ui.widget.radiobuttontable.html">ui.widget.radiobuttontable</a></li>
+  <li><a href="../modules/ui.widget.radiobuttonwidget.html">ui.widget.radiobuttonwidget</a></li>
+  <li><a href="../modules/ui.widget.scrollhtmlwidget.html">ui.widget.scrollhtmlwidget</a></li>
+  <li><a href="../modules/ui.widget.scrolltextwidget.html">ui.widget.scrolltextwidget</a></li>
+  <li><a href="../modules/ui.widget.textboxwidget.html">ui.widget.textboxwidget</a></li>
+  <li><a href="../modules/ui.widget.textviewer.html">ui.widget.textviewer</a></li>
+  <li><a href="../modules/ui.widget.textwidget.html">ui.widget.textwidget</a></li>
+  <li><a href="../modules/ui.widget.toggleswitch.html">ui.widget.toggleswitch</a></li>
+  <li><a href="../modules/ui.widget.touchmenu.html">ui.widget.touchmenu</a></li>
+  <li><a href="../modules/ui.widget.trapwidget.html">ui.widget.trapwidget</a></li>
+  <li><a href="../modules/ui.widget.verticalgroup.html">ui.widget.verticalgroup</a></li>
+  <li><a href="../modules/ui.widget.widget.html">ui.widget.widget</a></li>
+  <li><a href="../modules/userpatch.html">userpatch</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+  <li><a href="../modules/version.html">version</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/Collaborating_with_Git.md.html">Collaborating with Git</a></li>
+  <li><a href="../topics/DataStore.md.html">DataStore</a></li>
+  <li><a href="../topics/Development_guide.md.html">Development Guide</a></li>
+  <li><a href="../topics/Events.md.html">Events</a></li>
+  <li><a href="../topics/Hacking.md.html">Hacking</a></li>
+  <li><a href="../topics/Porting.md.html">Porting</a></li>
+  <li><a href="../topics/README.md.html">README</a></li>
+  <li><a href="../topics/Unit_tests.md.html">Unit Tests</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>koplugin.wallabag</code></h1>
+<p>This plugin downloads a set number of the newest arcticles in your Wallabag "Unread" list.</p>
+<p> As epubs,
+or in their original formats. It can archive or delete articles from Wallabag when you finish them
+in KOReader. And it will delete or archive them locally when you finish them elsewhere.</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:addToMainMenu">Wallabag:addToMainMenu (menu_items)</a></td>
+	<td class="summary">Add Wallabag to the Tools menu in both the file manager and the reader.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:getBearerToken">Wallabag:getBearerToken ()</a></td>
+	<td class="summary">Validate server settings and request an OAuth bearer token.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:getArticleList">Wallabag:getArticleList ()</a></td>
+	<td class="summary">Get a JSON formatted list of articles from the server.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:filterIgnoredTags">Wallabag:filterIgnoredTags (article_list)</a></td>
+	<td class="summary">Remove all the articles from the list containing one of the ignored tags.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:downloadArticle">Wallabag:downloadArticle (An)</a></td>
+	<td class="summary">Download a single article from the Wallabag server given by id in the article table.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:needToDownload">Wallabag:needToDownload (local_articles, remote_article)</a></td>
+	<td class="summary">Check if we already have the article locally.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:callAPI">Wallabag:callAPI (method, url[, headers[, body[, filepath[, quiet=false]]]])</a></td>
+	<td class="summary">Call the Wallabag API.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:downloadArticles">Wallabag:downloadArticles (local_articles)</a></td>
+	<td class="summary">Add articles from local queue to Wallabag, then download new articles.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:uploadQueue">Wallabag:uploadQueue ([quiet=true])</a></td>
+	<td class="summary">Upload any articles that were added to the queue.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:processRemoteDeletes">Wallabag:processRemoteDeletes (local_articles, remote_article_ids)</a></td>
+	<td class="summary">Compare local IDs with remote<em>article</em>ids and delete or archive any that are missing.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:shouldUploadStatus">Wallabag:shouldUploadStatus (entry_path)</a></td>
+	<td class="summary">Returns true, if article should be archived/deleted on the Wallabag server.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:uploadStatuses">Wallabag:uploadStatuses (local_articles[, quiet])</a></td>
+	<td class="summary">Archive (or delete) locally finished articles on the Wallabag server.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:addArticle">Wallabag:addArticle (article_url)</a></td>
+	<td class="summary">Add a new article (including any auto_tags) to the Wallabag server.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:addTagsFromReview">Wallabag:addTagsFromReview (path)</a></td>
+	<td class="summary">Add tags from the local review to the article on Wallabag.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:archiveArticle">Wallabag:archiveArticle (path)</a></td>
+	<td class="summary">Archive an article on Wallabag, or if delete_instead, then delete.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:archiveLocalArticle">Wallabag:archiveLocalArticle (path)</a></td>
+	<td class="summary">Move an article and its sidecar to archive_directory.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:deleteLocalArticle">Wallabag:deleteLocalArticle (path)</a></td>
+	<td class="summary">Delete an article and its sidecar locally.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:getArticleID">Wallabag:getArticleID (path)</a></td>
+	<td class="summary">Extract the Wallabag ID from the file name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:getLocalArticles">Wallabag:getLocalArticles ([Directory=true[, The=true]])</a></td>
+	<td class="summary">Find all files that represent Wallabag articles in specified directory and subdirectories.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:setTagsDialog">Wallabag:setTagsDialog (touchmenu_instance, title, description, value, callback)</a></td>
+	<td class="summary">A dialog used for setting filter<em>tag, ignore</em>tags and auto_tags.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:editServerSettings">Wallabag:editServerSettings ()</a></td>
+	<td class="summary">The dialog shown when clicking "Configure Wallabag server".</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:setArticlesPerSync">Wallabag:setArticlesPerSync (touchmenu_instance)</a></td>
+	<td class="summary">The dialog shown when clicking "Number of articles to keep locally".</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:setDownloadDirectory">Wallabag:setDownloadDirectory (touchmenu_instance)</a></td>
+	<td class="summary">The dialog shown when clicking "Download folder".</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:setArchiveDirectory">Wallabag:setArchiveDirectory (touchmenu_instance)</a></td>
+	<td class="summary">The dialog shown when clicking "Archive folder"</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:onAddWallabagArticle">Wallabag:onAddWallabagArticle (article_url)</a></td>
+	<td class="summary">Handler for addWallabagArticle event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:getLastPercent">Wallabag:getLastPercent ()</a></td>
+	<td class="summary">Get percent read of the opened article.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:onCloseDocument">Wallabag:onCloseDocument ()</a></td>
+	<td class="summary">Handler for the CloseDocument event.</td>
+	</tr>
+</table>
+<h2><a href="#Issues">Issues</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Wallabag:uploadQueue-todo14">Wallabag:uploadQueue-todo14</a></td>
+	<td class="summary">Add error handling</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Wallabag:addToMainMenu"></a>
+    <strong>Wallabag:addToMainMenu (menu_items)</strong>
+    </dt>
+    <dd>
+    Add Wallabag to the Tools menu in both the file manager and the reader.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">menu_items</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:getBearerToken"></a>
+    <strong>Wallabag:getBearerToken ()</strong>
+    </dt>
+    <dd>
+    Validate server settings and request an OAuth bearer token.
+ Do not request a new token if the saved one is valid for more than 5 minutes.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:getArticleList"></a>
+    <strong>Wallabag:getArticleList ()</strong>
+    </dt>
+    <dd>
+    Get a JSON formatted list of articles from the server.
+ The list should have self.article<em>per</em>sync item, or less if an error occurred.
+ If filter<em>tag is set, only articles containing this tag are queried.
+ If ignore</em>tags is defined, articles containing any of the tags are skipped.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        List of article tables
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:filterIgnoredTags"></a>
+    <strong>Wallabag:filterIgnoredTags (article_list)</strong>
+    </dt>
+    <dd>
+    Remove all the articles from the list containing one of the ignored tags.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">article_list</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Array containing a JSON formatted list of articles
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        Same array, but without any articles that contain an ignored tag.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:downloadArticle"></a>
+    <strong>Wallabag:downloadArticle (An)</strong>
+    </dt>
+    <dd>
+    Download a single article from the Wallabag server given by id in the article table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">An</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         article table, see https://doc.wallabag.org/developer/api/methods/#getting-existing-entries
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Full path to local article file.</li>
+        <li>
+           <span class="types"><span class="type">nil</span></span>
+        Failed to download the article.</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:needToDownload"></a>
+    <strong>Wallabag:needToDownload (local_articles, remote_article)</strong>
+    </dt>
+    <dd>
+    Check if we already have the article locally.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">local_articles</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Full paths of all articles, keyed by Wallabag ID.
+        </li>
+        <li><span class="parameter">remote_article</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         An article table, see https://doc.wallabag.org/developer/api/methods/#getting-existing-entries
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        Need to download the article
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:callAPI"></a>
+    <strong>Wallabag:callAPI (method, url[, headers[, body[, filepath[, quiet=false]]]])</strong>
+    </dt>
+    <dd>
+    Call the Wallabag API.
+ See https://app.wallabag.it/api/doc/ for methods and parameters.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">method</span>
+         GET, POST, DELETE, PATCH, etc…
+        </li>
+        <li><span class="parameter">url</span>
+         URL endpoint on Wallabag server without hostname, or full URL for external link
+        </li>
+        <li><span class="parameter">headers</span>
+         Defaults to Authorization for API endpoints, none for external
+         (<em>optional</em>)
+        </li>
+        <li><span class="parameter">body</span>
+         Body to include in the request, if needed
+         (<em>optional</em>)
+        </li>
+        <li><span class="parameter">filepath</span>
+         Downloads the file if provided, returns JSON otherwise
+         (<em>optional</em>)
+        </li>
+        <li><span class="parameter">quiet</span>
+
+
+
+         (<em>default</em> false)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">bool</span></span>
+        Whether the request was successful</li>
+        <li>
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        Error type if unsuccessful, filepath if success with path, JSON if without</li>
+        <li>
+           <span class="types"><span class="type">int</span></span>
+        HTTP response code if unsuccessful (e.g. 404, 503, …)</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:downloadArticles"></a>
+    <strong>Wallabag:downloadArticles (local_articles)</strong>
+    </dt>
+    <dd>
+    Add articles from local queue to Wallabag, then download new articles.
+ If self.auto_archive is true, then local article statuses are uploaded before downloading.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">local_articles</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Full paths of all articles, keyed by Wallabag ID.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        Whether the synchronization process reached the end (with or without errors)
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:uploadQueue"></a>
+    <strong>Wallabag:uploadQueue ([quiet=true])</strong>
+    </dt>
+    <dd>
+    Upload any articles that were added to the queue.
+ In case there was no network connection to upload them at the time.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">quiet</span>
+            <span class="types"><span class="type">bool</span></span>
+         Whether to supress the info message or not
+         (<em>default</em> true)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">int</span></span>
+        Number of article URLs added to the server
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:processRemoteDeletes"></a>
+    <strong>Wallabag:processRemoteDeletes (local_articles, remote_article_ids)</strong>
+    </dt>
+    <dd>
+    Compare local IDs with remote<em>article</em>ids and delete or archive any that are missing.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">local_articles</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Full paths of all articles, keyed by Wallabag ID.
+        </li>
+        <li><span class="parameter">remote_article_ids</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Article IDs of articles downloaded this sync run
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">int</span></span>
+        Number of locally deleted or archived articles
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:shouldUploadStatus"></a>
+    <strong>Wallabag:shouldUploadStatus (entry_path)</strong>
+    </dt>
+    <dd>
+    Returns true, if article should be archived/deleted on the Wallabag server.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">entry_path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Path to the article file
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:uploadStatuses"></a>
+    <strong>Wallabag:uploadStatuses (local_articles[, quiet])</strong>
+    </dt>
+    <dd>
+    Archive (or delete) locally finished articles on the Wallabag server.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">local_articles</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Full paths of all articles, keyed by Wallabag ID.
+        </li>
+        <li><span class="parameter">quiet</span>
+            <span class="types"><span class="type">bool</span></span>
+         Whether to supress the info message or not
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:addArticle"></a>
+    <strong>Wallabag:addArticle (article_url)</strong>
+    </dt>
+    <dd>
+    Add a new article (including any auto_tags) to the Wallabag server.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">article_url</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Full URL of the article
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        Whether the API call could be made successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:addTagsFromReview"></a>
+    <strong>Wallabag:addTagsFromReview (path)</strong>
+    </dt>
+    <dd>
+    Add tags from the local review to the article on Wallabag.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Local path of the article
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:archiveArticle"></a>
+    <strong>Wallabag:archiveArticle (path)</strong>
+    </dt>
+    <dd>
+    Archive an article on Wallabag, or if delete_instead, then delete.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Local path of the article
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        Whether archiving or deleting was completed
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:archiveLocalArticle"></a>
+    <strong>Wallabag:archiveLocalArticle (path)</strong>
+    </dt>
+    <dd>
+    Move an article and its sidecar to archive_directory.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Local path of the article
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        Successfully archived or not.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:deleteLocalArticle"></a>
+    <strong>Wallabag:deleteLocalArticle (path)</strong>
+    </dt>
+    <dd>
+    Delete an article and its sidecar locally.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Local path of the article
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+        Successfully deleted or not.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:getArticleID"></a>
+    <strong>Wallabag:getArticleID (path)</strong>
+    </dt>
+    <dd>
+    Extract the Wallabag ID from the file name.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Local path of the article
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        ID as string if successful, nil if not
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:getLocalArticles"></a>
+    <strong>Wallabag:getLocalArticles ([Directory=true[, The=true]])</strong>
+    </dt>
+    <dd>
+    Find all files that represent Wallabag articles in specified directory and subdirectories.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">Directory</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         to search (defaults to base self.directory)
+         (<em>default</em> true)
+        </li>
+        <li><span class="parameter">The</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         table that's passed through recursively (nil to start)
+         (<em>default</em> true)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        Full paths of all articles, keyed by Wallabag ID.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:setTagsDialog"></a>
+    <strong>Wallabag:setTagsDialog (touchmenu_instance, title, description, value, callback)</strong>
+    </dt>
+    <dd>
+    A dialog used for setting filter<em>tag, ignore</em>tags and auto_tags.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">touchmenu_instance</span>
+
+
+
+        </li>
+        <li><span class="parameter">title</span>
+
+
+
+        </li>
+        <li><span class="parameter">description</span>
+
+
+
+        </li>
+        <li><span class="parameter">value</span>
+
+
+
+        </li>
+        <li><span class="parameter">callback</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:editServerSettings"></a>
+    <strong>Wallabag:editServerSettings ()</strong>
+    </dt>
+    <dd>
+    The dialog shown when clicking "Configure Wallabag server".
+ Or automatically, when getBearerToken is run with an incomplete server configuration.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:setArticlesPerSync"></a>
+    <strong>Wallabag:setArticlesPerSync (touchmenu_instance)</strong>
+    </dt>
+    <dd>
+    The dialog shown when clicking "Number of articles to keep locally".
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">touchmenu_instance</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:setDownloadDirectory"></a>
+    <strong>Wallabag:setDownloadDirectory (touchmenu_instance)</strong>
+    </dt>
+    <dd>
+    The dialog shown when clicking "Download folder".
+ Or automatically, when getBearerToken is run with an incomplete server configuration.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">touchmenu_instance</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:setArchiveDirectory"></a>
+    <strong>Wallabag:setArchiveDirectory (touchmenu_instance)</strong>
+    </dt>
+    <dd>
+    The dialog shown when clicking "Archive folder"
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">touchmenu_instance</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:onAddWallabagArticle"></a>
+    <strong>Wallabag:onAddWallabagArticle (article_url)</strong>
+    </dt>
+    <dd>
+    Handler for addWallabagArticle event.
+ Uploads a new article to Wallabag directly if there is a network connection, or add it to the
+ local upload queue.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">article_url</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:getLastPercent"></a>
+    <strong>Wallabag:getLastPercent ()</strong>
+    </dt>
+    <dd>
+    Get percent read of the opened article.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Wallabag:onCloseDocument"></a>
+    <strong>Wallabag:onCloseDocument ()</strong>
+    </dt>
+    <dd>
+    Handler for the CloseDocument event.
+ If the opened article/book is saved in the Wallabag directory, and if any of the
+ remove<em>from</em>history settings are set and matching, then remove it from history
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Issues"></a>Issues</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Wallabag:uploadQueue-todo14"></a>
+    <strong>Wallabag:uploadQueue-todo14</strong>
+    </dt>
+    <dd>
+    Add error handling
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-09-04 22:02:09 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
