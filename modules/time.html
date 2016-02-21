@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>KOReader Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>KOReader</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Fields">Fields</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/android.html">android</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerbookinfo.html">apps.filemanager.filemanagerbookinfo</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerconverter.html">apps.filemanager.filemanagerconverter</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerutil.html">apps.filemanager.filemanagerutil</a></li>
+  <li><a href="../modules/apps.filemanager.lib.md.html">apps.filemanager.lib.md</a></li>
+  <li><a href="../modules/apps.reader.modules.readerlink.html">apps.reader.modules.readerlink</a></li>
+  <li><a href="../modules/apps.reader.modules.readerview.html">apps.reader.modules.readerview</a></li>
+  <li><a href="../modules/apps.reader.readerui.html">apps.reader.readerui</a></li>
+  <li><a href="../modules/baseexporter.html">baseexporter</a></li>
+  <li><a href="../modules/cache.html">cache</a></li>
+  <li><a href="../modules/cacheitem.html">cacheitem</a></li>
+  <li><a href="../modules/datetime.html">datetime</a></li>
+  <li><a href="../modules/dbg.html">dbg</a></li>
+  <li><a href="../modules/depgraph.html">depgraph</a></li>
+  <li><a href="../modules/device.generic.device.html">device.generic.device</a></li>
+  <li><a href="../modules/device.gesturedetector.html">device.gesturedetector</a></li>
+  <li><a href="../modules/device.input.html">device.input</a></li>
+  <li><a href="../modules/device.kindle.mockrtc.html">device.kindle.mockrtc</a></li>
+  <li><a href="../modules/device.kobo.nickel_conf.html">device.kobo.nickel_conf</a></li>
+  <li><a href="../modules/device.sysfs_light.html">device.sysfs_light</a></li>
+  <li><a href="../modules/device.wakeupmgr.html">device.wakeupmgr</a></li>
+  <li><a href="../modules/dispatcher.html">dispatcher</a></li>
+  <li><a href="../modules/docsettings.html">docsettings</a></li>
+  <li><a href="../modules/document.doccache.html">document.doccache</a></li>
+  <li><a href="../modules/document.documentregistry.html">document.documentregistry</a></li>
+  <li><a href="../modules/document.koptinterface.html">document.koptinterface</a></li>
+  <li><a href="../modules/dump.html">dump</a></li>
+  <li><a href="../modules/ffi.blitbuffer.html">ffi.blitbuffer</a></li>
+  <li><a href="../modules/ffi.crypto.html">ffi.crypto</a></li>
+  <li><a href="../modules/ffi.framebuffer.html">ffi.framebuffer</a></li>
+  <li><a href="../modules/ffi.freetype.html">ffi.freetype</a></li>
+  <li><a href="../modules/ffi.jpeg.html">ffi.jpeg</a></li>
+  <li><a href="../modules/ffi.koptcontext.html">ffi.koptcontext</a></li>
+  <li><a href="../modules/ffi.loadlib.html">ffi.loadlib</a></li>
+  <li><a href="../modules/ffi.md5.html">ffi.md5</a></li>
+  <li><a href="../modules/ffi.mupdf.html">ffi.mupdf</a></li>
+  <li><a href="../modules/ffi.png.html">ffi.png</a></li>
+  <li><a href="../modules/ffi.rtc.html">ffi.rtc</a></li>
+  <li><a href="../modules/ffi.sdl2_0.html">ffi.sdl2_0</a></li>
+  <li><a href="../modules/ffi.utf8proc.html">ffi.utf8proc</a></li>
+  <li><a href="../modules/ffi.util.html">ffi.util</a></li>
+  <li><a href="../modules/ffi.webp.html">ffi.webp</a></li>
+  <li><a href="../modules/ffi.zipwriter.html">ffi.zipwriter</a></li>
+  <li><a href="../modules/ffi.zlib.html">ffi.zlib</a></li>
+  <li><a href="../modules/ffi.zstd.html">ffi.zstd</a></li>
+  <li><a href="../modules/gettext.html">gettext</a></li>
+  <li><a href="../modules/koplugin.HelloWorld.html">koplugin.HelloWorld</a></li>
+  <li><a href="../modules/koplugin.QRClipboard.html">koplugin.QRClipboard</a></li>
+  <li><a href="../modules/koplugin.autodim.html">koplugin.autodim</a></li>
+  <li><a href="../modules/koplugin.autowarmth.html">koplugin.autowarmth</a></li>
+  <li><a href="../modules/koplugin.calibre.metadata.html">koplugin.calibre.metadata</a></li>
+  <li><a href="../modules/koplugin.coverimage.html">koplugin.coverimage</a></li>
+  <li><a href="../modules/koplugin.exporter.html">koplugin.exporter</a></li>
+  <li><a href="../modules/koplugin.japanese.html">koplugin.japanese</a></li>
+  <li><a href="../modules/koplugin.japanese.deinflector.html">koplugin.japanese.deinflector</a></li>
+  <li><a href="../modules/koplugin.patchmanagement.html">koplugin.patchmanagement</a></li>
+  <li><a href="../modules/koplugin.terminal.html">koplugin.terminal</a></li>
+  <li><a href="../modules/koplugin.terminal.html">koplugin.terminal</a></li>
+  <li><a href="../modules/koplugin.vocabbuilder.html">koplugin.vocabbuilder</a></li>
+  <li><a href="../modules/koplugin.wallabag.html">koplugin.wallabag</a></li>
+  <li><a href="../modules/languagesupport.html">languagesupport</a></li>
+  <li><a href="../modules/logger.html">logger</a></li>
+  <li><a href="../modules/luadata.html">luadata</a></li>
+  <li><a href="../modules/luadefaults.html">luadefaults</a></li>
+  <li><a href="../modules/luasettings.html">luasettings</a></li>
+  <li><a href="../modules/optmath.html">optmath</a></li>
+  <li><a href="../modules/random.html">random</a></li>
+  <li><a href="../modules/socketutil.html">socketutil</a></li>
+  <li><a href="../modules/sort.html">sort</a></li>
+  <li><a href="../modules/suntime.html">suntime</a></li>
+  <li><strong>time</strong></li>
+  <li><a href="../modules/ui.bidi.html">ui.bidi</a></li>
+  <li><a href="../modules/ui.data.css_tweaks.html">ui.data.css_tweaks</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.generic_ime.html">ui.data.keyboardlayouts.generic_ime</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard.html">ui.data.keyboardlayouts.ja_keyboard</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard_keys.html">ui.data.keyboardlayouts.ja_keyboard_keys</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ko_KR_helper.html">ui.data.keyboardlayouts.ko_KR_helper</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.zh_keyboard.html">ui.data.keyboardlayouts.zh_keyboard</a></li>
+  <li><a href="../modules/ui.data.optionsutil.html">ui.data.optionsutil</a></li>
+  <li><a href="../modules/ui.downloadmgr.html">ui.downloadmgr</a></li>
+  <li><a href="../modules/ui.event.html">ui.event</a></li>
+  <li><a href="../modules/ui.font.html">ui.font</a></li>
+  <li><a href="../modules/ui.geometry.html">ui.geometry</a></li>
+  <li><a href="../modules/ui.hook_container.html">ui.hook_container</a></li>
+  <li><a href="../modules/ui.menusorter.html">ui.menusorter</a></li>
+  <li><a href="../modules/ui.network.wpa_supplicant.html">ui.network.wpa_supplicant</a></li>
+  <li><a href="../modules/ui.otamanager.html">ui.otamanager</a></li>
+  <li><a href="../modules/ui.plugin.background_task_plugin.html">ui.plugin.background_task_plugin</a></li>
+  <li><a href="../modules/ui.plugin.switch_plugin.html">ui.plugin.switch_plugin</a></li>
+  <li><a href="../modules/ui.quickstart.html">ui.quickstart</a></li>
+  <li><a href="../modules/ui.renderimage.html">ui.renderimage</a></li>
+  <li><a href="../modules/ui.rendertext.html">ui.rendertext</a></li>
+  <li><a href="../modules/ui.size.html">ui.size</a></li>
+  <li><a href="../modules/ui.translator.html">ui.translator</a></li>
+  <li><a href="../modules/ui.trapper.html">ui.trapper</a></li>
+  <li><a href="../modules/ui.uimanager.html">ui.uimanager</a></li>
+  <li><a href="../modules/ui.viewhtml.html">ui.viewhtml</a></li>
+  <li><a href="../modules/ui.widget.bboxwidget.html">ui.widget.bboxwidget</a></li>
+  <li><a href="../modules/ui.widget.button.html">ui.widget.button</a></li>
+  <li><a href="../modules/ui.widget.buttondialog.html">ui.widget.buttondialog</a></li>
+  <li><a href="../modules/ui.widget.checkbutton.html">ui.widget.checkbutton</a></li>
+  <li><a href="../modules/ui.widget.checkmark.html">ui.widget.checkmark</a></li>
+  <li><a href="../modules/ui.widget.confirmbox.html">ui.widget.confirmbox</a></li>
+  <li><a href="../modules/ui.widget.container.alphacontainer.html">ui.widget.container.alphacontainer</a></li>
+  <li><a href="../modules/ui.widget.container.bottomcontainer.html">ui.widget.container.bottomcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.centercontainer.html">ui.widget.container.centercontainer</a></li>
+  <li><a href="../modules/ui.widget.container.framecontainer.html">ui.widget.container.framecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.inputcontainer.html">ui.widget.container.inputcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.leftcontainer.html">ui.widget.container.leftcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.movablecontainer.html">ui.widget.container.movablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.rightcontainer.html">ui.widget.container.rightcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.scrollablecontainer.html">ui.widget.container.scrollablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.topcontainer.html">ui.widget.container.topcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.underlinecontainer.html">ui.widget.container.underlinecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.widgetcontainer.html">ui.widget.container.widgetcontainer</a></li>
+  <li><a href="../modules/ui.widget.datetimewidget.html">ui.widget.datetimewidget</a></li>
+  <li><a href="../modules/ui.widget.eventlistener.html">ui.widget.eventlistener</a></li>
+  <li><a href="../modules/ui.widget.horizontalgroup.html">ui.widget.horizontalgroup</a></li>
+  <li><a href="../modules/ui.widget.htmlboxwidget.html">ui.widget.htmlboxwidget</a></li>
+  <li><a href="../modules/ui.widget.iconbutton.html">ui.widget.iconbutton</a></li>
+  <li><a href="../modules/ui.widget.iconwidget.html">ui.widget.iconwidget</a></li>
+  <li><a href="../modules/ui.widget.imageviewer.html">ui.widget.imageviewer</a></li>
+  <li><a href="../modules/ui.widget.imagewidget.html">ui.widget.imagewidget</a></li>
+  <li><a href="../modules/ui.widget.infomessage.html">ui.widget.infomessage</a></li>
+  <li><a href="../modules/ui.widget.inputdialog.html">ui.widget.inputdialog</a></li>
+  <li><a href="../modules/ui.widget.keyboardlayoutdialog.html">ui.widget.keyboardlayoutdialog</a></li>
+  <li><a href="../modules/ui.widget.keyvaluepage.html">ui.widget.keyvaluepage</a></li>
+  <li><a href="../modules/ui.widget.linewidget.html">ui.widget.linewidget</a></li>
+  <li><a href="../modules/ui.widget.listview.html">ui.widget.listview</a></li>
+  <li><a href="../modules/ui.widget.multiconfirmbox.html">ui.widget.multiconfirmbox</a></li>
+  <li><a href="../modules/ui.widget.multiinputdialog.html">ui.widget.multiinputdialog</a></li>
+  <li><a href="../modules/ui.widget.networksetting.html">ui.widget.networksetting</a></li>
+  <li><a href="../modules/ui.widget.notification.html">ui.widget.notification</a></li>
+  <li><a href="../modules/ui.widget.numberpickerwidget.html">ui.widget.numberpickerwidget</a></li>
+  <li><a href="../modules/ui.widget.openwithdialog.html">ui.widget.openwithdialog</a></li>
+  <li><a href="../modules/ui.widget.overlapgroup.html">ui.widget.overlapgroup</a></li>
+  <li><a href="../modules/ui.widget.progresswidget.html">ui.widget.progresswidget</a></li>
+  <li><a href="../modules/ui.widget.qrmessage.html">ui.widget.qrmessage</a></li>
+  <li><a href="../modules/ui.widget.radiobuttontable.html">ui.widget.radiobuttontable</a></li>
+  <li><a href="../modules/ui.widget.radiobuttonwidget.html">ui.widget.radiobuttonwidget</a></li>
+  <li><a href="../modules/ui.widget.scrollhtmlwidget.html">ui.widget.scrollhtmlwidget</a></li>
+  <li><a href="../modules/ui.widget.scrolltextwidget.html">ui.widget.scrolltextwidget</a></li>
+  <li><a href="../modules/ui.widget.textboxwidget.html">ui.widget.textboxwidget</a></li>
+  <li><a href="../modules/ui.widget.textviewer.html">ui.widget.textviewer</a></li>
+  <li><a href="../modules/ui.widget.textwidget.html">ui.widget.textwidget</a></li>
+  <li><a href="../modules/ui.widget.toggleswitch.html">ui.widget.toggleswitch</a></li>
+  <li><a href="../modules/ui.widget.touchmenu.html">ui.widget.touchmenu</a></li>
+  <li><a href="../modules/ui.widget.trapwidget.html">ui.widget.trapwidget</a></li>
+  <li><a href="../modules/ui.widget.verticalgroup.html">ui.widget.verticalgroup</a></li>
+  <li><a href="../modules/ui.widget.widget.html">ui.widget.widget</a></li>
+  <li><a href="../modules/userpatch.html">userpatch</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+  <li><a href="../modules/version.html">version</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/Collaborating_with_Git.md.html">Collaborating with Git</a></li>
+  <li><a href="../topics/DataStore.md.html">DataStore</a></li>
+  <li><a href="../topics/Development_guide.md.html">Development Guide</a></li>
+  <li><a href="../topics/Events.md.html">Events</a></li>
+  <li><a href="../topics/Hacking.md.html">Hacking</a></li>
+  <li><a href="../topics/Porting.md.html">Porting</a></li>
+  <li><a href="../topics/README.md.html">README</a></li>
+  <li><a href="../topics/Unit_tests.md.html">Unit Tests</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>time</code></h1>
+<p>A runtime optimized module to compare and do simple arithmetic with fixed point time values (which are called fts in here).</p>
+<p>Also implements functions to retrieve time from various system clocks (monotonic, monotonic<em>coarse, realtime, realtime</em>coarse, boottime ...).</p>
+
+<p><strong>Encode:</strong></p>
+
+<p>Don't store a numerical constant in an fts encoded time. Use the functions provided here!</p>
+
+<p>To convert real world units to an fts, you can use the following functions: time.s(seconds), time.ms(milliseconds), time.us(microseconds).</p>
+
+<p>You can calculate an fts encoded time of 3 s with <code>time.s(3)</code>.</p>
+
+<p>Special values: <code>0</code> can be used for a zero time and <a href="../modules/time.html#huge">time.huge</a> can be used for the longest possible time.</p>
+
+<p>Beware of float encoding precision, though. For instance, take 2.1s: 2.1 cannot be encoded with full precision, so time.s(2.1) would be slightly inaccurate.
+(For small values (under 10 secs) the error will be ±1µs, for values below a minute the error will be below ±2µs, for values below an hour the error will be ±100µs.)</p>
+
+<p>When full precision is necessary, use <code>time.s(2) + time.ms(100)</code> or <code>time.s(2) + time.us(100000)</code> instead.</p>
+
+<p>(For more information about floating-point-representation see: https://stackoverflow.com/questions/3448777/how-to-represent-0-1-in-floating-point-arithmetic-and-decimal)</p>
+
+<p><strong>Decode:</strong></p>
+
+<p>You can get the number of seconds in an fts encoded time with <code>time.to_s(time_fts)</code>.</p>
+
+<p>You can get the number of milliseconds in an fts encoded time with <code>time.to_ms(time_fts)</code>.</p>
+
+<p>You can get the number of microseconds in an fts encoded time with <code>time.to_us(time_fts)</code>.</p>
+
+<p>Please be aware, that <a href="../modules/time.html#to_number">time.to_number</a> is the same as a <a href="../modules/time.html#to_s">time.to_s</a> with a precision of four decimal places.</p>
+
+<p><strong>Supported calculations:</strong></p>
+
+<p>You can add and subtract all fts encoded times, without any problems.</p>
+
+<p>You can multiply or divide fts encoded times by numerical constants. So if you need the half of a time, <code>time_fts/2</code> is correct.</p>
+
+<p>A division of two fts encoded times would give you a number. (e.g., <code>time.s(2.5)/time.s(0.5)</code> equals <code>5</code>).</p>
+
+<p>The functions <code>math.abs()</code>, <code>math.min()</code>, <code>math.max()</code> and <a href="https://www.lua.org/manual/5.1/manual.html#pdf-math.huge">math.huge</a> will work as expected.</p>
+
+<p>Comparisons (<code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, <code>&lt;</code>, <code>&lt;=</code> and <code>~=</code>) of two fts encoded times work as expected.</p>
+
+<p>If you want a duration form a given time_fts to <em>now</em>, <code>time.since(time_fts)</code> as a shortcut (or simply use <code>fts.now - time_fts</code>) will return an fts encoded time. If you need milliseconds use <code>time.to_ms(time.since(time_fts))</code>.</p>
+
+<p><strong>Unsupported calculations:</strong></p>
+
+<p>Don't add a numerical constant to an fts time (in the best case, the numerical constant is interpreted as µs).</p>
+
+<p>Don't multiply two fts_encoded times (the position of the comma is wrong).</p>
+
+<p>But please be aware that <em>all other not explicitly supported</em> math on fts encoded times (<code>math.xxx()</code>) won't work as expected. (If you really, really need that, you have to shift the position of the comma yourself!)</p>
+
+<p><strong>Background:</strong>
+Numbers in Lua are double float which have a mantissa (precision) of 53 bit (plus sign + exponent)
+We won't use the exponent here.</p>
+
+<p>So we can store 2^53 = 9.0072E15 different values. If we use the lower 6 digits for µs, we can store
+up to 9.0072E9 seconds.</p>
+
+<p>A year has 365.25<em>24</em>3600 = 3.15576E7 s, so we can store up to 285 years (9.0072E9/3.15576E7) with µs precision.</p>
+
+<p>The module has been tested with the fixed point comma at 10^6 (other values might work, but are not really tested).</p>
+
+<p><strong>Recommendations:</strong>
+If the name of a variable implies a time (now, when, until, xxxdeadline, xxxtime, getElapsedTimeSinceBoot, lastxxxtimexxx, ...) we assume this value to be a time (fts encoded).</p>
+
+<p>Other objects which are times (like <code>last_tap</code>, <code>tap_interval_override</code>, ...) shall be renamed to something like <code>last_tap_time</code> (so to make it clear that they are fts encoded).</p>
+
+<p>All other time variables (a handful) get the appropriate suffix <code>_ms</code>, <code>_us</code>, <code>_s</code> (<code>_m</code>, <code>_h</code>, <code>_d</code>) denoting their status as plain Lua numbers and their resolution.</p>
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">local time = require(&quot;ui/time&quot;)
+
+local start_time = time.now()
+-- Do some stuff.
+-- You can add and subtract `fts times` objects
+local duration = time.now() - start_time
+-- and convert that object to various more human-readable formats, e.g.,
+print(string.format(&quot;Stuff took %.3fms&quot;, time.to_ms(duration)))
+
+local offset = time.s(100)
+print(string.format(&quot;Stuff plus 100s took %.3fms&quot;, time.to_ms(duration + offset)))
+</pre>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#s">s (seconds)</a></td>
+	<td class="summary">Creates a time (fts) from a number in seconds.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ms">ms (msec)</a></td>
+	<td class="summary">Creates a time (fts) from a number in milliseconds.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#us">us (usec)</a></td>
+	<td class="summary">Creates a time (fts) from a number in microseconds.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#timeval">timeval (tv)</a></td>
+	<td class="summary">Creates a time (fts) from a structure similar to timeval.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#to_number">to_number (time_fts)</a></td>
+	<td class="summary">Converts an fts time to a Lua (decimal) number (sec.usecs) (accurate to the ms, rounded to 4 decimal places)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#to_s">to_s (time_fts)</a></td>
+	<td class="summary">Converts an fts to a Lua (int) number (resolution: 1µs)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#to_ms">to_ms (time_fts)</a></td>
+	<td class="summary">Converts a fts to a Lua (int) number (resolution: 1ms, rounded).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#to_us">to_us (time_fts)</a></td>
+	<td class="summary">Converts an fts to a Lua (int) number (resolution: 1µs, rounded)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#since">since (start_time)</a></td>
+	<td class="summary">Compare a past <em>MONOTONIC</em> fts time to <em>now</em>, returning the elapsed time between the two.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#split_s_us">split_s_us (time_fts)</a></td>
+	<td class="summary">Splits an fts to seconds and microseconds.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#realtime">realtime ()</a></td>
+	<td class="summary">Returns an fts time based on the current wall clock time.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#monotonic">monotonic ()</a></td>
+	<td class="summary">Returns an fts time based on the current value from the system's MONOTONIC clock source.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#monotonic_coarse">monotonic_coarse ()</a></td>
+	<td class="summary">Ditto, but w/ CLOCK<em>MONOTONIC</em>COARSE if it's available and has a 1ms resolution or better (uses CLOCK_MONOTONIC otherwise).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#boottime">boottime ()</a></td>
+	<td class="summary">Ditto, but w/ CLOCK_BOOTTIME (will return an fts time set to 0, 0 if the clock source is unsupported, as it's 2.6.39+)
+ Only use it if you <em>know</em> it's going to be supported, otherwise, prefer the four following aliases.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#format_time">format_time (time_fts)</a></td>
+	<td class="summary">Converts an fts time to a string (seconds with 6 decimal places)</td>
+	</tr>
+</table>
+<h2><a href="#Fields">Fields</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#huge">huge</a></td>
+	<td class="summary">Sometimes we need a very large time.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#now">now</a></td>
+	<td class="summary">Alias for <a href="../modules/time.html#monotonic_coarse">monotonic_coarse</a>.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "s"></a>
+    <strong>s (seconds)</strong>
+    </dt>
+    <dd>
+    Creates a time (fts) from a number in seconds.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">seconds</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ms"></a>
+    <strong>ms (msec)</strong>
+    </dt>
+    <dd>
+    Creates a time (fts) from a number in milliseconds.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">msec</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "us"></a>
+    <strong>us (usec)</strong>
+    </dt>
+    <dd>
+    Creates a time (fts) from a number in microseconds.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">usec</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "timeval"></a>
+    <strong>timeval (tv)</strong>
+    </dt>
+    <dd>
+    Creates a time (fts) from a structure similar to timeval.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">tv</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "to_number"></a>
+    <strong>to_number (time_fts)</strong>
+    </dt>
+    <dd>
+    Converts an fts time to a Lua (decimal) number (sec.usecs) (accurate to the ms, rounded to 4 decimal places)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">time_fts</span>
+        Round to 4 decimal places
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "to_s"></a>
+    <strong>to_s (time_fts)</strong>
+    </dt>
+    <dd>
+    Converts an fts to a Lua (int) number (resolution: 1µs)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">time_fts</span>
+        Time in seconds with µs precision (without decimal places)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "to_ms"></a>
+    <strong>to_ms (time_fts)</strong>
+    </dt>
+    <dd>
+    Converts a fts to a Lua (int) number (resolution: 1ms, rounded). </p>
+
+<p>(Mainly useful when computing a time lapse for benchmarking purposes).
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">time_fts</span>
+        Time in milliseconds ms (without decimal places)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "to_us"></a>
+    <strong>to_us (time_fts)</strong>
+    </dt>
+    <dd>
+    Converts an fts to a Lua (int) number (resolution: 1µs, rounded)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">time_fts</span>
+        Time in microseconds µs (without decimal places)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "since"></a>
+    <strong>since (start_time)</strong>
+    </dt>
+    <dd>
+    Compare a past <em>MONOTONIC</em> fts time to <em>now</em>, returning the elapsed time between the two.  (sec.usecs variant)</p>
+
+<p>Returns a Lua (decimal) number (sec.usecs, with decimal places) (accurate to the µs).
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">start_time</span>
+        Time difference
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "split_s_us"></a>
+    <strong>split_s_us (time_fts)</strong>
+    </dt>
+    <dd>
+    Splits an fts to seconds and microseconds.
+ If argument is nil, returns nil,nil.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">time_fts</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "realtime"></a>
+    <strong>realtime ()</strong>
+    </dt>
+    <dd>
+    Returns an fts time based on the current wall clock time.
+(e.g., gettimeofday / clock<em>gettime(CLOCK</em>REALTIME).</p>
+
+<p>This is a simple wrapper around clock<em>gettime(CLOCK</em>REALTIME) to get all the niceties of a time.
+If you don't need sub-second precision, prefer os.time().
+Which means that, yes, this is a fancier POSIX Epoch ;).
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">fts</span></span>
+        fixed point time
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> time = <span class="global">require</span>(<span class="string">"ui/time"</span>)
+<span class="keyword">local</span> fts_start = time.<span class="function-name">realtime</span>()
+<span class="comment">-- Do some stuff.
+</span><span class="comment">-- You can add and subtract fts times
+</span><span class="keyword">local</span> fts_duration = time.<span class="function-name">realtime</span>() - fts_start</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "monotonic"></a>
+    <strong>monotonic ()</strong>
+    </dt>
+    <dd>
+    Returns an fts time based on the current value from the system's MONOTONIC clock source.
+(e.g., clock<em>gettime(CLOCK</em>MONOTONIC).)</p>
+
+<p>POSIX guarantees that this clock source will <em>never</em> go backwards (but it <em>may</em> return the same value multiple times).
+On Linux, this will not account for time spent with the device in suspend (unlike CLOCK_BOOTTIME).
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">fts</span></span>
+        fixed point time
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "monotonic_coarse"></a>
+    <strong>monotonic_coarse ()</strong>
+    </dt>
+    <dd>
+    Ditto, but w/ CLOCK<em>MONOTONIC</em>COARSE if it's available and has a 1ms resolution or better (uses CLOCK_MONOTONIC otherwise).
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "boottime"></a>
+    <strong>boottime ()</strong>
+    </dt>
+    <dd>
+    Ditto, but w/ CLOCK_BOOTTIME (will return an fts time set to 0, 0 if the clock source is unsupported, as it's 2.6.39+)
+ Only use it if you <em>know</em> it's going to be supported, otherwise, prefer the four following aliases.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "format_time"></a>
+    <strong>format_time (time_fts)</strong>
+    </dt>
+    <dd>
+    Converts an fts time to a string (seconds with 6 decimal places)
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">time_fts</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Fields"></a>Fields</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "huge"></a>
+    <strong>huge</strong>
+    </dt>
+    <dd>
+    Sometimes we need a very large time.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "now"></a>
+    <strong>now</strong>
+    </dt>
+    <dd>
+    Alias for <a href="../modules/time.html#monotonic_coarse">monotonic_coarse</a>. </p>
+
+<p>The assumption being anything that requires accurate timestamps expects a monotonic clock source.
+This is certainly true for KOReader's UI scheduling.
+
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2024-10-24 08:59:32 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

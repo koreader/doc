@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>KOReader Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>KOReader</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Overview">Overview </a></li>
+<li><a href="#Builtin_events">Builtin events </a></li>
+<li><a href="#Event_propagation">Event propagation </a></li>
+<li><a href="#Event_system">Event system </a></li>
+<li><a href="#Draw_Page_Code_Path">Draw Page Code Path </a></li>
+</ul>
+
+
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/Collaborating_with_Git.md.html">Collaborating with Git</a></li>
+  <li><a href="../topics/DataStore.md.html">DataStore</a></li>
+  <li><a href="../topics/Development_guide.md.html">Development Guide</a></li>
+  <li><strong>Events</strong></li>
+  <li><a href="../topics/Hacking.md.html">Hacking</a></li>
+  <li><a href="../topics/Porting.md.html">Porting</a></li>
+  <li><a href="../topics/README.md.html">README</a></li>
+  <li><a href="../topics/Unit_tests.md.html">Unit Tests</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/android.html">android</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerbookinfo.html">apps.filemanager.filemanagerbookinfo</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerconverter.html">apps.filemanager.filemanagerconverter</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerutil.html">apps.filemanager.filemanagerutil</a></li>
+  <li><a href="../modules/apps.filemanager.lib.md.html">apps.filemanager.lib.md</a></li>
+  <li><a href="../modules/apps.reader.modules.readerlink.html">apps.reader.modules.readerlink</a></li>
+  <li><a href="../modules/apps.reader.modules.readerview.html">apps.reader.modules.readerview</a></li>
+  <li><a href="../modules/apps.reader.readerui.html">apps.reader.readerui</a></li>
+  <li><a href="../modules/baseexporter.html">baseexporter</a></li>
+  <li><a href="../modules/cache.html">cache</a></li>
+  <li><a href="../modules/cacheitem.html">cacheitem</a></li>
+  <li><a href="../modules/datetime.html">datetime</a></li>
+  <li><a href="../modules/dbg.html">dbg</a></li>
+  <li><a href="../modules/depgraph.html">depgraph</a></li>
+  <li><a href="../modules/device.generic.device.html">device.generic.device</a></li>
+  <li><a href="../modules/device.gesturedetector.html">device.gesturedetector</a></li>
+  <li><a href="../modules/device.input.html">device.input</a></li>
+  <li><a href="../modules/device.kindle.mockrtc.html">device.kindle.mockrtc</a></li>
+  <li><a href="../modules/device.kobo.nickel_conf.html">device.kobo.nickel_conf</a></li>
+  <li><a href="../modules/device.sysfs_light.html">device.sysfs_light</a></li>
+  <li><a href="../modules/device.wakeupmgr.html">device.wakeupmgr</a></li>
+  <li><a href="../modules/dispatcher.html">dispatcher</a></li>
+  <li><a href="../modules/docsettings.html">docsettings</a></li>
+  <li><a href="../modules/document.doccache.html">document.doccache</a></li>
+  <li><a href="../modules/document.documentregistry.html">document.documentregistry</a></li>
+  <li><a href="../modules/document.koptinterface.html">document.koptinterface</a></li>
+  <li><a href="../modules/dump.html">dump</a></li>
+  <li><a href="../modules/ffi.blitbuffer.html">ffi.blitbuffer</a></li>
+  <li><a href="../modules/ffi.crypto.html">ffi.crypto</a></li>
+  <li><a href="../modules/ffi.framebuffer.html">ffi.framebuffer</a></li>
+  <li><a href="../modules/ffi.freetype.html">ffi.freetype</a></li>
+  <li><a href="../modules/ffi.jpeg.html">ffi.jpeg</a></li>
+  <li><a href="../modules/ffi.koptcontext.html">ffi.koptcontext</a></li>
+  <li><a href="../modules/ffi.loadlib.html">ffi.loadlib</a></li>
+  <li><a href="../modules/ffi.md5.html">ffi.md5</a></li>
+  <li><a href="../modules/ffi.mupdf.html">ffi.mupdf</a></li>
+  <li><a href="../modules/ffi.png.html">ffi.png</a></li>
+  <li><a href="../modules/ffi.rtc.html">ffi.rtc</a></li>
+  <li><a href="../modules/ffi.sdl2_0.html">ffi.sdl2_0</a></li>
+  <li><a href="../modules/ffi.utf8proc.html">ffi.utf8proc</a></li>
+  <li><a href="../modules/ffi.util.html">ffi.util</a></li>
+  <li><a href="../modules/ffi.webp.html">ffi.webp</a></li>
+  <li><a href="../modules/ffi.zipwriter.html">ffi.zipwriter</a></li>
+  <li><a href="../modules/ffi.zlib.html">ffi.zlib</a></li>
+  <li><a href="../modules/ffi.zstd.html">ffi.zstd</a></li>
+  <li><a href="../modules/gettext.html">gettext</a></li>
+  <li><a href="../modules/koplugin.HelloWorld.html">koplugin.HelloWorld</a></li>
+  <li><a href="../modules/koplugin.QRClipboard.html">koplugin.QRClipboard</a></li>
+  <li><a href="../modules/koplugin.autodim.html">koplugin.autodim</a></li>
+  <li><a href="../modules/koplugin.autowarmth.html">koplugin.autowarmth</a></li>
+  <li><a href="../modules/koplugin.calibre.metadata.html">koplugin.calibre.metadata</a></li>
+  <li><a href="../modules/koplugin.coverimage.html">koplugin.coverimage</a></li>
+  <li><a href="../modules/koplugin.exporter.html">koplugin.exporter</a></li>
+  <li><a href="../modules/koplugin.japanese.html">koplugin.japanese</a></li>
+  <li><a href="../modules/koplugin.japanese.deinflector.html">koplugin.japanese.deinflector</a></li>
+  <li><a href="../modules/koplugin.patchmanagement.html">koplugin.patchmanagement</a></li>
+  <li><a href="../modules/koplugin.terminal.html">koplugin.terminal</a></li>
+  <li><a href="../modules/koplugin.terminal.html">koplugin.terminal</a></li>
+  <li><a href="../modules/koplugin.vocabbuilder.html">koplugin.vocabbuilder</a></li>
+  <li><a href="../modules/koplugin.wallabag.html">koplugin.wallabag</a></li>
+  <li><a href="../modules/languagesupport.html">languagesupport</a></li>
+  <li><a href="../modules/logger.html">logger</a></li>
+  <li><a href="../modules/luadata.html">luadata</a></li>
+  <li><a href="../modules/luadefaults.html">luadefaults</a></li>
+  <li><a href="../modules/luasettings.html">luasettings</a></li>
+  <li><a href="../modules/optmath.html">optmath</a></li>
+  <li><a href="../modules/random.html">random</a></li>
+  <li><a href="../modules/socketutil.html">socketutil</a></li>
+  <li><a href="../modules/sort.html">sort</a></li>
+  <li><a href="../modules/suntime.html">suntime</a></li>
+  <li><a href="../modules/time.html">time</a></li>
+  <li><a href="../modules/ui.bidi.html">ui.bidi</a></li>
+  <li><a href="../modules/ui.data.css_tweaks.html">ui.data.css_tweaks</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.generic_ime.html">ui.data.keyboardlayouts.generic_ime</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard.html">ui.data.keyboardlayouts.ja_keyboard</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard_keys.html">ui.data.keyboardlayouts.ja_keyboard_keys</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ko_KR_helper.html">ui.data.keyboardlayouts.ko_KR_helper</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.zh_keyboard.html">ui.data.keyboardlayouts.zh_keyboard</a></li>
+  <li><a href="../modules/ui.data.optionsutil.html">ui.data.optionsutil</a></li>
+  <li><a href="../modules/ui.downloadmgr.html">ui.downloadmgr</a></li>
+  <li><a href="../modules/ui.event.html">ui.event</a></li>
+  <li><a href="../modules/ui.font.html">ui.font</a></li>
+  <li><a href="../modules/ui.geometry.html">ui.geometry</a></li>
+  <li><a href="../modules/ui.hook_container.html">ui.hook_container</a></li>
+  <li><a href="../modules/ui.menusorter.html">ui.menusorter</a></li>
+  <li><a href="../modules/ui.network.wpa_supplicant.html">ui.network.wpa_supplicant</a></li>
+  <li><a href="../modules/ui.otamanager.html">ui.otamanager</a></li>
+  <li><a href="../modules/ui.plugin.background_task_plugin.html">ui.plugin.background_task_plugin</a></li>
+  <li><a href="../modules/ui.plugin.switch_plugin.html">ui.plugin.switch_plugin</a></li>
+  <li><a href="../modules/ui.quickstart.html">ui.quickstart</a></li>
+  <li><a href="../modules/ui.renderimage.html">ui.renderimage</a></li>
+  <li><a href="../modules/ui.rendertext.html">ui.rendertext</a></li>
+  <li><a href="../modules/ui.size.html">ui.size</a></li>
+  <li><a href="../modules/ui.translator.html">ui.translator</a></li>
+  <li><a href="../modules/ui.trapper.html">ui.trapper</a></li>
+  <li><a href="../modules/ui.uimanager.html">ui.uimanager</a></li>
+  <li><a href="../modules/ui.viewhtml.html">ui.viewhtml</a></li>
+  <li><a href="../modules/ui.widget.bboxwidget.html">ui.widget.bboxwidget</a></li>
+  <li><a href="../modules/ui.widget.button.html">ui.widget.button</a></li>
+  <li><a href="../modules/ui.widget.buttondialog.html">ui.widget.buttondialog</a></li>
+  <li><a href="../modules/ui.widget.checkbutton.html">ui.widget.checkbutton</a></li>
+  <li><a href="../modules/ui.widget.checkmark.html">ui.widget.checkmark</a></li>
+  <li><a href="../modules/ui.widget.confirmbox.html">ui.widget.confirmbox</a></li>
+  <li><a href="../modules/ui.widget.container.alphacontainer.html">ui.widget.container.alphacontainer</a></li>
+  <li><a href="../modules/ui.widget.container.bottomcontainer.html">ui.widget.container.bottomcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.centercontainer.html">ui.widget.container.centercontainer</a></li>
+  <li><a href="../modules/ui.widget.container.framecontainer.html">ui.widget.container.framecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.inputcontainer.html">ui.widget.container.inputcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.leftcontainer.html">ui.widget.container.leftcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.movablecontainer.html">ui.widget.container.movablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.rightcontainer.html">ui.widget.container.rightcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.scrollablecontainer.html">ui.widget.container.scrollablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.topcontainer.html">ui.widget.container.topcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.underlinecontainer.html">ui.widget.container.underlinecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.widgetcontainer.html">ui.widget.container.widgetcontainer</a></li>
+  <li><a href="../modules/ui.widget.datetimewidget.html">ui.widget.datetimewidget</a></li>
+  <li><a href="../modules/ui.widget.eventlistener.html">ui.widget.eventlistener</a></li>
+  <li><a href="../modules/ui.widget.horizontalgroup.html">ui.widget.horizontalgroup</a></li>
+  <li><a href="../modules/ui.widget.htmlboxwidget.html">ui.widget.htmlboxwidget</a></li>
+  <li><a href="../modules/ui.widget.iconbutton.html">ui.widget.iconbutton</a></li>
+  <li><a href="../modules/ui.widget.iconwidget.html">ui.widget.iconwidget</a></li>
+  <li><a href="../modules/ui.widget.imageviewer.html">ui.widget.imageviewer</a></li>
+  <li><a href="../modules/ui.widget.imagewidget.html">ui.widget.imagewidget</a></li>
+  <li><a href="../modules/ui.widget.infomessage.html">ui.widget.infomessage</a></li>
+  <li><a href="../modules/ui.widget.inputdialog.html">ui.widget.inputdialog</a></li>
+  <li><a href="../modules/ui.widget.keyboardlayoutdialog.html">ui.widget.keyboardlayoutdialog</a></li>
+  <li><a href="../modules/ui.widget.keyvaluepage.html">ui.widget.keyvaluepage</a></li>
+  <li><a href="../modules/ui.widget.linewidget.html">ui.widget.linewidget</a></li>
+  <li><a href="../modules/ui.widget.listview.html">ui.widget.listview</a></li>
+  <li><a href="../modules/ui.widget.multiconfirmbox.html">ui.widget.multiconfirmbox</a></li>
+  <li><a href="../modules/ui.widget.multiinputdialog.html">ui.widget.multiinputdialog</a></li>
+  <li><a href="../modules/ui.widget.networksetting.html">ui.widget.networksetting</a></li>
+  <li><a href="../modules/ui.widget.notification.html">ui.widget.notification</a></li>
+  <li><a href="../modules/ui.widget.numberpickerwidget.html">ui.widget.numberpickerwidget</a></li>
+  <li><a href="../modules/ui.widget.openwithdialog.html">ui.widget.openwithdialog</a></li>
+  <li><a href="../modules/ui.widget.overlapgroup.html">ui.widget.overlapgroup</a></li>
+  <li><a href="../modules/ui.widget.progresswidget.html">ui.widget.progresswidget</a></li>
+  <li><a href="../modules/ui.widget.qrmessage.html">ui.widget.qrmessage</a></li>
+  <li><a href="../modules/ui.widget.radiobuttontable.html">ui.widget.radiobuttontable</a></li>
+  <li><a href="../modules/ui.widget.radiobuttonwidget.html">ui.widget.radiobuttonwidget</a></li>
+  <li><a href="../modules/ui.widget.scrollhtmlwidget.html">ui.widget.scrollhtmlwidget</a></li>
+  <li><a href="../modules/ui.widget.scrolltextwidget.html">ui.widget.scrolltextwidget</a></li>
+  <li><a href="../modules/ui.widget.textboxwidget.html">ui.widget.textboxwidget</a></li>
+  <li><a href="../modules/ui.widget.textviewer.html">ui.widget.textviewer</a></li>
+  <li><a href="../modules/ui.widget.textwidget.html">ui.widget.textwidget</a></li>
+  <li><a href="../modules/ui.widget.toggleswitch.html">ui.widget.toggleswitch</a></li>
+  <li><a href="../modules/ui.widget.touchmenu.html">ui.widget.touchmenu</a></li>
+  <li><a href="../modules/ui.widget.trapwidget.html">ui.widget.trapwidget</a></li>
+  <li><a href="../modules/ui.widget.verticalgroup.html">ui.widget.verticalgroup</a></li>
+  <li><a href="../modules/ui.widget.widget.html">ui.widget.widget</a></li>
+  <li><a href="../modules/userpatch.html">userpatch</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+  <li><a href="../modules/version.html">version</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+
+<h1>Events</h1>
+
+<p><a name="Overview"></a></p>
+<h2>Overview</h2>
+
+<p>All widgets are a subclass of <a href="../modules/ui.widget.eventlistener.html#">ui.widget.eventlistener</a>, therefore they inherit
+the <a href="../modules/ui.widget.eventlistener.html#EventListener:handleEvent">handleEvent</a> method. To send an event
+to a widget, you can simply invoke the handleEvent method like the following:</p>
+
+
+<pre>
+widget_foo:<span class="function-name">handleEvent</span>(Event:<span class="function-name">new</span>(<span class="string">"Timeout"</span>))
+</pre>
+
+<p>If the widget can be destroyed during the event you should call <a href="../modules/ui.uimanager.html#UIManager:sendEvent">UIManager:sendEvent</a> to propagate the event from the topmost widget or <a href="../modules/ui.uimanager.html#UIManager:broadcastEvent">UIManager:broadcastEvent</a> to send the event to all widgets.</p>
+
+<p>Events are passed to child Widgets (or child containers) before their own handler sees them. See the implementation of WidgetContainer:handleEvent(). So a child widget, for instance a text input widget, gets the input events before the layout manager. The child widgets can "consume" an event by returning <code>true</code> from the event handler. Thus a text input widget just implements an input handler and consumes left/right presses, returning <code>true</code> in those cases. It can even make its return code dependent on whether the cursor is on the last position (do not consume press to right) or first position (do not consume press to left) to have proper focus movement in those cases.</p>
+
+<p><a name="Builtin_events"></a></p>
+<h2>Builtin events</h2>
+
+<h3>Reader events</h3>
+
+<ul>
+    <li><p>UpdatePos: emitted by typesetting related modules to notify other modules to
+    recalculate the view based on the new typesetting.</p></li>
+    <li><p>PosUpdate: emitted by readerrolling module to signal a change in pos.</p></li>
+</ul>
+
+
+<p><a name="Event_propagation"></a></p>
+<h2>Event propagation</h2>
+
+<p>Most UI components are a subclass of <a href="../modules/ui.widget.container.widgetcontainer.html#">WidgetContainer</a>.
+A WidgetContainer is an array that stores a list of children widgets.</p>
+
+<p>When <a href="../modules/ui.widget.container.widgetcontainer.html#WidgetContainer:handleEvent">WidgetContainer:handleEvent</a> is called with a new event,
+it will run roughly the following code:</p>
+
+
+<pre>
+<span class="comment">-- First propagate event to its children
+</span><span class="keyword">for</span> _, widget <span class="keyword">in</span> <span class="global">ipairs</span>(self) <span class="keyword">do</span>
+    <span class="keyword">if</span> widget:<span class="function-name">handleEvent</span>(event) <span class="keyword">then</span>
+        <span class="comment">-- stop propagating when an event handler returns true
+</span>        <span class="keyword">return</span> <span class="keyword">true</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">-- If not consumed by children, consume it ourself
+</span><span class="keyword">return</span> self[<span class="string">"on"</span>..event.name](self, <span class="global">unpack</span>(event.args, <span class="number">1</span>, event.args.n))
+</pre>
+
+
+<p><a name="Event_system"></a></p>
+<h2>Event system</h2>
+<p>The <a href="../modules/ui.event.html#">Event</a> system is used by widgets to communicate.</p>
+
+<p>Each event is an object that has two properties: <code>args</code> and <code>handler</code>. <code>handler</code> is the name of function that will be called on receive. <code>args</code> is a table that contains all the arguments needed to be passed to the event handler. When a widget receives a event, it will first check to see if <code>self[event.handler]</code> exists. If yes, the <code>self[event.handler]</code> function will be called and the return value of the handler will be returned to UIManager.</p>
+
+<p>Notice that if you don't want the event propagate after consumed in your handler, your handler must return <code>true</code>. Otherwise, the event will be passed to other widgets' handlers until one of the handlers returns <code>true</code>.</p>
+
+<p><a href="../modules/ui.widget.container.widgetcontainer.html#">WidgetContainer</a> is a special kind of widget. When it receives an event, it will first propagate the event to all its children. If the event is still not consumed (i.e., its handler returns <code>true</code>), then it will try to handle the event by itself.</p>
+
+<p>When you call <a href="../modules/ui.uimanager.html#UIManager:show">UIManager:show</a> on a widget, this widget will be added to the top of the <code>UIManager._window_stack</code>.
+Events are sent to the first widget in <code>UIManager._window_stack</code>. If it is not consumed, then UIManager will try to send it to all active widgets (<code>widget.is_always_active</code> equals <code>true</code>) in the <code>_window_stack</code>.</p>
+
+<p><a name="Draw_Page_Code_Path"></a></p>
+<h2>Draw Page Code Path</h2>
+
+<ul>
+    <li><strong>in readerview.lua:</strong> ReaderView widget flag itself dirty in <code>ReaderView:recalculate</code></li>
+    <li><strong>in ui.lua:</strong> UI main loop calls <code>ReaderView:paintTo</code></li>
+    <li><strong>in readerview.lua:</strong> <code>ReaderView:paintTo</code> calls <code>document:drawPage</code></li>
+    <li><strong>in document.lua:</strong> <code>document:drawPage</code> check for cache, if found, <strong>return cache</strong></li>
+    <li><strong>in document.lua:</strong> if cache not found, <code>document:drawPage</code> calls <code>document:renderPage</code></li>
+    <li><strong>in document.lua:</strong> <code>document:renderPage</code> calls <code>_document:openPage</code>, <code>page:draw</code> and put the result into cache</li>
+</ul>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2024-10-24 08:59:32 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

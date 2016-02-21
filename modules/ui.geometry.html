@@ -1,0 +1,1112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>KOReader Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>KOReader</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/android.html">android</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerbookinfo.html">apps.filemanager.filemanagerbookinfo</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerconverter.html">apps.filemanager.filemanagerconverter</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerutil.html">apps.filemanager.filemanagerutil</a></li>
+  <li><a href="../modules/apps.filemanager.lib.md.html">apps.filemanager.lib.md</a></li>
+  <li><a href="../modules/apps.reader.modules.readerlink.html">apps.reader.modules.readerlink</a></li>
+  <li><a href="../modules/apps.reader.modules.readerview.html">apps.reader.modules.readerview</a></li>
+  <li><a href="../modules/apps.reader.readerui.html">apps.reader.readerui</a></li>
+  <li><a href="../modules/baseexporter.html">baseexporter</a></li>
+  <li><a href="../modules/cache.html">cache</a></li>
+  <li><a href="../modules/cacheitem.html">cacheitem</a></li>
+  <li><a href="../modules/datetime.html">datetime</a></li>
+  <li><a href="../modules/dbg.html">dbg</a></li>
+  <li><a href="../modules/depgraph.html">depgraph</a></li>
+  <li><a href="../modules/device.generic.device.html">device.generic.device</a></li>
+  <li><a href="../modules/device.gesturedetector.html">device.gesturedetector</a></li>
+  <li><a href="../modules/device.input.html">device.input</a></li>
+  <li><a href="../modules/device.kindle.mockrtc.html">device.kindle.mockrtc</a></li>
+  <li><a href="../modules/device.kobo.nickel_conf.html">device.kobo.nickel_conf</a></li>
+  <li><a href="../modules/device.sysfs_light.html">device.sysfs_light</a></li>
+  <li><a href="../modules/device.wakeupmgr.html">device.wakeupmgr</a></li>
+  <li><a href="../modules/dispatcher.html">dispatcher</a></li>
+  <li><a href="../modules/docsettings.html">docsettings</a></li>
+  <li><a href="../modules/document.doccache.html">document.doccache</a></li>
+  <li><a href="../modules/document.documentregistry.html">document.documentregistry</a></li>
+  <li><a href="../modules/document.koptinterface.html">document.koptinterface</a></li>
+  <li><a href="../modules/dump.html">dump</a></li>
+  <li><a href="../modules/ffi.blitbuffer.html">ffi.blitbuffer</a></li>
+  <li><a href="../modules/ffi.crypto.html">ffi.crypto</a></li>
+  <li><a href="../modules/ffi.framebuffer.html">ffi.framebuffer</a></li>
+  <li><a href="../modules/ffi.freetype.html">ffi.freetype</a></li>
+  <li><a href="../modules/ffi.jpeg.html">ffi.jpeg</a></li>
+  <li><a href="../modules/ffi.koptcontext.html">ffi.koptcontext</a></li>
+  <li><a href="../modules/ffi.loadlib.html">ffi.loadlib</a></li>
+  <li><a href="../modules/ffi.md5.html">ffi.md5</a></li>
+  <li><a href="../modules/ffi.mupdf.html">ffi.mupdf</a></li>
+  <li><a href="../modules/ffi.png.html">ffi.png</a></li>
+  <li><a href="../modules/ffi.rtc.html">ffi.rtc</a></li>
+  <li><a href="../modules/ffi.sdl2_0.html">ffi.sdl2_0</a></li>
+  <li><a href="../modules/ffi.utf8proc.html">ffi.utf8proc</a></li>
+  <li><a href="../modules/ffi.util.html">ffi.util</a></li>
+  <li><a href="../modules/ffi.webp.html">ffi.webp</a></li>
+  <li><a href="../modules/ffi.zipwriter.html">ffi.zipwriter</a></li>
+  <li><a href="../modules/ffi.zlib.html">ffi.zlib</a></li>
+  <li><a href="../modules/ffi.zstd.html">ffi.zstd</a></li>
+  <li><a href="../modules/gettext.html">gettext</a></li>
+  <li><a href="../modules/koplugin.HelloWorld.html">koplugin.HelloWorld</a></li>
+  <li><a href="../modules/koplugin.QRClipboard.html">koplugin.QRClipboard</a></li>
+  <li><a href="../modules/koplugin.autodim.html">koplugin.autodim</a></li>
+  <li><a href="../modules/koplugin.autowarmth.html">koplugin.autowarmth</a></li>
+  <li><a href="../modules/koplugin.calibre.metadata.html">koplugin.calibre.metadata</a></li>
+  <li><a href="../modules/koplugin.coverimage.html">koplugin.coverimage</a></li>
+  <li><a href="../modules/koplugin.exporter.html">koplugin.exporter</a></li>
+  <li><a href="../modules/koplugin.japanese.html">koplugin.japanese</a></li>
+  <li><a href="../modules/koplugin.japanese.deinflector.html">koplugin.japanese.deinflector</a></li>
+  <li><a href="../modules/koplugin.patchmanagement.html">koplugin.patchmanagement</a></li>
+  <li><a href="../modules/koplugin.terminal.html">koplugin.terminal</a></li>
+  <li><a href="../modules/koplugin.terminal.html">koplugin.terminal</a></li>
+  <li><a href="../modules/koplugin.vocabbuilder.html">koplugin.vocabbuilder</a></li>
+  <li><a href="../modules/koplugin.wallabag.html">koplugin.wallabag</a></li>
+  <li><a href="../modules/languagesupport.html">languagesupport</a></li>
+  <li><a href="../modules/logger.html">logger</a></li>
+  <li><a href="../modules/luadata.html">luadata</a></li>
+  <li><a href="../modules/luadefaults.html">luadefaults</a></li>
+  <li><a href="../modules/luasettings.html">luasettings</a></li>
+  <li><a href="../modules/optmath.html">optmath</a></li>
+  <li><a href="../modules/random.html">random</a></li>
+  <li><a href="../modules/socketutil.html">socketutil</a></li>
+  <li><a href="../modules/sort.html">sort</a></li>
+  <li><a href="../modules/suntime.html">suntime</a></li>
+  <li><a href="../modules/time.html">time</a></li>
+  <li><a href="../modules/ui.bidi.html">ui.bidi</a></li>
+  <li><a href="../modules/ui.data.css_tweaks.html">ui.data.css_tweaks</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.generic_ime.html">ui.data.keyboardlayouts.generic_ime</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard.html">ui.data.keyboardlayouts.ja_keyboard</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard_keys.html">ui.data.keyboardlayouts.ja_keyboard_keys</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ko_KR_helper.html">ui.data.keyboardlayouts.ko_KR_helper</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.zh_keyboard.html">ui.data.keyboardlayouts.zh_keyboard</a></li>
+  <li><a href="../modules/ui.data.optionsutil.html">ui.data.optionsutil</a></li>
+  <li><a href="../modules/ui.downloadmgr.html">ui.downloadmgr</a></li>
+  <li><a href="../modules/ui.event.html">ui.event</a></li>
+  <li><a href="../modules/ui.font.html">ui.font</a></li>
+  <li><strong>ui.geometry</strong></li>
+  <li><a href="../modules/ui.hook_container.html">ui.hook_container</a></li>
+  <li><a href="../modules/ui.menusorter.html">ui.menusorter</a></li>
+  <li><a href="../modules/ui.network.wpa_supplicant.html">ui.network.wpa_supplicant</a></li>
+  <li><a href="../modules/ui.otamanager.html">ui.otamanager</a></li>
+  <li><a href="../modules/ui.plugin.background_task_plugin.html">ui.plugin.background_task_plugin</a></li>
+  <li><a href="../modules/ui.plugin.switch_plugin.html">ui.plugin.switch_plugin</a></li>
+  <li><a href="../modules/ui.quickstart.html">ui.quickstart</a></li>
+  <li><a href="../modules/ui.renderimage.html">ui.renderimage</a></li>
+  <li><a href="../modules/ui.rendertext.html">ui.rendertext</a></li>
+  <li><a href="../modules/ui.size.html">ui.size</a></li>
+  <li><a href="../modules/ui.translator.html">ui.translator</a></li>
+  <li><a href="../modules/ui.trapper.html">ui.trapper</a></li>
+  <li><a href="../modules/ui.uimanager.html">ui.uimanager</a></li>
+  <li><a href="../modules/ui.viewhtml.html">ui.viewhtml</a></li>
+  <li><a href="../modules/ui.widget.bboxwidget.html">ui.widget.bboxwidget</a></li>
+  <li><a href="../modules/ui.widget.button.html">ui.widget.button</a></li>
+  <li><a href="../modules/ui.widget.buttondialog.html">ui.widget.buttondialog</a></li>
+  <li><a href="../modules/ui.widget.checkbutton.html">ui.widget.checkbutton</a></li>
+  <li><a href="../modules/ui.widget.checkmark.html">ui.widget.checkmark</a></li>
+  <li><a href="../modules/ui.widget.confirmbox.html">ui.widget.confirmbox</a></li>
+  <li><a href="../modules/ui.widget.container.alphacontainer.html">ui.widget.container.alphacontainer</a></li>
+  <li><a href="../modules/ui.widget.container.bottomcontainer.html">ui.widget.container.bottomcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.centercontainer.html">ui.widget.container.centercontainer</a></li>
+  <li><a href="../modules/ui.widget.container.framecontainer.html">ui.widget.container.framecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.inputcontainer.html">ui.widget.container.inputcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.leftcontainer.html">ui.widget.container.leftcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.movablecontainer.html">ui.widget.container.movablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.rightcontainer.html">ui.widget.container.rightcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.scrollablecontainer.html">ui.widget.container.scrollablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.topcontainer.html">ui.widget.container.topcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.underlinecontainer.html">ui.widget.container.underlinecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.widgetcontainer.html">ui.widget.container.widgetcontainer</a></li>
+  <li><a href="../modules/ui.widget.datetimewidget.html">ui.widget.datetimewidget</a></li>
+  <li><a href="../modules/ui.widget.eventlistener.html">ui.widget.eventlistener</a></li>
+  <li><a href="../modules/ui.widget.horizontalgroup.html">ui.widget.horizontalgroup</a></li>
+  <li><a href="../modules/ui.widget.htmlboxwidget.html">ui.widget.htmlboxwidget</a></li>
+  <li><a href="../modules/ui.widget.iconbutton.html">ui.widget.iconbutton</a></li>
+  <li><a href="../modules/ui.widget.iconwidget.html">ui.widget.iconwidget</a></li>
+  <li><a href="../modules/ui.widget.imageviewer.html">ui.widget.imageviewer</a></li>
+  <li><a href="../modules/ui.widget.imagewidget.html">ui.widget.imagewidget</a></li>
+  <li><a href="../modules/ui.widget.infomessage.html">ui.widget.infomessage</a></li>
+  <li><a href="../modules/ui.widget.inputdialog.html">ui.widget.inputdialog</a></li>
+  <li><a href="../modules/ui.widget.keyboardlayoutdialog.html">ui.widget.keyboardlayoutdialog</a></li>
+  <li><a href="../modules/ui.widget.keyvaluepage.html">ui.widget.keyvaluepage</a></li>
+  <li><a href="../modules/ui.widget.linewidget.html">ui.widget.linewidget</a></li>
+  <li><a href="../modules/ui.widget.listview.html">ui.widget.listview</a></li>
+  <li><a href="../modules/ui.widget.multiconfirmbox.html">ui.widget.multiconfirmbox</a></li>
+  <li><a href="../modules/ui.widget.multiinputdialog.html">ui.widget.multiinputdialog</a></li>
+  <li><a href="../modules/ui.widget.networksetting.html">ui.widget.networksetting</a></li>
+  <li><a href="../modules/ui.widget.notification.html">ui.widget.notification</a></li>
+  <li><a href="../modules/ui.widget.numberpickerwidget.html">ui.widget.numberpickerwidget</a></li>
+  <li><a href="../modules/ui.widget.openwithdialog.html">ui.widget.openwithdialog</a></li>
+  <li><a href="../modules/ui.widget.overlapgroup.html">ui.widget.overlapgroup</a></li>
+  <li><a href="../modules/ui.widget.progresswidget.html">ui.widget.progresswidget</a></li>
+  <li><a href="../modules/ui.widget.qrmessage.html">ui.widget.qrmessage</a></li>
+  <li><a href="../modules/ui.widget.radiobuttontable.html">ui.widget.radiobuttontable</a></li>
+  <li><a href="../modules/ui.widget.radiobuttonwidget.html">ui.widget.radiobuttonwidget</a></li>
+  <li><a href="../modules/ui.widget.scrollhtmlwidget.html">ui.widget.scrollhtmlwidget</a></li>
+  <li><a href="../modules/ui.widget.scrolltextwidget.html">ui.widget.scrolltextwidget</a></li>
+  <li><a href="../modules/ui.widget.textboxwidget.html">ui.widget.textboxwidget</a></li>
+  <li><a href="../modules/ui.widget.textviewer.html">ui.widget.textviewer</a></li>
+  <li><a href="../modules/ui.widget.textwidget.html">ui.widget.textwidget</a></li>
+  <li><a href="../modules/ui.widget.toggleswitch.html">ui.widget.toggleswitch</a></li>
+  <li><a href="../modules/ui.widget.touchmenu.html">ui.widget.touchmenu</a></li>
+  <li><a href="../modules/ui.widget.trapwidget.html">ui.widget.trapwidget</a></li>
+  <li><a href="../modules/ui.widget.verticalgroup.html">ui.widget.verticalgroup</a></li>
+  <li><a href="../modules/ui.widget.widget.html">ui.widget.widget</a></li>
+  <li><a href="../modules/userpatch.html">userpatch</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+  <li><a href="../modules/version.html">version</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/Collaborating_with_Git.md.html">Collaborating with Git</a></li>
+  <li><a href="../topics/DataStore.md.html">DataStore</a></li>
+  <li><a href="../topics/Development_guide.md.html">Development Guide</a></li>
+  <li><a href="../topics/Events.md.html">Events</a></li>
+  <li><a href="../topics/Hacking.md.html">Hacking</a></li>
+  <li><a href="../topics/Porting.md.html">Porting</a></li>
+  <li><a href="../topics/README.md.html">README</a></li>
+  <li><a href="../topics/Unit_tests.md.html">Unit Tests</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ui.geometry</code></h1>
+<p>Utilities for 2D geometry.</p>
+<p>All of these apply to full rectangles:</p>
+
+
+<pre>
+<span class="keyword">local</span> Geom = <span class="global">require</span>(<span class="string">"ui/geometry"</span>)
+Geom:<span class="function-name">new</span>{ x = <span class="number">1</span>, y = <span class="number">0</span>, w = Screen:<span class="function-name">scaleBySize</span>(<span class="number">100</span>), h = Screen:<span class="function-name">scaleBySize</span>(<span class="number">200</span>), }
+</pre>
+
+<p>Some behaviour is defined for points:</p>
+
+
+<pre>
+Geom:<span class="function-name">new</span>{ x = <span class="number">0</span>, y = <span class="number">0</span>, }
+</pre>
+
+<p>Some behaviour is defined for dimensions:</p>
+
+
+<pre>
+Geom:<span class="function-name">new</span>{ w = Screen:<span class="function-name">scaleBySize</span>(<span class="number">600</span>), h = Screen:<span class="function-name">scaleBySize</span>(<span class="number">800</span>), }
+</pre>
+
+<p>Just use it on simple tables that have x, y and/or w, h
+or define your own types using this as a metatable.</p>
+
+<p>Where <a href="../modules/ffi.blitbuffer.html#">BlitBuffer</a> is concerned, a point at (0, 0) means the top-left corner.</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Geom:copy">Geom:copy ()</a></td>
+	<td class="summary">Makes a deep copy of itself.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:offsetBy">Geom:offsetBy (dx, dy)</a></td>
+	<td class="summary">Offsets rectangle or point by relative values</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:offsetTo">Geom:offsetTo (x, y)</a></td>
+	<td class="summary">Offsets rectangle or point to certain coordinates</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:scaleBy">Geom:scaleBy (zx, zy)</a></td>
+	<td class="summary">Scales rectangle (top-left corner is rounded down, bottom-right corner is rounded up) or dimension</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:transformByScale">Geom:transformByScale (zx, zy)</a></td>
+	<td class="summary">
+<p>This method also takes care of x and y on top of <a href="../modules/ui.geometry.html#Geom:scaleBy">Geom:scaleBy</a>,
+c.f., fz<em>round</em>rect in MµPDF,</p>
+<pre><code>  &lt;https://github.com/ArtifexSoftware/mupdf/blob/d00de0e96a4a5ec90ffc30837d40cd624a6a89e0/source/fitz/geometry.c#L400-L416&gt;
+</code></pre>
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:area">Geom:area ()</a></td>
+	<td class="summary">Returns area of itself.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:changeSizeBy">Geom:changeSizeBy (dw, dh)</a></td>
+	<td class="summary">Enlarges or shrinks dimensions or rectangles</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:combine">Geom:combine (rect_b)</a></td>
+	<td class="summary">Returns a new outer rectangle that contains both us and a given rectangle</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:intersect">Geom:intersect (rect_b)</a></td>
+	<td class="summary">Returns a new rectangle for the part that we and a given rectangle share</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:notIntersectWith">Geom:notIntersectWith (rect_b)</a></td>
+	<td class="summary">Returns true if self does not share any area or edge with rect_b</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:intersectWith">Geom:intersectWith (rect_b)</a></td>
+	<td class="summary">Returns true if self geom shares area with rect_b.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:notOpenIntersectWith">Geom:notOpenIntersectWith (rect_b)</a></td>
+	<td class="summary">Returns true if self does not share any area with rect_b</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:openIntersectWith">Geom:openIntersectWith (rect_b)</a></td>
+	<td class="summary">Returns true if self geom shares area or an edge with rect_b.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:setSizeTo">Geom:setSizeTo (rect_b)</a></td>
+	<td class="summary">Set size of dimension or rectangle to size of given dimension/rectangle.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:contains">Geom:contains (geom)</a></td>
+	<td class="summary">Checks whether geom is within current rectangle</p>
+
+<p>Works for dimensions, too.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:__eq">Geom:__eq (rect_b)</a></td>
+	<td class="summary">Checks for equality.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:equalSize">Geom:equalSize (rect_b)</a></td>
+	<td class="summary">Checks the size of a dimension/rectangle for equality.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:__lt">Geom:__lt (rect_b)</a></td>
+	<td class="summary">Checks if our size is smaller than the size of the given dimension/rectangle.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:__le">Geom:__le (rect_b)</a></td>
+	<td class="summary">Checks if our size is smaller or equal to the size of the given dimension/rectangle.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:offsetWithin">Geom:offsetWithin (rect_b, dx, dy)</a></td>
+	<td class="summary">Offsets the current rectangle by dx, dy while fitting it into the space
+of a given rectangle.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:centerWithin">Geom:centerWithin (rect_b, dx, dy)</a></td>
+	<td class="summary">Centers the current rectangle at position x and y of a given rectangle.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:distance">Geom:distance (rect_b)</a></td>
+	<td class="summary">Returns the Euclidean distance between two geoms.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:midpoint">Geom:midpoint (geom)</a></td>
+	<td class="summary">Returns the midpoint of two geoms.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:center">Geom:center ()</a></td>
+	<td class="summary">Returns the center point of this geom.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:clear">Geom:clear ()</a></td>
+	<td class="summary">Resets an existing Geom object to zero.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom:isEmpty">Geom:isEmpty ()</a></td>
+	<td class="summary">Checks if a dimension or rectangle is empty.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Geom.boundingBox">Geom.boundingBox (rectangles)</a></td>
+	<td class="summary">Returns a bounding box which encompasses all passed rectangles.</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Geom">Geom</a></td>
+	<td class="summary">Represents a full rectangle (all fields are set), a point (x &amp; y are set), or a dimension (w &amp; h are set).</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Geom:copy"></a>
+    <strong>Geom:copy ()</strong>
+    </dt>
+    <dd>
+    Makes a deep copy of itself.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:offsetBy"></a>
+    <strong>Geom:offsetBy (dx, dy)</strong>
+    </dt>
+    <dd>
+    Offsets rectangle or point by relative values
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">dx</span>
+            <span class="types"><span class="type">integer</span></span>
+         x delta
+        </li>
+        <li><span class="parameter">dy</span>
+            <span class="types"><span class="type">integer</span></span>
+         y delta
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:offsetTo"></a>
+    <strong>Geom:offsetTo (x, y)</strong>
+    </dt>
+    <dd>
+    Offsets rectangle or point to certain coordinates
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">integer</span></span>
+         new x
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">integer</span></span>
+         new y
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:scaleBy"></a>
+    <strong>Geom:scaleBy (zx, zy)</strong>
+    </dt>
+    <dd>
+    Scales rectangle (top-left corner is rounded down, bottom-right corner is rounded up) or dimension If a single factor is given, it is applied to both width and height
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">zx</span>
+            <span class="types"><span class="type">integer</span></span>
+         scale for x axis
+        </li>
+        <li><span class="parameter">zy</span>
+            <span class="types"><span class="type">integer</span></span>
+         scale for y axis
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:transformByScale"></a>
+    <strong>Geom:transformByScale (zx, zy)</strong>
+    </dt>
+    <dd>
+
+<p>This method also takes care of x and y on top of <a href="../modules/ui.geometry.html#Geom:scaleBy">Geom:scaleBy</a>,
+c.f., fz<em>round</em>rect in MµPDF,</p>
+<pre><code>  &lt;https://github.com/ArtifexSoftware/mupdf/blob/d00de0e96a4a5ec90ffc30837d40cd624a6a89e0/source/fitz/geometry.c#L400-L416&gt;
+</code></pre>
+
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">zx</span>
+            <span class="types"><span class="type">integer</span></span>
+         scale for x axis
+        </li>
+        <li><span class="parameter">zy</span>
+            <span class="types"><span class="type">integer</span></span>
+         scale for y axis
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:area"></a>
+    <strong>Geom:area ()</strong>
+    </dt>
+    <dd>
+    Returns area of itself.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">int</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:changeSizeBy"></a>
+    <strong>Geom:changeSizeBy (dw, dh)</strong>
+    </dt>
+    <dd>
+    Enlarges or shrinks dimensions or rectangles Note that for rectangles the offset stays the same
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">dw</span>
+            <span class="types"><span class="type">integer</span></span>
+         width delta
+        </li>
+        <li><span class="parameter">dh</span>
+            <span class="types"><span class="type">integer</span></span>
+         height delta
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:combine"></a>
+    <strong>Geom:combine (rect_b)</strong>
+    </dt>
+    <dd>
+    Returns a new outer rectangle that contains both us and a given rectangle Works for rectangles, dimensions and points
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:intersect"></a>
+    <strong>Geom:intersect (rect_b)</strong>
+    </dt>
+    <dd>
+    Returns a new rectangle for the part that we and a given rectangle share
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:notIntersectWith"></a>
+    <strong>Geom:notIntersectWith (rect_b)</strong>
+    </dt>
+    <dd>
+    Returns true if self does not share any area or edge with rect_b
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:intersectWith"></a>
+    <strong>Geom:intersectWith (rect_b)</strong>
+    </dt>
+    <dd>
+    Returns true if self geom shares area with rect_b.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:notOpenIntersectWith"></a>
+    <strong>Geom:notOpenIntersectWith (rect_b)</strong>
+    </dt>
+    <dd>
+    Returns true if self does not share any area with rect_b
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:openIntersectWith"></a>
+    <strong>Geom:openIntersectWith (rect_b)</strong>
+    </dt>
+    <dd>
+    Returns true if self geom shares area or an edge with rect_b.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:setSizeTo"></a>
+    <strong>Geom:setSizeTo (rect_b)</strong>
+    </dt>
+    <dd>
+    Set size of dimension or rectangle to size of given dimension/rectangle.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:contains"></a>
+    <strong>Geom:contains (geom)</strong>
+    </dt>
+    <dd>
+    Checks whether geom is within current rectangle</p>
+
+<p>Works for dimensions, too.  For points, it is basically an equality check.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">geom</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:__eq"></a>
+    <strong>Geom:__eq (rect_b)</strong>
+    </dt>
+    <dd>
+    Checks for equality. </p>
+
+<p>Works for rectangles, points, and dimensions.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:equalSize"></a>
+    <strong>Geom:equalSize (rect_b)</strong>
+    </dt>
+    <dd>
+    Checks the size of a dimension/rectangle for equality.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:__lt"></a>
+    <strong>Geom:__lt (rect_b)</strong>
+    </dt>
+    <dd>
+    Checks if our size is smaller than the size of the given dimension/rectangle.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:__le"></a>
+    <strong>Geom:__le (rect_b)</strong>
+    </dt>
+    <dd>
+    Checks if our size is smaller or equal to the size of the given dimension/rectangle.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:offsetWithin"></a>
+    <strong>Geom:offsetWithin (rect_b, dx, dy)</strong>
+    </dt>
+    <dd>
+    Offsets the current rectangle by dx, dy while fitting it into the space
+of a given rectangle. </p>
+
+<p>This can also be called with dx=0 and dy=0, which will fit the current
+rectangle into the given rectangle.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+        <li><span class="parameter">dx</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">dy</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:centerWithin"></a>
+    <strong>Geom:centerWithin (rect_b, dx, dy)</strong>
+    </dt>
+    <dd>
+    Centers the current rectangle at position x and y of a given rectangle.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+        <li><span class="parameter">dx</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">dy</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:distance"></a>
+    <strong>Geom:distance (rect_b)</strong>
+    </dt>
+    <dd>
+    Returns the Euclidean distance between two geoms.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rect_b</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:midpoint"></a>
+    <strong>Geom:midpoint (geom)</strong>
+    </dt>
+    <dd>
+    Returns the midpoint of two geoms.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">geom</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:center"></a>
+    <strong>Geom:center ()</strong>
+    </dt>
+    <dd>
+    Returns the center point of this geom.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:clear"></a>
+    <strong>Geom:clear ()</strong>
+    </dt>
+    <dd>
+    Resets an existing Geom object to zero.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom:isEmpty"></a>
+    <strong>Geom:isEmpty ()</strong>
+    </dt>
+    <dd>
+    Checks if a dimension or rectangle is empty.
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Geom.boundingBox"></a>
+    <strong>Geom.boundingBox (rectangles)</strong>
+    </dt>
+    <dd>
+    Returns a bounding box which encompasses all passed rectangles.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rectangles</span>
+            <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+         to encompass
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../modules/ui.geometry.html#Geom">Geom</a></span>
+        bounding box or nil if no rectangles passed
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Geom"></a>
+    <strong>Geom</strong>
+    </dt>
+    <dd>
+    Represents a full rectangle (all fields are set), a point (x &amp; y are set), or a dimension (w &amp; h are set).
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+        left origin
+        </li>
+        <li><span class="parameter">y</span>
+        top origin
+        </li>
+        <li><span class="parameter">w</span>
+        width
+        </li>
+        <li><span class="parameter">h</span>
+        height
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2024-10-24 08:59:32 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -1,0 +1,841 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>KOReader Documentation</title>
+    <link rel="stylesheet" href="../ldoc_fixed.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>KOReader</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/android.html">android</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerbookinfo.html">apps.filemanager.filemanagerbookinfo</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerconverter.html">apps.filemanager.filemanagerconverter</a></li>
+  <li><a href="../modules/apps.filemanager.filemanagerutil.html">apps.filemanager.filemanagerutil</a></li>
+  <li><a href="../modules/apps.filemanager.lib.md.html">apps.filemanager.lib.md</a></li>
+  <li><a href="../modules/apps.reader.modules.readerlink.html">apps.reader.modules.readerlink</a></li>
+  <li><a href="../modules/apps.reader.modules.readerview.html">apps.reader.modules.readerview</a></li>
+  <li><a href="../modules/apps.reader.readerui.html">apps.reader.readerui</a></li>
+  <li><a href="../modules/baseexporter.html">baseexporter</a></li>
+  <li><a href="../modules/cache.html">cache</a></li>
+  <li><a href="../modules/cacheitem.html">cacheitem</a></li>
+  <li><a href="../modules/datetime.html">datetime</a></li>
+  <li><a href="../modules/dbg.html">dbg</a></li>
+  <li><a href="../modules/depgraph.html">depgraph</a></li>
+  <li><a href="../modules/device.generic.device.html">device.generic.device</a></li>
+  <li><a href="../modules/device.gesturedetector.html">device.gesturedetector</a></li>
+  <li><a href="../modules/device.input.html">device.input</a></li>
+  <li><a href="../modules/device.kindle.mockrtc.html">device.kindle.mockrtc</a></li>
+  <li><a href="../modules/device.kobo.nickel_conf.html">device.kobo.nickel_conf</a></li>
+  <li><a href="../modules/device.sysfs_light.html">device.sysfs_light</a></li>
+  <li><a href="../modules/device.wakeupmgr.html">device.wakeupmgr</a></li>
+  <li><a href="../modules/dispatcher.html">dispatcher</a></li>
+  <li><a href="../modules/docsettings.html">docsettings</a></li>
+  <li><a href="../modules/document.doccache.html">document.doccache</a></li>
+  <li><a href="../modules/document.documentregistry.html">document.documentregistry</a></li>
+  <li><a href="../modules/document.koptinterface.html">document.koptinterface</a></li>
+  <li><a href="../modules/dump.html">dump</a></li>
+  <li><a href="../modules/ffi.blitbuffer.html">ffi.blitbuffer</a></li>
+  <li><a href="../modules/ffi.crypto.html">ffi.crypto</a></li>
+  <li><a href="../modules/ffi.framebuffer.html">ffi.framebuffer</a></li>
+  <li><a href="../modules/ffi.freetype.html">ffi.freetype</a></li>
+  <li><a href="../modules/ffi.jpeg.html">ffi.jpeg</a></li>
+  <li><a href="../modules/ffi.koptcontext.html">ffi.koptcontext</a></li>
+  <li><a href="../modules/ffi.loadlib.html">ffi.loadlib</a></li>
+  <li><a href="../modules/ffi.md5.html">ffi.md5</a></li>
+  <li><a href="../modules/ffi.mupdf.html">ffi.mupdf</a></li>
+  <li><a href="../modules/ffi.png.html">ffi.png</a></li>
+  <li><a href="../modules/ffi.rtc.html">ffi.rtc</a></li>
+  <li><a href="../modules/ffi.sdl2_0.html">ffi.sdl2_0</a></li>
+  <li><a href="../modules/ffi.utf8proc.html">ffi.utf8proc</a></li>
+  <li><strong>ffi.util</strong></li>
+  <li><a href="../modules/ffi.webp.html">ffi.webp</a></li>
+  <li><a href="../modules/ffi.zipwriter.html">ffi.zipwriter</a></li>
+  <li><a href="../modules/ffi.zlib.html">ffi.zlib</a></li>
+  <li><a href="../modules/ffi.zstd.html">ffi.zstd</a></li>
+  <li><a href="../modules/gettext.html">gettext</a></li>
+  <li><a href="../modules/koplugin.HelloWorld.html">koplugin.HelloWorld</a></li>
+  <li><a href="../modules/koplugin.QRClipboard.html">koplugin.QRClipboard</a></li>
+  <li><a href="../modules/koplugin.autodim.html">koplugin.autodim</a></li>
+  <li><a href="../modules/koplugin.autowarmth.html">koplugin.autowarmth</a></li>
+  <li><a href="../modules/koplugin.calibre.metadata.html">koplugin.calibre.metadata</a></li>
+  <li><a href="../modules/koplugin.coverimage.html">koplugin.coverimage</a></li>
+  <li><a href="../modules/koplugin.exporter.html">koplugin.exporter</a></li>
+  <li><a href="../modules/koplugin.japanese.html">koplugin.japanese</a></li>
+  <li><a href="../modules/koplugin.japanese.deinflector.html">koplugin.japanese.deinflector</a></li>
+  <li><a href="../modules/koplugin.patchmanagement.html">koplugin.patchmanagement</a></li>
+  <li><a href="../modules/koplugin.terminal.html">koplugin.terminal</a></li>
+  <li><a href="../modules/koplugin.terminal.html">koplugin.terminal</a></li>
+  <li><a href="../modules/koplugin.vocabbuilder.html">koplugin.vocabbuilder</a></li>
+  <li><a href="../modules/koplugin.wallabag.html">koplugin.wallabag</a></li>
+  <li><a href="../modules/languagesupport.html">languagesupport</a></li>
+  <li><a href="../modules/logger.html">logger</a></li>
+  <li><a href="../modules/luadata.html">luadata</a></li>
+  <li><a href="../modules/luadefaults.html">luadefaults</a></li>
+  <li><a href="../modules/luasettings.html">luasettings</a></li>
+  <li><a href="../modules/optmath.html">optmath</a></li>
+  <li><a href="../modules/random.html">random</a></li>
+  <li><a href="../modules/socketutil.html">socketutil</a></li>
+  <li><a href="../modules/sort.html">sort</a></li>
+  <li><a href="../modules/suntime.html">suntime</a></li>
+  <li><a href="../modules/time.html">time</a></li>
+  <li><a href="../modules/ui.bidi.html">ui.bidi</a></li>
+  <li><a href="../modules/ui.data.css_tweaks.html">ui.data.css_tweaks</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.generic_ime.html">ui.data.keyboardlayouts.generic_ime</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard.html">ui.data.keyboardlayouts.ja_keyboard</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ja_keyboard_keys.html">ui.data.keyboardlayouts.ja_keyboard_keys</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.ko_KR_helper.html">ui.data.keyboardlayouts.ko_KR_helper</a></li>
+  <li><a href="../modules/ui.data.keyboardlayouts.zh_keyboard.html">ui.data.keyboardlayouts.zh_keyboard</a></li>
+  <li><a href="../modules/ui.data.optionsutil.html">ui.data.optionsutil</a></li>
+  <li><a href="../modules/ui.downloadmgr.html">ui.downloadmgr</a></li>
+  <li><a href="../modules/ui.event.html">ui.event</a></li>
+  <li><a href="../modules/ui.font.html">ui.font</a></li>
+  <li><a href="../modules/ui.geometry.html">ui.geometry</a></li>
+  <li><a href="../modules/ui.hook_container.html">ui.hook_container</a></li>
+  <li><a href="../modules/ui.menusorter.html">ui.menusorter</a></li>
+  <li><a href="../modules/ui.network.wpa_supplicant.html">ui.network.wpa_supplicant</a></li>
+  <li><a href="../modules/ui.otamanager.html">ui.otamanager</a></li>
+  <li><a href="../modules/ui.plugin.background_task_plugin.html">ui.plugin.background_task_plugin</a></li>
+  <li><a href="../modules/ui.plugin.switch_plugin.html">ui.plugin.switch_plugin</a></li>
+  <li><a href="../modules/ui.quickstart.html">ui.quickstart</a></li>
+  <li><a href="../modules/ui.renderimage.html">ui.renderimage</a></li>
+  <li><a href="../modules/ui.rendertext.html">ui.rendertext</a></li>
+  <li><a href="../modules/ui.size.html">ui.size</a></li>
+  <li><a href="../modules/ui.translator.html">ui.translator</a></li>
+  <li><a href="../modules/ui.trapper.html">ui.trapper</a></li>
+  <li><a href="../modules/ui.uimanager.html">ui.uimanager</a></li>
+  <li><a href="../modules/ui.viewhtml.html">ui.viewhtml</a></li>
+  <li><a href="../modules/ui.widget.bboxwidget.html">ui.widget.bboxwidget</a></li>
+  <li><a href="../modules/ui.widget.button.html">ui.widget.button</a></li>
+  <li><a href="../modules/ui.widget.buttondialog.html">ui.widget.buttondialog</a></li>
+  <li><a href="../modules/ui.widget.checkbutton.html">ui.widget.checkbutton</a></li>
+  <li><a href="../modules/ui.widget.checkmark.html">ui.widget.checkmark</a></li>
+  <li><a href="../modules/ui.widget.confirmbox.html">ui.widget.confirmbox</a></li>
+  <li><a href="../modules/ui.widget.container.alphacontainer.html">ui.widget.container.alphacontainer</a></li>
+  <li><a href="../modules/ui.widget.container.bottomcontainer.html">ui.widget.container.bottomcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.centercontainer.html">ui.widget.container.centercontainer</a></li>
+  <li><a href="../modules/ui.widget.container.framecontainer.html">ui.widget.container.framecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.inputcontainer.html">ui.widget.container.inputcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.leftcontainer.html">ui.widget.container.leftcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.movablecontainer.html">ui.widget.container.movablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.rightcontainer.html">ui.widget.container.rightcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.scrollablecontainer.html">ui.widget.container.scrollablecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.topcontainer.html">ui.widget.container.topcontainer</a></li>
+  <li><a href="../modules/ui.widget.container.underlinecontainer.html">ui.widget.container.underlinecontainer</a></li>
+  <li><a href="../modules/ui.widget.container.widgetcontainer.html">ui.widget.container.widgetcontainer</a></li>
+  <li><a href="../modules/ui.widget.datetimewidget.html">ui.widget.datetimewidget</a></li>
+  <li><a href="../modules/ui.widget.eventlistener.html">ui.widget.eventlistener</a></li>
+  <li><a href="../modules/ui.widget.horizontalgroup.html">ui.widget.horizontalgroup</a></li>
+  <li><a href="../modules/ui.widget.htmlboxwidget.html">ui.widget.htmlboxwidget</a></li>
+  <li><a href="../modules/ui.widget.iconbutton.html">ui.widget.iconbutton</a></li>
+  <li><a href="../modules/ui.widget.iconwidget.html">ui.widget.iconwidget</a></li>
+  <li><a href="../modules/ui.widget.imageviewer.html">ui.widget.imageviewer</a></li>
+  <li><a href="../modules/ui.widget.imagewidget.html">ui.widget.imagewidget</a></li>
+  <li><a href="../modules/ui.widget.infomessage.html">ui.widget.infomessage</a></li>
+  <li><a href="../modules/ui.widget.inputdialog.html">ui.widget.inputdialog</a></li>
+  <li><a href="../modules/ui.widget.keyboardlayoutdialog.html">ui.widget.keyboardlayoutdialog</a></li>
+  <li><a href="../modules/ui.widget.keyvaluepage.html">ui.widget.keyvaluepage</a></li>
+  <li><a href="../modules/ui.widget.linewidget.html">ui.widget.linewidget</a></li>
+  <li><a href="../modules/ui.widget.listview.html">ui.widget.listview</a></li>
+  <li><a href="../modules/ui.widget.multiconfirmbox.html">ui.widget.multiconfirmbox</a></li>
+  <li><a href="../modules/ui.widget.multiinputdialog.html">ui.widget.multiinputdialog</a></li>
+  <li><a href="../modules/ui.widget.networksetting.html">ui.widget.networksetting</a></li>
+  <li><a href="../modules/ui.widget.notification.html">ui.widget.notification</a></li>
+  <li><a href="../modules/ui.widget.numberpickerwidget.html">ui.widget.numberpickerwidget</a></li>
+  <li><a href="../modules/ui.widget.openwithdialog.html">ui.widget.openwithdialog</a></li>
+  <li><a href="../modules/ui.widget.overlapgroup.html">ui.widget.overlapgroup</a></li>
+  <li><a href="../modules/ui.widget.progresswidget.html">ui.widget.progresswidget</a></li>
+  <li><a href="../modules/ui.widget.qrmessage.html">ui.widget.qrmessage</a></li>
+  <li><a href="../modules/ui.widget.radiobuttontable.html">ui.widget.radiobuttontable</a></li>
+  <li><a href="../modules/ui.widget.radiobuttonwidget.html">ui.widget.radiobuttonwidget</a></li>
+  <li><a href="../modules/ui.widget.scrollhtmlwidget.html">ui.widget.scrollhtmlwidget</a></li>
+  <li><a href="../modules/ui.widget.scrolltextwidget.html">ui.widget.scrolltextwidget</a></li>
+  <li><a href="../modules/ui.widget.textboxwidget.html">ui.widget.textboxwidget</a></li>
+  <li><a href="../modules/ui.widget.textviewer.html">ui.widget.textviewer</a></li>
+  <li><a href="../modules/ui.widget.textwidget.html">ui.widget.textwidget</a></li>
+  <li><a href="../modules/ui.widget.toggleswitch.html">ui.widget.toggleswitch</a></li>
+  <li><a href="../modules/ui.widget.touchmenu.html">ui.widget.touchmenu</a></li>
+  <li><a href="../modules/ui.widget.trapwidget.html">ui.widget.trapwidget</a></li>
+  <li><a href="../modules/ui.widget.verticalgroup.html">ui.widget.verticalgroup</a></li>
+  <li><a href="../modules/ui.widget.widget.html">ui.widget.widget</a></li>
+  <li><a href="../modules/userpatch.html">userpatch</a></li>
+  <li><a href="../modules/util.html">util</a></li>
+  <li><a href="../modules/version.html">version</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/Collaborating_with_Git.md.html">Collaborating with Git</a></li>
+  <li><a href="../topics/DataStore.md.html">DataStore</a></li>
+  <li><a href="../topics/Development_guide.md.html">Development Guide</a></li>
+  <li><a href="../topics/Events.md.html">Events</a></li>
+  <li><a href="../topics/Hacking.md.html">Hacking</a></li>
+  <li><a href="../topics/Porting.md.html">Porting</a></li>
+  <li><a href="../topics/README.md.html">README</a></li>
+  <li><a href="../topics/Unit_tests.md.html">Unit Tests</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>ffi.util</code></h1>
+<p>Module for various utility functions.</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#copyFile">copyFile (from, to)</a></td>
+	<td class="summary">Copies file.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#joinPath">joinPath (path1, path2)</a></td>
+	<td class="summary">Joins paths.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#purgeDir">purgeDir (dir)</a></td>
+	<td class="summary">Purges directory.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#execute">execute (...)</a></td>
+	<td class="summary">Executes child process.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#runInSubProcess">runInSubProcess (func, with_pipe, double_fork)</a></td>
+	<td class="summary">Run lua code (func) in a forked subprocess</p>
+
+<p> With with_pipe=true, sets up a pipe for communication
+ from children towards parent.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#isSubProcessDone">isSubProcessDone (pid, wait)</a></td>
+	<td class="summary">Collect subprocess so it does not become a zombie.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#terminateSubProcess">terminateSubProcess (pid)</a></td>
+	<td class="summary">Terminate subprocess pid by sending SIGKILL</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#getNonBlockingReadSize">getNonBlockingReadSize (fd_or_luafile)</a></td>
+	<td class="summary">Returns the length of data that can be read immediately without blocking</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#writeToFD">writeToFD (fd, data, close_fd)</a></td>
+	<td class="summary">Write data to file descriptor, and optionally close it when done</p>
+
+<p> May block if data is large until the other end has read it.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#writeToSysfs">writeToSysfs (val, file)</a></td>
+	<td class="summary">Simple wrapper to write a string (will be coerced if not) to a file (mainly aimed at sysfs/procfs knobs).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#readAllFromFD">readAllFromFD (fd)</a></td>
+	<td class="summary">Read all data from file descriptor, and close it.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#fsyncOpenedFile">fsyncOpenedFile (fd_or_luafile, sync_metadata)</a></td>
+	<td class="summary">Ensure content written to lua file or fd is flushed to the storage device.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#fsyncDirectory">fsyncDirectory (path)</a></td>
+	<td class="summary">Ensure directory content updates are flushed to the storage device.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#utf8charcode">utf8charcode (charstring)</a></td>
+	<td class="summary">Gets UTF-8 charcode.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#multiByteToUTF8">multiByteToUTF8 (str, codepage)</a></td>
+	<td class="summary">Converts multibyte string to utf-8 encoded string on Windows.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#isAndroid">isAndroid ()</a></td>
+	<td class="summary">Returns true if Android.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#loadSDL2">loadSDL2 ()</a></td>
+	<td class="summary">Returns SDL2 library</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#idiv">idiv (a, b)</a></td>
+	<td class="summary">Division with integer result.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#template">template (str, ...)</a></td>
+	<td class="summary">The util.template function allows for better translations through
+dynamic positioning of place markers.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "copyFile"></a>
+    <strong>copyFile (from, to)</strong>
+    </dt>
+    <dd>
+    Copies file.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">from</span>
+
+
+
+        </li>
+        <li><span class="parameter">to</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "joinPath"></a>
+    <strong>joinPath (path1, path2)</strong>
+    </dt>
+    <dd>
+    Joins paths. </p>
+
+<p>NOTE: If <code>path2</code> is an absolute path, then this function ignores <code>path1</code> and returns <code>path2</code> directly.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path1</span>
+
+
+
+        </li>
+        <li><span class="parameter">path2</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "purgeDir"></a>
+    <strong>purgeDir (dir)</strong>
+    </dt>
+    <dd>
+    Purges directory.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">dir</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "execute"></a>
+    <strong>execute (...)</strong>
+    </dt>
+    <dd>
+    Executes child process.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "runInSubProcess"></a>
+    <strong>runInSubProcess (func, with_pipe, double_fork)</strong>
+    </dt>
+    <dd>
+    Run lua code (func) in a forked subprocess</p>
+
+<p> With with<em>pipe=true, sets up a pipe for communication
+ from children towards parent.
+ func is called with the child pid as 1st argument, and,
+ if with</em>pipe: a fd for writting
+ This function returns (to parent): the child pid, and,
+ if with<em>pipe: a fd for reading what the child wrote
+ if double</em>fork: do a double fork so the child gets reparented to init,</p>
+<pre><code>             ensuring automatic reaping of zombies.
+             NOTE: In this case, the pid returned will *already*
+                   have been reaped, making it fairly useless.
+                   This means you do NOT have to call isSubProcessDone on it.
+                   It is safe to do so, though, it'll just immediately return success,
+                   as waitpid will return -1 w/ an ECHILD errno.
+</code></pre>
+<p> NOTE: Assumes the target platform is POSIX compliant.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">func</span>
+
+
+
+        </li>
+        <li><span class="parameter">with_pipe</span>
+
+
+
+        </li>
+        <li><span class="parameter">double_fork</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "isSubProcessDone"></a>
+    <strong>isSubProcessDone (pid, wait)</strong>
+    </dt>
+    <dd>
+    Collect subprocess so it does not become a zombie.
+ This does not block, unless <code>wait</code> is <code>true</code>.
+ Returns true if process was collected or has already exited, false if process is still running.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">pid</span>
+
+
+
+        </li>
+        <li><span class="parameter">wait</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "terminateSubProcess"></a>
+    <strong>terminateSubProcess (pid)</strong>
+    </dt>
+    <dd>
+    Terminate subprocess pid by sending SIGKILL
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">pid</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "getNonBlockingReadSize"></a>
+    <strong>getNonBlockingReadSize (fd_or_luafile)</strong>
+    </dt>
+    <dd>
+    Returns the length of data that can be read immediately without blocking  Accepts a low-level file descriptor, or a higher level lua file object
+ returns 0 if not readable yet, otherwise len of available data
+ returns nil when unsupported: caller may read (with possible blocking)</p>
+
+<p> Caveats with pipes: returns 0 too if other side of pipe has exited
+ without writing anything
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">fd_or_luafile</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "writeToFD"></a>
+    <strong>writeToFD (fd, data, close_fd)</strong>
+    </dt>
+    <dd>
+    Write data to file descriptor, and optionally close it when done</p>
+
+<p> May block if data is large until the other end has read it.
+ If data fits into kernel pipe buffer, it can return before the
+ other end has started reading it.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">fd</span>
+
+
+
+        </li>
+        <li><span class="parameter">data</span>
+
+
+
+        </li>
+        <li><span class="parameter">close_fd</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "writeToSysfs"></a>
+    <strong>writeToSysfs (val, file)</strong>
+    </dt>
+    <dd>
+    Simple wrapper to write a string (will be coerced if not) to a file (mainly aimed at sysfs/procfs knobs).
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">val</span>
+            <span class="types"><span class="type">NOTE</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">file</span>
+         We do things by hand via ffi, because io.write uses fwrite, which isn't a great fit for procfs/sysfs (e.g., we lose failure cases like EBUSY, as it only reports failures to write to the <em>stream</em>, not to the disk/file!).
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "readAllFromFD"></a>
+    <strong>readAllFromFD (fd)</strong>
+    </dt>
+    <dd>
+    Read all data from file descriptor, and close it.
+ This blocks until remote side has closed its side of the fd
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">fd</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "fsyncOpenedFile"></a>
+    <strong>fsyncOpenedFile (fd_or_luafile, sync_metadata)</strong>
+    </dt>
+    <dd>
+    Ensure content written to lua file or fd is flushed to the storage device. </p>
+
+<p> Accepts a low-level file descriptor, or a higher level lua file object,
+ which must still be opened (call :close() only after having called this).
+ If optional parameter sync_metadata is true, use fsync() to also flush
+ file metadata (timestamps...), otherwise use fdatasync() to only flush
+ file content and file size.
+ Returns true if syscall successful
+ See https://stackoverflow.com/questions/37288453/calling-fsync2-after-close2
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">fd_or_luafile</span>
+
+
+
+        </li>
+        <li><span class="parameter">sync_metadata</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "fsyncDirectory"></a>
+    <strong>fsyncDirectory (path)</strong>
+    </dt>
+    <dd>
+    Ensure directory content updates are flushed to the storage device. </p>
+
+<p> Accepts the directory path as a string, or a file path (from which
+ we can deduce the directory to sync).
+ Returns true if syscall successful
+ See http://blog.httrack.com/blog/2013/11/15/everything-you-always-wanted-to-know-about-fsync/
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">path</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "utf8charcode"></a>
+    <strong>utf8charcode (charstring)</strong>
+    </dt>
+    <dd>
+    Gets UTF-8 charcode.
+ See unicodeCodepointToUtf8 in frontend/util for an encoder.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">charstring</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "multiByteToUTF8"></a>
+    <strong>multiByteToUTF8 (str, codepage)</strong>
+    </dt>
+    <dd>
+    Converts multibyte string to utf-8 encoded string on Windows.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+
+
+
+        </li>
+        <li><span class="parameter">codepage</span>
+        if codepage is not provided we will query the system codepage
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "isAndroid"></a>
+    <strong>isAndroid ()</strong>
+    </dt>
+    <dd>
+    Returns true if Android.
+ For now, we just check if the "android" module can be loaded.
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "loadSDL2"></a>
+    <strong>loadSDL2 ()</strong>
+    </dt>
+    <dd>
+    Returns SDL2 library
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "idiv"></a>
+    <strong>idiv (a, b)</strong>
+    </dt>
+    <dd>
+    Division with integer result.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">a</span>
+
+
+
+        </li>
+        <li><span class="parameter">b</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "template"></a>
+    <strong>template (str, ...)</strong>
+    </dt>
+    <dd>
+    The util.template function allows for better translations through
+dynamic positioning of place markers.  The range of place markers
+runs from %1 to %99, but normally no more than two or three should
+be required. There are no provisions for escaping place markers.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">str</span>
+
+
+
+        </li>
+        <li><span class="parameter">...</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">    output = util.<span class="function-name">template</span>(
+        <span class="function-name">_</span>(<span class="string">"Hello %1, welcome to %2."</span>),
+        name,
+        company
+    )
+
+This <span class="keyword">function</span> was inspired by Qt:
+&lt;http://qt-project.org/doc/qt-<span class="number">4.8</span>/internationalization.html#use-qstring-arg-<span class="keyword">for</span>-dynamic-text&gt;</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2024-10-24 08:59:32 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
