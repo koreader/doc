@@ -31,7 +31,7 @@ cp -r ../koreader/doc/html/* .
     echo -e "\\n${ANSI_GREEN}Pushing document update..."
     git -c user.name="KOReader build bot" -c user.email="non-reply@koreader.rocks" \
         commit -a --amend -m 'Automated documentation build from Github Actions.'
-    #git push -f --quiet "https://${GITHUB_TOKEN}@github.com/koreader/doc.git" gh-pages >/dev/null
+    git push -f -n
     echo -e "\\n${ANSI_GREEN}Documentation update pushed."
 } || exit
 
