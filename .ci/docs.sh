@@ -16,6 +16,7 @@ pushd ../koreader && {
 
 pushd ../koreader/doc && {
     ldoc .
+    whoami
     ls -la
     if [ ! -d html ]; then
         echo "Failed to generate documents..."
