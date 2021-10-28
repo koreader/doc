@@ -20,7 +20,7 @@ jobs:
     steps:
         # make sure we have git >= 2.18 so github checkout behaves
       - name: Update ldoc
-        run: sudo apt-get update && sudo apt-get install lua-ldoc -y
+        run: sudo apt-get update && sudo apt-get install lua-ldoc lua-markdown -y
 
       - name: Check out Git repository
         uses: actions/checkout@v2
